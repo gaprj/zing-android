@@ -1,53 +1,52 @@
 # Zing — Pantry & Recipes
 
-Zing is a native Android app for managing pantry items, tracking expiry dates, discovering recipes, and organizing a shopping list. It is built with Kotlin, Jetpack Compose, and Room.
+Zing is a native Android app built with Kotlin, Jetpack Compose and Room. It helps you organize pantry items and expiry dates, discover recipes based on ingredients you have, and manage a shopping list.
 
 ## Features
 
-- Pantry inventory with item lots, quantities, locations, expiry dates, filters, and sorting.
+- Pantry inventory with separate lots, quantities, locations, expiry dates, filters and sorting.
 - Barcode scanning with CameraX and ML Kit, with optional product lookup through Open Food Facts.
-- 64 built-in recipes available offline, with localized names, descriptions, ingredients, and instructions in Italian, English, Spanish, French, German, and Portuguese.
-- Online recipe discovery through the Wikibooks MediaWiki API. Results are heuristic and the online catalogue is not exhaustive.
-- Ingredient availability checks, recipe scaling, and a shopping list.
+- 64 built-in recipes available offline, with localized names, descriptions, ingredients and instructions in Italian, English, Spanish, French, German and Portuguese.
+- Online recipe discovery through the public Wikibooks MediaWiki API. Results are heuristic and the online catalogue is not exhaustive.
+- Ingredient availability checks, missing-ingredient comparison, recipe scaling and a shopping list.
 - Local reminders, cooking timers, light/dark theme, language and unit preferences.
-- Optional nutrition profile and JSON export/import. Nutrition estimates are informational and are not medical advice.
-- Adaptive layouts for phones and tablets, including a navigation rail, adaptive grids, and a two-pane recipe view on wide windows.
+- Optional nutrition profile and JSON export/import. Nutrition estimates are informational, not medical advice.
+- Adaptive layouts for phones and tablets, including a navigation rail, adaptive grids and a two-pane recipe view on wider screens.
 
 ## Technology
 
-- Kotlin, Jetpack Compose, Material 3
-- Android Gradle Plugin 8.13.2, Gradle 8.13, Kotlin 2.2.21
+- Kotlin, Jetpack Compose and Material 3
+- Android Gradle Plugin 8.13.2, Gradle 8.13 and Kotlin 2.2.21
 - `compileSdk = 36`, `targetSdk = 36`, `minSdk = 26`
-- Room, DataStore, WorkManager, CameraX, ML Kit Barcode Scanning, Google Play Billing
+- Room, DataStore, WorkManager, CameraX and ML Kit Barcode Scanning
 
 ## Build locally
 
-1. Install Android Studio, JDK 17 or JDK 21 (both compatible with this project toolchain), Android SDK Platform 36, and the required Build Tools.
-2. Open this repository's root directory in Android Studio—the directory containing `settings.gradle.kts`.
-3. Let Gradle sync and download dependencies. Network access is required on the first build.
-4. Build and run the app from Android Studio, or use the included Gradle bootstrap scripts from the project root:
+1. Install Android Studio, JDK 17 or newer, Android SDK Platform 36 and the required SDK Build Tools.
+2. Open the project directory containing `settings.gradle.kts` in Android Studio and allow Gradle to sync.
+3. From the project root, run the relevant commands.
 
-   **Windows PowerShell**
+Windows PowerShell:
 
-   ```powershell
-   .\gradlew.bat :app:assembleDebug
-   .\gradlew.bat :app:testDebugUnitTest
-   ```
+```powershell
+.\gradlew.bat :app:assembleDebug
+.\gradlew.bat :app:testDebugUnitTest
+```
 
-   **Linux/macOS**
+Linux/macOS:
 
-   ```sh
-   ./gradlew :app:assembleDebug
-   ./gradlew :app:testDebugUnitTest
-   ```
+```bash
+./gradlew :app:assembleDebug
+./gradlew :app:testDebugUnitTest
+```
 
-The maintainer has verified the debug APK build on a local Android Studio setup and reports that all 8 unit tests pass. Build outputs and local IDE settings are intentionally not committed; they are regenerated locally.
+The first build requires network access to download Gradle and dependencies. Build outputs and local IDE configuration are not included in the repository.
 
 ## External data sources
 
-- [Open Food Facts](https://world.openfoodfacts.org/) provides product information for barcode lookups. Data may be incomplete; its API terms, rate limits, and applicable database/content licences apply.
-- [Wikibooks](https://www.wikibooks.org/) is queried for online recipe discovery. The catalogue is community-maintained and not exhaustive. Recipe pages may have page-specific licence and attribution requirements; source attribution should be preserved where applicable.
+- **Open Food Facts** is used for optional barcode product lookup. Product data may be incomplete; consult the [Open Food Facts terms of use](https://world.openfoodfacts.org/terms-of-use) and API documentation before integrating or redistributing its data.
+- **Wikibooks** is used for online recipe discovery. Results link to source pages; check the attribution and licensing information of individual pages before reusing their content.
 
-## Licensing
+## Source code license
 
-No license is granted for general reuse, modification, or redistribution of this project's code. Public visibility on GitHub does not mean the project is open source. All rights remain with the copyright holder, except for rights granted by applicable law or GitHub's platform terms. Third-party libraries, data, and content remain subject to their respective licences and terms.
+No license is currently specified for this repository. Public availability on GitHub does not, by itself, grant permission to copy, modify or redistribute the source code.
