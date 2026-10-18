@@ -1,0 +1,3825 @@
+{
+  "schemaVersion": 1,
+  "translations": {
+    "en": {
+      "Pasta al pomodoro": {
+        "name": "Tomato pasta",
+        "description": "A simple Italian classic with tomato and basil.",
+        "instructions": [
+          "Warm the oil with the garlic.",
+          "Add the tomato passata and simmer for 15 minutes.",
+          "Boil the pasta in salted water, drain it al dente and toss it with the sauce.",
+          "Finish with fresh basil."
+        ]
+      },
+      "Spaghetti aglio, olio e peperoncino": {
+        "name": "Spaghetti aglio, olio e peperoncino",
+        "description": "Spaghetti with garlic, olive oil and chilli.",
+        "instructions": [
+          "Cook the spaghetti al dente.",
+          "Gently heat sliced garlic and chilli in the oil without burning them.",
+          "Add the pasta and a little cooking water, then toss until glossy.",
+          "Finish with chopped parsley."
+        ]
+      },
+      "Risotto alla zucca": {
+        "name": "Pumpkin risotto",
+        "description": "Creamy risotto with sweet pumpkin.",
+        "instructions": [
+          "Finely chop the onion and soften it in a little butter.",
+          "Add diced pumpkin and cook for 8 minutes.",
+          "Stir in the rice and toast it, then gradually add hot stock while stirring.",
+          "Turn off the heat and finish with butter and Parmesan."
+        ]
+      },
+      "Pasta e ceci": {
+        "name": "Pasta e ceci (pasta with chickpeas)",
+        "description": "A rustic pasta and chickpea soup.",
+        "instructions": [
+          "Warm the oil with garlic and rosemary.",
+          "Add the chickpeas and passata with a glass of water, then simmer.",
+          "Mash some chickpeas to make the soup creamy.",
+          "Add the pasta and cook, adding hot water if needed."
+        ]
+      },
+      "Pasta al pesto": {
+        "name": "Pasta with pesto",
+        "description": "Pasta tossed with fresh basil pesto.",
+        "instructions": [
+          "Blend basil, pine nuts, garlic, Parmesan and oil into a pesto; add a spoonful of cold water if needed.",
+          "Cook the pasta.",
+          "Off the heat, toss the pasta with the pesto, loosening it with cooking water."
+        ]
+      },
+      "Penne all'arrabbiata": {
+        "name": "Penne all'arrabbiata",
+        "description": "Spicy penne in tomato sauce.",
+        "instructions": [
+          "Sauté garlic and chilli in the oil.",
+          "Add passata and cook for 15 minutes.",
+          "Boil the penne al dente, add them to the sauce and toss to coat.",
+          "Finish with chopped parsley."
+        ]
+      },
+      "Pasta tonno e limone": {
+        "name": "Tuna and lemon pasta",
+        "description": "Fresh pasta with tuna, lemon and parsley.",
+        "instructions": [
+          "Cook the pasta.",
+          "Drain the tuna and warm it briefly with oil and grated lemon zest.",
+          "Add the pasta and a little cooking water, then add lemon juice to taste and parsley."
+        ]
+      },
+      "Pasta ricotta e spinaci": {
+        "name": "Pasta with ricotta and spinach",
+        "description": "Creamy ricotta pasta with spinach.",
+        "instructions": [
+          "Cook the spinach in a pan with a little water, then chop it.",
+          "Mix ricotta, Parmesan, nutmeg and a ladle of pasta water.",
+          "Add the pasta and spinach to the cream and stir off the heat."
+        ]
+      },
+      "Gnocchi al burro e salvia": {
+        "name": "Potato gnocchi with butter and sage",
+        "description": "Soft potato gnocchi with fragrant sage butter.",
+        "instructions": [
+          "Boil the gnocchi until they float to the surface.",
+          "Meanwhile, melt the butter with the sage.",
+          "Lift out the gnocchi with a slotted spoon and toss them in the butter.",
+          "Serve with Parmesan."
+        ]
+      },
+      "Pasta alla carbonara": {
+        "name": "Spaghetti carbonara",
+        "description": "Roman-style spaghetti with egg, pecorino and guanciale.",
+        "instructions": [
+          "Brown the sliced guanciale in a pan.",
+          "Beat the eggs with pecorino and black pepper.",
+          "Cook the spaghetti and reserve some cooking water.",
+          "Off the heat, toss the pasta with the guanciale, then stir in the egg mixture with a little hot water until creamy; do not scramble the eggs."
+        ]
+      },
+      "Pasta alla norma": {
+        "name": "Pasta alla Norma",
+        "description": "Sicilian pasta with aubergine, tomato and salted ricotta.",
+        "instructions": [
+          "Dice the aubergine and fry it in oil until golden.",
+          "Simmer the passata with basil for 15 minutes.",
+          "Cook the pasta and toss it with the sauce and aubergine.",
+          "Grate salted ricotta over the top."
+        ]
+      },
+      "Lasagne vegetariane": {
+        "name": "Vegetarian lasagne",
+        "description": "Layered lasagne with vegetables and béchamel.",
+        "instructions": [
+          "Dice the vegetables and sauté them in a pan.",
+          "Spread a thin layer of passata and béchamel in a baking dish.",
+          "Layer pasta sheets with vegetables, tomato sauce, béchamel and mozzarella.",
+          "Finish with Parmesan and bake at 180 °C for 30–35 minutes."
+        ]
+      },
+      "Minestrone di verdure": {
+        "name": "Vegetable minestrone",
+        "description": "Hearty soup with seasonal vegetables and beans.",
+        "instructions": [
+          "Dice the vegetables.",
+          "Soften the onion in a little oil, then add the vegetables and stock.",
+          "Simmer gently for about 30 minutes.",
+          "Add the beans for the final 10 minutes and season with salt."
+        ]
+      },
+      "Frittata di zucchine": {
+        "name": "Zucchini frittata",
+        "description": "Italian omelette with zucchini and Parmesan.",
+        "instructions": [
+          "Grate or thinly slice the zucchini and sauté them in a pan.",
+          "Beat the eggs with Parmesan and pepper, then pour over the zucchini.",
+          "Cover and cook over low heat.",
+          "Flip the frittata using a plate and cook the other side."
+        ]
+      },
+      "Polpette al sugo": {
+        "name": "Meatballs in tomato sauce",
+        "description": "Tender meatballs simmered in tomato sauce.",
+        "instructions": [
+          "Mix the meat, egg, Parmesan, breadcrumbs and milk; shape into firm balls.",
+          "Lightly brown the meatballs in a pan.",
+          "Add passata and a little water, cover and simmer over low heat for 25 minutes."
+        ]
+      },
+      "Pollo al limone": {
+        "name": "Lemon chicken",
+        "description": "Quick chicken strips in a bright lemon sauce.",
+        "instructions": [
+          "Cut the chicken into strips, dust lightly with flour and brown in oil.",
+          "Add stock and lemon juice.",
+          "Cook until the chicken is fully cooked and the sauce thickens.",
+          "Season with salt and serve immediately."
+        ]
+      },
+      "Salmone al forno": {
+        "name": "Oven-baked salmon",
+        "description": "Salmon baked with lemon and parsley.",
+        "instructions": [
+          "Place the salmon on a tray lined with baking paper.",
+          "Season with oil, lemon, parsley and pepper.",
+          "Bake at 190 °C for 12–18 minutes depending on thickness, until fully cooked."
+        ]
+      },
+      "Pollo alla cacciatora": {
+        "name": "Chicken cacciatore",
+        "description": "Rustic chicken braised with tomato, olives and herbs.",
+        "instructions": [
+          "Brown the chicken pieces in a casserole.",
+          "Add onion, pour in the white wine and let it evaporate.",
+          "Stir in passata, olives, rosemary and a little water.",
+          "Cover and simmer gently for 35–40 minutes, checking that the chicken is cooked through."
+        ]
+      },
+      "Parmigiana di melanzane": {
+        "name": "Eggplant parmigiana",
+        "description": "Baked layers of aubergine, tomato, mozzarella and Parmesan.",
+        "instructions": [
+          "Slice the aubergines and grill them or bake with a little oil.",
+          "Make a quick tomato sauce with the passata.",
+          "Layer sauce, aubergine, mozzarella, basil and Parmesan in a baking dish.",
+          "Bake at 190 °C for about 35–40 minutes."
+        ]
+      },
+      "Insalata caprese": {
+        "name": "Caprese salad",
+        "description": "A fresh salad of tomato, mozzarella and basil.",
+        "instructions": [
+          "Slice the tomatoes and mozzarella and arrange them alternately on a plate.",
+          "Add basil leaves.",
+          "Season with oil, salt and pepper just before serving."
+        ]
+      },
+      "Insalata di ceci e tonno": {
+        "name": "Chickpea and tuna salad",
+        "description": "A protein-rich salad with chickpeas, tuna and tomato.",
+        "instructions": [
+          "Rinse and drain the chickpeas.",
+          "Combine them with drained tuna, diced tomato and thinly sliced onion.",
+          "Dress with oil, lemon juice, salt and pepper.",
+          "Let stand for 5 minutes."
+        ]
+      },
+      "Panzanella": {
+        "name": "Panzanella",
+        "description": "Tuscan bread salad with tomato, cucumber and onion.",
+        "instructions": [
+          "Briefly soak the bread in water and a little vinegar, then squeeze it dry and break it up.",
+          "Add sliced tomatoes, cucumber and onion.",
+          "Dress with oil, vinegar, basil, salt and pepper.",
+          "Rest in a cool place before serving."
+        ]
+      },
+      "Bruschette al pomodoro": {
+        "name": "Tomato bruschetta",
+        "description": "Toasted bread topped with seasoned tomatoes.",
+        "instructions": [
+          "Toast the bread on a griddle or under the grill.",
+          "Dice the tomatoes and season with oil, basil and salt.",
+          "Rub the warm bread with garlic and spoon the tomatoes on top."
+        ]
+      },
+      "Crostini ricotta e miele": {
+        "name": "Ricotta, honey and walnut crostini",
+        "description": "Crisp toast with ricotta, honey and walnuts.",
+        "instructions": [
+          "Toast the bread.",
+          "Mash the ricotta with a fork and spread it over the slices.",
+          "Top with honey and chopped walnuts; serve straight away to keep the bread crisp."
+        ]
+      },
+      "Piadina prosciutto e squacquerone": {
+        "name": "Piadina with prosciutto and squacquerone",
+        "description": "Italian flatbread filled with soft cheese and cured ham.",
+        "instructions": [
+          "Warm the piadine in a non-stick pan for one minute per side.",
+          "Fill with squacquerone, prosciutto and rocket.",
+          "Fold in half and serve warm."
+        ]
+      },
+      "Cous cous alle verdure": {
+        "name": "Vegetable couscous",
+        "description": "Fluffy couscous with sautéed vegetables.",
+        "instructions": [
+          "Dice the vegetables and sauté them in oil until tender but still firm.",
+          "Pour boiling stock over the couscous, cover for 5 minutes and fluff with a fork.",
+          "Mix in the vegetables and season with spices."
+        ]
+      },
+      "Riso freddo mediterraneo": {
+        "name": "Mediterranean rice salad",
+        "description": "Chilled rice with tomato, mozzarella and basil.",
+        "instructions": [
+          "Cook the rice in salted water, drain and cool quickly.",
+          "Dice the tomato and mozzarella.",
+          "Combine all the ingredients, season with oil, basil and pepper, then chill before serving."
+        ]
+      },
+      "Farinata di ceci": {
+        "name": "Chickpea farinata",
+        "description": "A thin Ligurian chickpea flatbread.",
+        "instructions": [
+          "Whisk the chickpea flour with water until smooth and let rest for at least 30 minutes if possible.",
+          "Skim off any foam and mix in oil and salt.",
+          "Pour into a wide, very hot baking tray and add rosemary.",
+          "Bake at 220 °C until golden."
+        ]
+      },
+      "Pasta fredda con pesto e pomodorini": {
+        "name": "Cold pasta with pesto and cherry tomatoes",
+        "description": "A chilled pasta salad with pesto and mozzarella.",
+        "instructions": [
+          "Cook the pasta al dente, drain and cool with a little cold water.",
+          "Toss with pesto, halved cherry tomatoes and diced mozzarella.",
+          "Chill and add a drizzle of oil before serving."
+        ]
+      },
+      "Zuppa di lenticchie": {
+        "name": "Lentil soup",
+        "description": "Comforting lentil soup with vegetables and tomato.",
+        "instructions": [
+          "Chop the carrot, celery and onion and soften in oil.",
+          "Add rinsed lentils, passata and stock.",
+          "Simmer for 30–35 minutes, or according to the packet, adding water if needed.",
+          "Season with salt at the end."
+        ]
+      },
+      "Vellutata di zucca": {
+        "name": "Creamy pumpkin soup",
+        "description": "Smooth pumpkin and potato soup.",
+        "instructions": [
+          "Soften the onion in oil.",
+          "Add diced pumpkin and potato and cover with stock.",
+          "Cook until tender, then blend until smooth.",
+          "Adjust the consistency with stock and serve with seeds or croutons."
+        ]
+      },
+      "Pasta con broccoli e acciughe": {
+        "name": "Pasta with broccoli and anchovies",
+        "description": "Pasta with broccoli, anchovies, garlic and olive oil.",
+        "instructions": [
+          "Cut the broccoli into florets and cook them in the pasta water; add the pasta to the same pot.",
+          "Melt the anchovies in a pan with oil and garlic.",
+          "Drain the pasta and broccoli, reserving some water, and toss everything together."
+        ]
+      },
+      "Orzotto ai funghi": {
+        "name": "Mushroom barley risotto",
+        "description": "Creamy pearl barley with mushrooms.",
+        "instructions": [
+          "Sauté the onion and sliced mushrooms.",
+          "Add rinsed barley and toast briefly.",
+          "Gradually add hot stock, stirring often, for 25–30 minutes until tender.",
+          "Finish with Parmesan."
+        ]
+      },
+      "Uova al purgatorio": {
+        "name": "Eggs in purgatory",
+        "description": "Eggs poached in spicy tomato sauce.",
+        "instructions": [
+          "Warm oil with garlic and chilli.",
+          "Add passata, salt and a little water and cook for 8 minutes.",
+          "Make four wells, crack in the eggs and cover.",
+          "Cook until the whites are set and serve with bread."
+        ]
+      },
+      "Patate al forno": {
+        "name": "Roast potatoes",
+        "description": "Golden oven-roasted potato wedges.",
+        "instructions": [
+          "Cut the potatoes into even wedges and pat dry.",
+          "Toss with oil, rosemary, garlic and salt.",
+          "Spread in one layer and roast at 200 °C for 35–45 minutes, turning halfway through."
+        ]
+      },
+      "Caponata siciliana": {
+        "name": "Sicilian caponata",
+        "description": "Sweet-and-sour Sicilian aubergine and vegetable relish.",
+        "instructions": [
+          "Dice the aubergines and brown them in a pan.",
+          "Blanch the chopped celery, then add it with tomato, olives and capers.",
+          "Cook until the vegetables are tender.",
+          "Add vinegar and sugar, let the vinegar evaporate and cool before serving."
+        ]
+      },
+      "Spinaci saltati all'aglio": {
+        "name": "Garlic sautéed spinach",
+        "description": "Quick spinach sautéed with garlic.",
+        "instructions": [
+          "Warm the oil with a garlic clove.",
+          "Add the spinach in batches and cook until wilted, allowing the liquid to evaporate.",
+          "Remove the garlic and season with salt and lemon to taste."
+        ]
+      },
+      "Ceci croccanti al forno": {
+        "name": "Crispy roasted chickpeas",
+        "description": "Crunchy oven-roasted chickpeas with paprika and rosemary.",
+        "instructions": [
+          "Rinse the chickpeas and dry them very thoroughly.",
+          "Toss with oil, paprika, rosemary and salt.",
+          "Spread on a tray and roast at 200 °C for 25–30 minutes, stirring halfway, until crisp."
+        ]
+      },
+      "Hummus fatto in casa": {
+        "name": "Homemade hummus",
+        "description": "Creamy chickpea dip with tahini and lemon.",
+        "instructions": [
+          "Blend chickpeas, tahini, lemon juice, garlic and oil.",
+          "Add cold water a little at a time until the texture is right.",
+          "Taste, season with salt and serve with raw vegetables or bread."
+        ]
+      },
+      "Porridge mela e cannella": {
+        "name": "Apple cinnamon porridge",
+        "description": "Warm oat porridge with apple and cinnamon.",
+        "instructions": [
+          "Heat the oats and milk in a small pan, stirring for 5–8 minutes.",
+          "Add diced apple during the final minutes.",
+          "Finish with cinnamon and honey."
+        ]
+      },
+      "Pancake alla banana": {
+        "name": "Banana pancakes",
+        "description": "Soft pancakes made with banana and eggs.",
+        "instructions": [
+          "Mash the banana and mix with eggs and milk.",
+          "Stir in flour and baking powder to make a batter.",
+          "Cook small portions in a lightly greased non-stick pan for about 2 minutes per side."
+        ]
+      },
+      "Yogurt con frutta e granola": {
+        "name": "Yogurt with fruit and granola",
+        "description": "A quick breakfast bowl with yogurt, fruit and granola.",
+        "instructions": [
+          "Spoon the yogurt into a bowl and add chopped fruit and granola.",
+          "Finish with a drizzle of honey and serve immediately."
+        ]
+      },
+      "Toast prosciutto e formaggio": {
+        "name": "Ham and cheese toastie",
+        "description": "Toasted sandwich with ham and melted cheese.",
+        "instructions": [
+          "Fill the bread with ham and cheese.",
+          "Toast in a pan, sandwich press or oven until golden and the cheese has melted.",
+          "Cut in half and serve hot."
+        ]
+      },
+      "Pasta con zucchine e menta": {
+        "name": "Pasta with zucchini and mint",
+        "description": "Light pasta with zucchini, mint and Parmesan.",
+        "instructions": [
+          "Cut the zucchini into half-moons and sauté in oil until golden.",
+          "Cook the pasta and toss it in the pan with a little cooking water.",
+          "Turn off the heat and add chopped mint and Parmesan."
+        ]
+      },
+      "Ribollita semplificata": {
+        "name": "Simplified ribollita",
+        "description": "Tuscan bread and vegetable soup with beans and kale.",
+        "instructions": [
+          "Sauté chopped onion and carrot.",
+          "Add sliced kale, beans and stock; cook until the kale is tender.",
+          "Stir in pieces of bread and let the soup thicken.",
+          "It tastes even better reheated the next day."
+        ]
+      },
+      "Risotto agli asparagi": {
+        "name": "Asparagus risotto",
+        "description": "Creamy risotto with fresh asparagus.",
+        "instructions": [
+          "Trim the asparagus, slice the stems and reserve the tips.",
+          "Soften the onion, add the stems and rice, then toast briefly.",
+          "Gradually add stock; add the tips halfway through cooking.",
+          "Finish with butter and Parmesan."
+        ]
+      },
+      "Tortino di patate e formaggio": {
+        "name": "Potato and cheese bake",
+        "description": "A golden potato bake with a melted mozzarella centre.",
+        "instructions": [
+          "Boil the potatoes, mash them and let them cool slightly.",
+          "Mix with eggs, Parmesan, salt and pepper.",
+          "Spread half in an oiled baking dish, add diced mozzarella and cover with the rest.",
+          "Sprinkle with breadcrumbs and bake at 190 °C for 25–30 minutes."
+        ]
+      },
+      "Burger di lenticchie": {
+        "name": "Lentil burgers",
+        "description": "Vegetarian burgers with lentils, carrot and oats.",
+        "instructions": [
+          "Mash the lentils and mix with grated carrot, oats, egg and paprika.",
+          "Rest for 10 minutes, then shape into burgers.",
+          "Pan-fry in a little oil for 5–6 minutes per side until golden and firm."
+        ]
+      },
+      "Focaccia veloce in padella": {
+        "name": "Quick pan focaccia",
+        "description": "Soft flatbread cooked in a pan.",
+        "instructions": [
+          "Mix flour, yogurt, baking powder, oil and salt into a soft dough.",
+          "Divide into two discs and roll them out.",
+          "Cook in a covered pan over medium-low heat for 5–6 minutes per side, checking the centre is cooked."
+        ]
+      },
+      "Tiramisù in bicchiere": {
+        "name": "Tiramisu in a glass",
+        "description": "Individual tiramisu with coffee, mascarpone and cocoa.",
+        "instructions": [
+          "Make the coffee and let it cool.",
+          "Separate the eggs, beat the yolks with sugar and mix in mascarpone.",
+          "Whip the whites to stiff peaks and fold them in gently.",
+          "Layer briefly coffee-soaked ladyfingers and cream in glasses, dust with cocoa and chill for at least 3 hours.",
+          "Use pasteurised eggs if needed."
+        ]
+      },
+      "Torta di mele": {
+        "name": "Apple cake",
+        "description": "Homemade apple cake with a soft crumb.",
+        "instructions": [
+          "Beat the eggs and sugar, then mix in lukewarm melted butter and milk.",
+          "Fold in sifted flour and baking powder.",
+          "Add half the sliced apples, pour into a cake tin and decorate with the rest.",
+          "Bake at 180 °C for about 40 minutes and test with a skewer."
+        ]
+      },
+      "Budino al cacao": {
+        "name": "Chocolate cocoa pudding",
+        "description": "Silky chocolate pudding made with cocoa and milk.",
+        "instructions": [
+          "Mix cocoa, sugar and cornstarch with a little cold milk until smooth.",
+          "Add the remaining milk and cook over medium heat, stirring until thick.",
+          "Pour into moulds, cool and refrigerate."
+        ]
+      },
+      "Muffin allo yogurt": {
+        "name": "Yogurt muffins",
+        "description": "Soft muffins with yogurt.",
+        "instructions": [
+          "Mix eggs and sugar, then add yogurt and oil.",
+          "Fold in flour and baking powder without overmixing.",
+          "Fill muffin cases about two-thirds full and bake at 180 °C for 18–22 minutes."
+        ]
+      },
+      "Smoothie banana e fragole": {
+        "name": "Banana and strawberry smoothie",
+        "description": "A fresh fruit smoothie with banana, strawberries and yogurt.",
+        "instructions": [
+          "Wash the strawberries and remove the stems.",
+          "Blend with banana, yogurt and milk until smooth.",
+          "Add extra milk for a thinner drink and serve immediately."
+        ]
+      },
+      "Fagioli all'uccelletto": {
+        "name": "Tuscan beans with sage",
+        "description": "Cannellini beans simmered in tomato, garlic and sage.",
+        "instructions": [
+          "Warm oil, garlic and sage in a saucepan.",
+          "Add drained beans and passata, with a little water.",
+          "Simmer gently for 15–20 minutes, season with salt and serve with toasted bread."
+        ]
+      },
+      "Peperoni ripieni di riso": {
+        "name": "Rice-stuffed peppers",
+        "description": "Bell peppers filled with rice, tomato and Parmesan.",
+        "instructions": [
+          "Cut off the pepper tops and remove seeds and ribs.",
+          "Cook the rice for half the packet time, then mix with passata, Parmesan and parsley.",
+          "Fill the peppers and replace the tops.",
+          "Bake with a little water at 190 °C for 35–40 minutes."
+        ]
+      },
+      "Pasta con crema di piselli": {
+        "name": "Pasta with creamy peas",
+        "description": "Pasta with a smooth pea sauce and whole peas.",
+        "instructions": [
+          "Soften the onion, add peas and stock and cook until tender.",
+          "Blend half the peas with Parmesan and a little cooking water.",
+          "Cook the pasta, toss with the cream and add the remaining whole peas."
+        ]
+      },
+      "Insalata di farro mediterranea": {
+        "name": "Mediterranean spelt salad",
+        "description": "Spelt salad with tomato, cucumber, feta and olives.",
+        "instructions": [
+          "Cook the spelt according to the packet, drain and cool.",
+          "Dice tomato, cucumber and feta.",
+          "Mix with olives and spelt, dress with oil, lemon and oregano, and let the flavours develop."
+        ]
+      },
+      "Cavolfiore gratinato": {
+        "name": "Cauliflower gratin",
+        "description": "Cauliflower baked with béchamel and a golden Parmesan crust.",
+        "instructions": [
+          "Cut the cauliflower into florets and blanch for 5–7 minutes.",
+          "Place in a baking dish and cover with béchamel, Parmesan and breadcrumbs.",
+          "Bake at 200 °C for 15–20 minutes until golden."
+        ]
+      },
+      "Pasta con crema di peperoni": {
+        "name": "Pasta with creamy bell pepper sauce",
+        "description": "Pasta with a smooth pepper, ricotta and Parmesan sauce.",
+        "instructions": [
+          "Cook chopped peppers in a pan with garlic and a little oil until soft.",
+          "Blend with ricotta and Parmesan, adding pasta water as needed.",
+          "Cook the pasta, toss with the sauce and warm briefly."
+        ]
+      },
+      "Pane dorato alla francese": {
+        "name": "French toast",
+        "description": "Golden French toast for a sweet breakfast.",
+        "instructions": [
+          "Beat the eggs and milk in a shallow bowl.",
+          "Quickly dip the bread slices on both sides.",
+          "Fry in butter for 2–3 minutes per side until golden.",
+          "For a sweet version, add cinnamon and a little sugar."
+        ]
+      },
+      "Pasta alla puttanesca": {
+        "name": "Pasta alla puttanesca",
+        "description": "Pasta with anchovies, capers, olives and tomato.",
+        "instructions": [
+          "Dissolve the anchovies in hot oil with garlic.",
+          "Add chopped capers and olives, then passata; simmer for 15 minutes.",
+          "Boil the pasta and toss it with the sauce, seasoning carefully because the ingredients are salty."
+        ]
+      },
+      "Crostata alla marmellata": {
+        "name": "Jam tart",
+        "description": "Classic shortcrust tart filled with jam.",
+        "instructions": [
+          "Rub cold diced butter into the flour until crumbly.",
+          "Add sugar and egg and knead quickly.",
+          "Chill for 30 minutes.",
+          "Roll out two-thirds of the pastry in a tart tin, spread with jam, decorate with strips and bake at 180 °C for 30–35 minutes."
+        ]
+      },
+      "Melanzane ripiene": {
+        "name": "Stuffed aubergines",
+        "description": "Baked aubergines filled with tomato, breadcrumbs and Parmesan.",
+        "instructions": [
+          "Halve the aubergines and score the flesh.",
+          "Bake at 190 °C for 15 minutes, then carefully scoop out the flesh.",
+          "Chop it and mix with passata, breadcrumbs, Parmesan, garlic and parsley.",
+          "Fill the shells and bake for another 15–20 minutes."
+        ]
+      }
+    },
+    "es": {
+      "Pasta al pomodoro": {
+        "name": "Pasta con tomate",
+        "description": "Un clásico italiano sencillo con tomate y albahaca.",
+        "instructions": [
+          "Calienta el aceite con el ajo.",
+          "Añade el tomate triturado y cocina a fuego lento 15 minutos.",
+          "Cuece la pasta al dente en agua con sal, escúrrela y mézclala con la salsa.",
+          "Termina con albahaca fresca."
+        ]
+      },
+      "Spaghetti aglio, olio e peperoncino": {
+        "name": "Espaguetis con ajo, aceite y guindilla",
+        "description": "Espaguetis con ajo, aceite de oliva y guindilla.",
+        "instructions": [
+          "Cuece los espaguetis al dente.",
+          "Calienta suavemente el aceite con el ajo laminado y la guindilla, sin quemarlos.",
+          "Añade la pasta y un poco de agua de cocción y mezcla bien.",
+          "Termina con perejil picado."
+        ]
+      },
+      "Risotto alla zucca": {
+        "name": "Risotto de calabaza",
+        "description": "Risotto cremoso con calabaza dulce.",
+        "instructions": [
+          "Pica la cebolla y póchala con un poco de mantequilla.",
+          "Añade la calabaza en dados y cocina 8 minutos.",
+          "Incorpora el arroz, tuéstalo y agrega caldo caliente poco a poco, removiendo.",
+          "Apaga el fuego y liga con mantequilla y parmesano."
+        ]
+      },
+      "Pasta e ceci": {
+        "name": "Pasta con garbanzos",
+        "description": "Sopa rústica de pasta y garbanzos.",
+        "instructions": [
+          "Calienta el aceite con ajo y romero.",
+          "Añade los garbanzos y el tomate triturado con un vaso de agua y deja hervir suavemente.",
+          "Tritura algunos garbanzos para espesar la sopa.",
+          "Añade la pasta y cuécela, agregando agua caliente si hace falta."
+        ]
+      },
+      "Pasta al pesto": {
+        "name": "Pasta al pesto",
+        "description": "Pasta con pesto fresco de albahaca.",
+        "instructions": [
+          "Tritura albahaca, piñones, ajo, parmesano y aceite hasta obtener un pesto; añade una cucharada de agua fría si hace falta.",
+          "Cuece la pasta.",
+          "Fuera del fuego, mezcla la pasta con el pesto y aligera con agua de cocción."
+        ]
+      },
+      "Penne all'arrabbiata": {
+        "name": "Penne arrabbiata",
+        "description": "Penne picantes con salsa de tomate.",
+        "instructions": [
+          "Dora el ajo y la guindilla en aceite.",
+          "Añade el tomate triturado y cocina 15 minutos.",
+          "Cuece los penne al dente, incorpóralos a la salsa y mezcla.",
+          "Termina con perejil picado."
+        ]
+      },
+      "Pasta tonno e limone": {
+        "name": "Pasta con atún y limón",
+        "description": "Pasta fresca con atún, limón y perejil.",
+        "instructions": [
+          "Cuece la pasta.",
+          "Escurre el atún y caliéntalo brevemente con aceite y ralladura de limón.",
+          "Añade la pasta y un poco de agua de cocción, y termina con zumo de limón al gusto y perejil."
+        ]
+      },
+      "Pasta ricotta e spinaci": {
+        "name": "Pasta con ricotta y espinacas",
+        "description": "Pasta cremosa de ricotta con espinacas.",
+        "instructions": [
+          "Cocina las espinacas en una sartén con un poco de agua y pícalas.",
+          "Mezcla ricotta, parmesano, nuez moscada y un cucharón de agua de cocción.",
+          "Añade la pasta y las espinacas a la crema y mezcla fuera del fuego."
+        ]
+      },
+      "Gnocchi al burro e salvia": {
+        "name": "Ñoquis de patata con mantequilla y salvia",
+        "description": "Ñoquis tiernos con mantequilla aromatizada con salvia.",
+        "instructions": [
+          "Cuece los ñoquis hasta que suban a la superficie.",
+          "Mientras tanto, derrite la mantequilla con la salvia.",
+          "Retira los ñoquis con una espumadera y saltéalos en la mantequilla.",
+          "Sirve con parmesano."
+        ]
+      },
+      "Pasta alla carbonara": {
+        "name": "Espaguetis a la carbonara",
+        "description": "Espaguetis romanos con huevo, pecorino y guanciale.",
+        "instructions": [
+          "Dora el guanciale cortado en tiras.",
+          "Bate los huevos con pecorino y pimienta negra.",
+          "Cuece los espaguetis y reserva agua de cocción.",
+          "Fuera del fuego mezcla la pasta con el guanciale, incorpora el huevo con un poco de agua caliente hasta lograr una crema y evita cuajarlo."
+        ]
+      },
+      "Pasta alla norma": {
+        "name": "Pasta alla Norma",
+        "description": "Pasta siciliana con berenjena, tomate y ricotta salada.",
+        "instructions": [
+          "Corta la berenjena en dados y dóralos en aceite.",
+          "Cocina el tomate triturado con albahaca durante 15 minutos.",
+          "Cuece la pasta y mézclala con la salsa y la berenjena.",
+          "Ralla ricotta salada por encima."
+        ]
+      },
+      "Lasagne vegetariane": {
+        "name": "Lasaña vegetariana",
+        "description": "Lasaña en capas con verduras y bechamel.",
+        "instructions": [
+          "Corta las verduras en dados y saltéalas.",
+          "Extiende una fina capa de tomate y bechamel en una fuente.",
+          "Alterna láminas de pasta con verduras, salsa, bechamel y mozzarella.",
+          "Termina con parmesano y hornea a 180 °C durante 30–35 minutos."
+        ]
+      },
+      "Minestrone di verdure": {
+        "name": "Minestrone de verduras",
+        "description": "Sopa abundante de verduras de temporada y alubias.",
+        "instructions": [
+          "Corta las verduras en dados.",
+          "Pocha la cebolla en aceite y añade las verduras y el caldo.",
+          "Cocina a fuego suave unos 30 minutos.",
+          "Añade las alubias los últimos 10 minutos y ajusta la sal."
+        ]
+      },
+      "Frittata di zucchine": {
+        "name": "Frittata de calabacín",
+        "description": "Tortilla italiana de calabacín y parmesano.",
+        "instructions": [
+          "Ralla o corta fino el calabacín y saltéalo.",
+          "Bate los huevos con parmesano y pimienta y viértelos sobre el calabacín.",
+          "Tapa y cocina a fuego bajo.",
+          "Da la vuelta con ayuda de un plato y termina la cocción."
+        ]
+      },
+      "Polpette al sugo": {
+        "name": "Albóndigas en salsa de tomate",
+        "description": "Albóndigas tiernas guisadas en tomate.",
+        "instructions": [
+          "Mezcla carne, huevo, parmesano, pan rallado y leche y forma bolas firmes.",
+          "Dóralas ligeramente en una sartén.",
+          "Añade tomate triturado y un poco de agua, tapa y cocina a fuego bajo 25 minutos."
+        ]
+      },
+      "Pollo al limone": {
+        "name": "Pollo al limón",
+        "description": "Tiras de pollo rápidas con una salsa fresca de limón.",
+        "instructions": [
+          "Corta el pollo en tiras, enharínalo ligeramente y dóralo en aceite.",
+          "Añade caldo y zumo de limón.",
+          "Cocina hasta que el pollo esté bien hecho y la salsa espese.",
+          "Sala y sirve enseguida."
+        ]
+      },
+      "Salmone al forno": {
+        "name": "Salmón al horno",
+        "description": "Salmón al horno con limón y perejil.",
+        "instructions": [
+          "Coloca el salmón en una bandeja con papel de horno.",
+          "Aliña con aceite, limón, perejil y pimienta.",
+          "Hornea a 190 °C durante 12–18 minutos, según el grosor, hasta que esté bien hecho."
+        ]
+      },
+      "Pollo alla cacciatora": {
+        "name": "Pollo a la cazadora",
+        "description": "Pollo guisado con tomate, aceitunas y hierbas.",
+        "instructions": [
+          "Dora los trozos de pollo en una cazuela.",
+          "Añade cebolla, vierte vino blanco y deja que se evapore.",
+          "Incorpora tomate triturado, aceitunas, romero y un poco de agua.",
+          "Tapa y cocina suavemente 35–40 minutos, comprobando que el pollo esté hecho."
+        ]
+      },
+      "Parmigiana di melanzane": {
+        "name": "Berenjenas a la parmesana",
+        "description": "Capas al horno de berenjena, tomate, mozzarella y parmesano.",
+        "instructions": [
+          "Corta las berenjenas y ásalas a la plancha o al horno con poco aceite.",
+          "Prepara una salsa rápida de tomate.",
+          "En una fuente alterna salsa, berenjena, mozzarella, albahaca y parmesano.",
+          "Hornea a 190 °C unos 35–40 minutos."
+        ]
+      },
+      "Insalata caprese": {
+        "name": "Ensalada caprese",
+        "description": "Ensalada fresca de tomate, mozzarella y albahaca.",
+        "instructions": [
+          "Corta los tomates y la mozzarella y alterna las rodajas en un plato.",
+          "Añade hojas de albahaca.",
+          "Aliña con aceite, sal y pimienta justo antes de servir."
+        ]
+      },
+      "Insalata di ceci e tonno": {
+        "name": "Ensalada de garbanzos y atún",
+        "description": "Ensalada de garbanzos, atún y tomate rica en proteínas.",
+        "instructions": [
+          "Enjuaga y escurre los garbanzos.",
+          "Mézclalos con atún escurrido, tomate en dados y cebolla fina.",
+          "Aliña con aceite, zumo de limón, sal y pimienta.",
+          "Deja reposar 5 minutos."
+        ]
+      },
+      "Panzanella": {
+        "name": "Panzanella",
+        "description": "Ensalada toscana de pan, tomate, pepino y cebolla.",
+        "instructions": [
+          "Remoja brevemente el pan con agua y un poco de vinagre, escúrrelo y trocéalo.",
+          "Añade tomate, pepino y cebolla en rodajas.",
+          "Aliña con aceite, vinagre, albahaca, sal y pimienta.",
+          "Deja reposar en un lugar fresco."
+        ]
+      },
+      "Bruschette al pomodoro": {
+        "name": "Bruschettas de tomate",
+        "description": "Pan tostado con tomate aliñado.",
+        "instructions": [
+          "Tuesta el pan en una plancha o bajo el grill.",
+          "Corta los tomates en dados y mézclalos con aceite, albahaca y sal.",
+          "Frota el pan caliente con ajo y reparte el tomate por encima."
+        ]
+      },
+      "Crostini ricotta e miele": {
+        "name": "Tostadas de ricotta, miel y nueces",
+        "description": "Tostadas crujientes con ricotta, miel y nueces.",
+        "instructions": [
+          "Tuesta el pan.",
+          "Aplasta la ricotta con un tenedor y úntala en las rebanadas.",
+          "Añade miel y nueces picadas y sirve enseguida."
+        ]
+      },
+      "Piadina prosciutto e squacquerone": {
+        "name": "Piadina con prosciutto y squacquerone",
+        "description": "Pan plano italiano relleno de queso cremoso y jamón curado.",
+        "instructions": [
+          "Calienta las piadinas en una sartén antiadherente un minuto por cada lado.",
+          "Rellena con squacquerone, prosciutto y rúcula.",
+          "Dobla por la mitad y sirve caliente."
+        ]
+      },
+      "Cous cous alle verdure": {
+        "name": "Cuscús con verduras",
+        "description": "Cuscús suelto con verduras salteadas.",
+        "instructions": [
+          "Corta las verduras en dados y saltéalas hasta que estén tiernas pero firmes.",
+          "Vierte caldo hirviendo sobre el cuscús, tapa 5 minutos y separa los granos con un tenedor.",
+          "Añade las verduras y sazona con especias."
+        ]
+      },
+      "Riso freddo mediterraneo": {
+        "name": "Ensalada mediterránea de arroz",
+        "description": "Arroz frío con tomate, mozzarella y albahaca.",
+        "instructions": [
+          "Cuece el arroz en agua con sal, escúrrelo y enfríalo rápidamente.",
+          "Corta el tomate y la mozzarella en dados.",
+          "Mezcla todo, aliña con aceite, albahaca y pimienta y enfría antes de servir."
+        ]
+      },
+      "Farinata di ceci": {
+        "name": "Farinata de garbanzos",
+        "description": "Torta fina ligur de harina de garbanzo.",
+        "instructions": [
+          "Mezcla la harina de garbanzo con agua hasta que no queden grumos y deja reposar al menos 30 minutos si puedes.",
+          "Retira la espuma e incorpora aceite y sal.",
+          "Vierte en una bandeja ancha muy caliente, añade romero y hornea a 220 °C hasta dorar."
+        ]
+      },
+      "Pasta fredda con pesto e pomodorini": {
+        "name": "Pasta fría con pesto y tomates cherry",
+        "description": "Ensalada fría de pasta con pesto y mozzarella.",
+        "instructions": [
+          "Cuece la pasta al dente, escúrrela y enfríala con un poco de agua fría.",
+          "Mezcla con pesto, tomates cherry partidos y mozzarella en dados.",
+          "Refrigera y añade un hilo de aceite antes de servir."
+        ]
+      },
+      "Zuppa di lenticchie": {
+        "name": "Sopa de lentejas",
+        "description": "Sopa reconfortante de lentejas con verduras y tomate.",
+        "instructions": [
+          "Pica zanahoria, apio y cebolla y póchalos en aceite.",
+          "Añade las lentejas enjuagadas, tomate triturado y caldo.",
+          "Cocina suavemente 30–35 minutos o según el paquete, añadiendo agua si hace falta.",
+          "Sala al final."
+        ]
+      },
+      "Vellutata di zucca": {
+        "name": "Crema de calabaza",
+        "description": "Crema suave de calabaza y patata.",
+        "instructions": [
+          "Pocha la cebolla en aceite.",
+          "Añade calabaza y patata en dados y cubre con caldo.",
+          "Cocina hasta que estén tiernas y tritura hasta obtener una crema.",
+          "Ajusta con caldo y sirve con semillas o picatostes."
+        ]
+      },
+      "Pasta con broccoli e acciughe": {
+        "name": "Pasta con brócoli y anchoas",
+        "description": "Pasta con brócoli, anchoas, ajo y aceite de oliva.",
+        "instructions": [
+          "Separa el brócoli en ramilletes y cuécelo en el agua de la pasta; añade la pasta a la misma olla.",
+          "Derrite las anchoas en una sartén con aceite y ajo.",
+          "Escurre la pasta y el brócoli reservando agua y mezcla todo."
+        ]
+      },
+      "Orzotto ai funghi": {
+        "name": "Risotto de cebada y setas",
+        "description": "Cebada perlada cremosa con setas.",
+        "instructions": [
+          "Saltea la cebolla y las setas laminadas.",
+          "Añade la cebada enjuagada y tuéstala brevemente.",
+          "Agrega caldo caliente poco a poco, removiendo 25–30 minutos hasta que esté tierna.",
+          "Termina con parmesano."
+        ]
+      },
+      "Uova al purgatorio": {
+        "name": "Huevos al purgatorio",
+        "description": "Huevos escalfados en salsa de tomate picante.",
+        "instructions": [
+          "Calienta aceite con ajo y guindilla.",
+          "Añade tomate triturado, sal y un poco de agua y cocina 8 minutos.",
+          "Haz cuatro huecos, casca los huevos y tapa.",
+          "Cocina hasta que las claras cuajen y sirve con pan."
+        ]
+      },
+      "Patate al forno": {
+        "name": "Patatas al horno",
+        "description": "Gajos de patata dorados al horno.",
+        "instructions": [
+          "Corta las patatas en gajos iguales y sécalas.",
+          "Mézclalas con aceite, romero, ajo y sal.",
+          "Extiéndelas en una sola capa y hornea a 200 °C durante 35–45 minutos, dándoles la vuelta a mitad."
+        ]
+      },
+      "Caponata siciliana": {
+        "name": "Caponata siciliana",
+        "description": "Guiso siciliano agridulce de berenjena y verduras.",
+        "instructions": [
+          "Corta las berenjenas en dados y dóralas.",
+          "Escalda el apio troceado y añádelo con tomate, aceitunas y alcaparras.",
+          "Cocina hasta que las verduras estén tiernas.",
+          "Añade vinagre y azúcar, deja evaporar y enfría antes de servir."
+        ]
+      },
+      "Spinaci saltati all'aglio": {
+        "name": "Espinacas salteadas con ajo",
+        "description": "Espinacas rápidas salteadas con ajo.",
+        "instructions": [
+          "Calienta el aceite con un diente de ajo.",
+          "Añade las espinacas por tandas y cocina hasta que se marchiten y se evapore el líquido.",
+          "Retira el ajo y sazona con sal y limón al gusto."
+        ]
+      },
+      "Ceci croccanti al forno": {
+        "name": "Garbanzos crujientes al horno",
+        "description": "Garbanzos crujientes con pimentón y romero.",
+        "instructions": [
+          "Enjuaga y seca muy bien los garbanzos.",
+          "Mézclalos con aceite, pimentón, romero y sal.",
+          "Extiende en una bandeja y hornea a 200 °C durante 25–30 minutos, removiendo a mitad, hasta que queden crujientes."
+        ]
+      },
+      "Hummus fatto in casa": {
+        "name": "Hummus casero",
+        "description": "Crema de garbanzos con tahini y limón.",
+        "instructions": [
+          "Tritura garbanzos, tahini, zumo de limón, ajo y aceite.",
+          "Añade agua fría poco a poco hasta lograr la textura deseada.",
+          "Prueba, ajusta la sal y sirve con verduras crudas o pan."
+        ]
+      },
+      "Porridge mela e cannella": {
+        "name": "Gachas de avena con manzana y canela",
+        "description": "Porridge caliente de avena, manzana y canela.",
+        "instructions": [
+          "Calienta la avena con leche en un cazo y remueve 5–8 minutos.",
+          "Añade la manzana en dados durante los últimos minutos.",
+          "Termina con canela y miel."
+        ]
+      },
+      "Pancake alla banana": {
+        "name": "Tortitas de plátano",
+        "description": "Tortitas tiernas de plátano y huevo.",
+        "instructions": [
+          "Aplasta el plátano y mézclalo con huevos y leche.",
+          "Añade harina y levadura química hasta formar una masa fluida.",
+          "Cocina pequeñas porciones en una sartén ligeramente engrasada unos 2 minutos por lado."
+        ]
+      },
+      "Yogurt con frutta e granola": {
+        "name": "Yogur con fruta y granola",
+        "description": "Desayuno rápido con yogur, fruta y granola.",
+        "instructions": [
+          "Pon el yogur en un bol y añade fruta troceada y granola.",
+          "Termina con un hilo de miel y sirve enseguida."
+        ]
+      },
+      "Toast prosciutto e formaggio": {
+        "name": "Sándwich tostado de jamón y queso",
+        "description": "Sándwich tostado con jamón y queso fundido.",
+        "instructions": [
+          "Rellena el pan con jamón y queso.",
+          "Tuéstalo en sartén, sandwichera u horno hasta dorar y fundir el queso.",
+          "Corta por la mitad y sirve caliente."
+        ]
+      },
+      "Pasta con zucchine e menta": {
+        "name": "Pasta con calabacín y menta",
+        "description": "Pasta ligera con calabacín, menta y parmesano.",
+        "instructions": [
+          "Corta el calabacín en medias lunas y saltéalo en aceite hasta dorar.",
+          "Cuece la pasta y mézclala en la sartén con un poco de agua de cocción.",
+          "Apaga el fuego y añade menta picada y parmesano."
+        ]
+      },
+      "Ribollita semplificata": {
+        "name": "Ribollita simplificada",
+        "description": "Sopa toscana de pan, alubias y col negra.",
+        "instructions": [
+          "Sofríe la cebolla y la zanahoria picadas.",
+          "Añade col negra en tiras, alubias y caldo y cocina hasta que la col esté tierna.",
+          "Incorpora trozos de pan y deja espesar.",
+          "Está aún mejor recalentada al día siguiente."
+        ]
+      },
+      "Risotto agli asparagi": {
+        "name": "Risotto de espárragos",
+        "description": "Risotto cremoso con espárragos frescos.",
+        "instructions": [
+          "Limpia los espárragos, corta los tallos en rodajas y reserva las puntas.",
+          "Pocha la cebolla, añade tallos y arroz y tuesta brevemente.",
+          "Añade caldo poco a poco e incorpora las puntas a mitad de cocción.",
+          "Termina con mantequilla y parmesano."
+        ]
+      },
+      "Tortino di patate e formaggio": {
+        "name": "Pastel de patata y queso",
+        "description": "Pastel dorado de patata con mozzarella fundida en el centro.",
+        "instructions": [
+          "Cuece las patatas, aplástalas y deja que se templen.",
+          "Mezcla con huevos, parmesano, sal y pimienta.",
+          "Pon la mitad en una fuente engrasada, añade mozzarella en dados y cubre con el resto.",
+          "Espolvorea pan rallado y hornea a 190 °C durante 25–30 minutos."
+        ]
+      },
+      "Burger di lenticchie": {
+        "name": "Hamburguesas de lentejas",
+        "description": "Hamburguesas vegetarianas de lentejas, zanahoria y avena.",
+        "instructions": [
+          "Aplasta las lentejas y mézclalas con zanahoria rallada, avena, huevo y pimentón.",
+          "Deja reposar 10 minutos y forma hamburguesas.",
+          "Cocina en una sartén con poco aceite 5–6 minutos por lado hasta dorar y compactar."
+        ]
+      },
+      "Focaccia veloce in padella": {
+        "name": "Focaccia rápida a la sartén",
+        "description": "Pan plano tierno cocinado en sartén.",
+        "instructions": [
+          "Mezcla harina, yogur, levadura, aceite y sal hasta obtener una masa blanda.",
+          "Divide en dos discos y estíralos.",
+          "Cocina en una sartén tapada a fuego medio-bajo 5–6 minutos por lado, comprobando que el centro esté hecho."
+        ]
+      },
+      "Tiramisù in bicchiere": {
+        "name": "Tiramisú en vaso",
+        "description": "Tiramisú individual con café, mascarpone y cacao.",
+        "instructions": [
+          "Prepara el café y déjalo enfriar.",
+          "Separa los huevos, bate las yemas con azúcar e incorpora el mascarpone.",
+          "Monta las claras a punto de nieve e intégralas con cuidado.",
+          "Alterna bizcochos apenas mojados en café y crema en vasos, espolvorea cacao y refrigera al menos 3 horas.",
+          "Usa huevos pasteurizados si es necesario."
+        ]
+      },
+      "Torta di mele": {
+        "name": "Bizcocho de manzana",
+        "description": "Bizcocho casero de manzana de miga tierna.",
+        "instructions": [
+          "Bate los huevos con el azúcar y añade mantequilla derretida templada y leche.",
+          "Incorpora harina y levadura tamizadas.",
+          "Añade la mitad de las manzanas en láminas, vierte en un molde y decora con el resto.",
+          "Hornea a 180 °C unos 40 minutos y comprueba con un palillo."
+        ]
+      },
+      "Budino al cacao": {
+        "name": "Pudin de cacao",
+        "description": "Pudin suave de chocolate con cacao y leche.",
+        "instructions": [
+          "Mezcla cacao, azúcar y maicena con un poco de leche fría hasta que quede liso.",
+          "Añade la leche restante y cocina a fuego medio removiendo hasta espesar.",
+          "Vierte en moldes, enfría y refrigera."
+        ]
+      },
+      "Muffin allo yogurt": {
+        "name": "Magdalenas de yogur",
+        "description": "Magdalenas esponjosas con yogur.",
+        "instructions": [
+          "Mezcla huevos y azúcar, después añade yogur y aceite.",
+          "Incorpora harina y levadura sin batir en exceso.",
+          "Llena las cápsulas hasta dos tercios y hornea a 180 °C durante 18–22 minutos."
+        ]
+      },
+      "Smoothie banana e fragole": {
+        "name": "Batido de plátano y fresas",
+        "description": "Batido fresco de fruta, yogur y leche.",
+        "instructions": [
+          "Lava las fresas y quita los tallos.",
+          "Tritura con plátano, yogur y leche hasta que quede suave.",
+          "Añade más leche si lo quieres más líquido y sirve enseguida."
+        ]
+      },
+      "Fagioli all'uccelletto": {
+        "name": "Alubias toscanas con salvia",
+        "description": "Alubias cannellini guisadas con tomate, ajo y salvia.",
+        "instructions": [
+          "Calienta aceite, ajo y salvia en una cazuela.",
+          "Añade las alubias escurridas y el tomate triturado con un poco de agua.",
+          "Cocina suavemente 15–20 minutos, ajusta la sal y sirve con pan tostado."
+        ]
+      },
+      "Peperoni ripieni di riso": {
+        "name": "Pimientos rellenos de arroz",
+        "description": "Pimientos rellenos de arroz, tomate y parmesano.",
+        "instructions": [
+          "Corta la parte superior de los pimientos y retira semillas y nervios.",
+          "Cuece el arroz la mitad del tiempo indicado y mézclalo con tomate triturado, parmesano y perejil.",
+          "Rellena los pimientos y vuelve a poner las tapas.",
+          "Hornea con un poco de agua a 190 °C durante 35–40 minutos."
+        ]
+      },
+      "Pasta con crema di piselli": {
+        "name": "Pasta con crema de guisantes",
+        "description": "Pasta con salsa cremosa de guisantes.",
+        "instructions": [
+          "Pocha la cebolla, añade los guisantes y el caldo y cocina hasta que estén tiernos.",
+          "Tritura la mitad con parmesano y un poco de agua de cocción.",
+          "Cuece la pasta, mézclala con la crema y añade los guisantes enteros."
+        ]
+      },
+      "Insalata di farro mediterranea": {
+        "name": "Ensalada mediterránea de espelta",
+        "description": "Ensalada de espelta con tomate, pepino, feta y aceitunas.",
+        "instructions": [
+          "Cuece la espelta según el paquete, escúrrela y enfríala.",
+          "Corta tomate, pepino y feta en dados.",
+          "Mezcla con aceitunas y espelta, aliña con aceite, limón y orégano y deja reposar."
+        ]
+      },
+      "Cavolfiore gratinato": {
+        "name": "Coliflor gratinada",
+        "description": "Coliflor al horno con bechamel y costra de parmesano.",
+        "instructions": [
+          "Separa la coliflor en ramilletes y escáldala 5–7 minutos.",
+          "Colócala en una fuente y cubre con bechamel, parmesano y pan rallado.",
+          "Gratina a 200 °C durante 15–20 minutos hasta dorar."
+        ]
+      },
+      "Pasta con crema di peperoni": {
+        "name": "Pasta con crema de pimientos",
+        "description": "Pasta con salsa suave de pimiento, ricotta y parmesano.",
+        "instructions": [
+          "Cocina los pimientos troceados con ajo y poco aceite hasta que estén blandos.",
+          "Tritura con ricotta y parmesano, añadiendo agua de cocción si hace falta.",
+          "Cuece la pasta, mezcla con la crema y calienta brevemente."
+        ]
+      },
+      "Pane dorato alla francese": {
+        "name": "Tostadas francesas",
+        "description": "Pan dorado a la francesa para un desayuno dulce.",
+        "instructions": [
+          "Bate los huevos y la leche en un plato hondo.",
+          "Sumerge rápidamente las rebanadas por ambos lados.",
+          "Fríe en mantequilla 2–3 minutos por lado hasta dorar.",
+          "Para una versión dulce, añade canela y un poco de azúcar."
+        ]
+      },
+      "Pasta alla puttanesca": {
+        "name": "Pasta alla puttanesca",
+        "description": "Pasta con anchoas, alcaparras, aceitunas y tomate.",
+        "instructions": [
+          "Disuelve las anchoas en aceite caliente con ajo.",
+          "Añade alcaparras y aceitunas picadas, luego el tomate y cocina 15 minutos.",
+          "Cuece la pasta y mézclala con la salsa, ajustando con cuidado la sal porque los ingredientes ya son salados."
+        ]
+      },
+      "Crostata alla marmellata": {
+        "name": "Tarta de mermelada",
+        "description": "Tarta clásica de masa quebrada rellena de mermelada.",
+        "instructions": [
+          "Frota la mantequilla fría en dados con la harina hasta obtener migas.",
+          "Añade azúcar y huevo y amasa rápidamente.",
+          "Refrigera 30 minutos.",
+          "Extiende dos tercios de la masa en un molde, añade mermelada, decora con tiras y hornea a 180 °C durante 30–35 minutos."
+        ]
+      },
+      "Melanzane ripiene": {
+        "name": "Berenjenas rellenas",
+        "description": "Berenjenas al horno rellenas de tomate, pan rallado y parmesano.",
+        "instructions": [
+          "Corta las berenjenas por la mitad y marca la pulpa.",
+          "Hornea a 190 °C durante 15 minutos y saca la pulpa con cuidado.",
+          "Pícala y mézclala con tomate triturado, pan rallado, parmesano, ajo y perejil.",
+          "Rellena las berenjenas y hornea otros 15–20 minutos."
+        ]
+      }
+    },
+    "fr": {
+      "Pasta al pomodoro": {
+        "name": "Pâtes à la tomate",
+        "description": "Un classique italien simple à la tomate et au basilic.",
+        "instructions": [
+          "Faites chauffer l’huile avec l’ail.",
+          "Ajoutez la passata et laissez mijoter 15 minutes.",
+          "Faites cuire les pâtes al dente dans de l’eau salée, égouttez-les et mélangez-les à la sauce.",
+          "Terminez avec du basilic frais."
+        ]
+      },
+      "Spaghetti aglio, olio e peperoncino": {
+        "name": "Spaghetti ail, huile et piment",
+        "description": "Spaghetti à l’ail, à l’huile d’olive et au piment.",
+        "instructions": [
+          "Faites cuire les spaghetti al dente.",
+          "Chauffez doucement l’huile avec l’ail émincé et le piment sans les brûler.",
+          "Ajoutez les pâtes et un peu d’eau de cuisson, puis mélangez.",
+          "Terminez avec du persil haché."
+        ]
+      },
+      "Risotto alla zucca": {
+        "name": "Risotto au potiron",
+        "description": "Risotto crémeux au potiron doux.",
+        "instructions": [
+          "Émincez l’oignon et faites-le fondre dans un peu de beurre.",
+          "Ajoutez le potiron en dés et faites cuire 8 minutes.",
+          "Ajoutez le riz, faites-le nacrer puis versez progressivement le bouillon chaud en remuant.",
+          "Hors du feu, incorporez le beurre et le parmesan."
+        ]
+      },
+      "Pasta e ceci": {
+        "name": "Pâtes aux pois chiches",
+        "description": "Soupe rustique de pâtes et de pois chiches.",
+        "instructions": [
+          "Chauffez l’huile avec l’ail et le romarin.",
+          "Ajoutez les pois chiches et la passata avec un verre d’eau, puis laissez mijoter.",
+          "Écrasez une partie des pois chiches pour épaissir la soupe.",
+          "Ajoutez les pâtes et faites-les cuire en ajoutant de l’eau chaude si nécessaire."
+        ]
+      },
+      "Pasta al pesto": {
+        "name": "Pâtes au pesto",
+        "description": "Pâtes au pesto frais de basilic.",
+        "instructions": [
+          "Mixez basilic, pignons, ail, parmesan et huile pour obtenir le pesto ; ajoutez une cuillerée d’eau froide si nécessaire.",
+          "Faites cuire les pâtes.",
+          "Hors du feu, mélangez-les au pesto en ajoutant un peu d’eau de cuisson."
+        ]
+      },
+      "Penne all'arrabbiata": {
+        "name": "Penne all’arrabbiata",
+        "description": "Penne épicées à la sauce tomate.",
+        "instructions": [
+          "Faites revenir l’ail et le piment dans l’huile.",
+          "Ajoutez la passata et faites cuire 15 minutes.",
+          "Faites cuire les penne al dente, ajoutez-les à la sauce et mélangez.",
+          "Terminez avec du persil haché."
+        ]
+      },
+      "Pasta tonno e limone": {
+        "name": "Pâtes au thon et au citron",
+        "description": "Pâtes fraîches au thon, citron et persil.",
+        "instructions": [
+          "Faites cuire les pâtes.",
+          "Égouttez le thon et réchauffez-le brièvement avec l’huile et le zeste de citron râpé.",
+          "Ajoutez les pâtes et un peu d’eau de cuisson, puis du jus de citron selon votre goût et du persil."
+        ]
+      },
+      "Pasta ricotta e spinaci": {
+        "name": "Pâtes à la ricotta et aux épinards",
+        "description": "Pâtes crémeuses à la ricotta et aux épinards.",
+        "instructions": [
+          "Faites cuire les épinards à la poêle avec un peu d’eau puis hachez-les.",
+          "Mélangez la ricotta, le parmesan, la noix de muscade et une louche d’eau de cuisson.",
+          "Ajoutez les pâtes et les épinards à la crème et mélangez hors du feu."
+        ]
+      },
+      "Gnocchi al burro e salvia": {
+        "name": "Gnocchis au beurre et à la sauge",
+        "description": "Gnocchis moelleux au beurre parfumé à la sauge.",
+        "instructions": [
+          "Faites cuire les gnocchis jusqu’à ce qu’ils remontent à la surface.",
+          "Pendant ce temps, faites fondre le beurre avec la sauge.",
+          "Retirez les gnocchis à l’écumoire et faites-les sauter dans le beurre.",
+          "Servez avec du parmesan."
+        ]
+      },
+      "Pasta alla carbonara": {
+        "name": "Spaghetti à la carbonara",
+        "description": "Spaghetti romains aux œufs, pecorino et guanciale.",
+        "instructions": [
+          "Faites dorer le guanciale coupé en lanières.",
+          "Battez les œufs avec le pecorino et le poivre noir.",
+          "Faites cuire les spaghetti et réservez de l’eau de cuisson.",
+          "Hors du feu, mélangez les pâtes et le guanciale, puis incorporez les œufs avec un peu d’eau chaude jusqu’à obtenir une crème sans brouiller les œufs."
+        ]
+      },
+      "Pasta alla norma": {
+        "name": "Pâtes alla Norma",
+        "description": "Pâtes siciliennes à l’aubergine, tomate et ricotta salée.",
+        "instructions": [
+          "Coupez l’aubergine en dés et faites-la dorer dans l’huile.",
+          "Faites mijoter la passata avec le basilic pendant 15 minutes.",
+          "Faites cuire les pâtes et mélangez-les à la sauce et à l’aubergine.",
+          "Râpez la ricotta salée par-dessus."
+        ]
+      },
+      "Lasagne vegetariane": {
+        "name": "Lasagnes végétariennes",
+        "description": "Lasagnes en couches aux légumes et à la béchamel.",
+        "instructions": [
+          "Coupez les légumes en dés et faites-les sauter à la poêle.",
+          "Étalez une fine couche de passata et de béchamel dans un plat.",
+          "Alternez feuilles de lasagne, légumes, sauce, béchamel et mozzarella.",
+          "Terminez avec le parmesan et enfournez à 180 °C pendant 30–35 minutes."
+        ]
+      },
+      "Minestrone di verdure": {
+        "name": "Minestrone de légumes",
+        "description": "Soupe nourrissante aux légumes de saison et haricots.",
+        "instructions": [
+          "Coupez les légumes en dés.",
+          "Faites fondre l’oignon dans un peu d’huile, puis ajoutez les légumes et le bouillon.",
+          "Laissez mijoter doucement environ 30 minutes.",
+          "Ajoutez les haricots pendant les 10 dernières minutes et salez."
+        ]
+      },
+      "Frittata di zucchine": {
+        "name": "Frittata aux courgettes",
+        "description": "Omelette italienne aux courgettes et au parmesan.",
+        "instructions": [
+          "Râpez ou émincez finement les courgettes et faites-les revenir.",
+          "Battez les œufs avec le parmesan et le poivre, puis versez sur les courgettes.",
+          "Couvrez et faites cuire à feu doux.",
+          "Retournez la frittata à l’aide d’une assiette et terminez la cuisson."
+        ]
+      },
+      "Polpette al sugo": {
+        "name": "Boulettes à la sauce tomate",
+        "description": "Boulettes tendres mijotées dans la tomate.",
+        "instructions": [
+          "Mélangez la viande, l’œuf, le parmesan, la chapelure et le lait, puis formez des boulettes fermes.",
+          "Faites-les légèrement dorer à la poêle.",
+          "Ajoutez la passata et un peu d’eau, couvrez et laissez mijoter 25 minutes à feu doux."
+        ]
+      },
+      "Pollo al limone": {
+        "name": "Poulet au citron",
+        "description": "Émincé de poulet rapide avec une sauce citronnée.",
+        "instructions": [
+          "Coupez le poulet en lanières, farinez-le légèrement et faites-le dorer dans l’huile.",
+          "Ajoutez le bouillon et le jus de citron.",
+          "Faites cuire jusqu’à ce que le poulet soit bien cuit et la sauce épaissie.",
+          "Salez et servez immédiatement."
+        ]
+      },
+      "Salmone al forno": {
+        "name": "Saumon au four",
+        "description": "Saumon rôti au citron et au persil.",
+        "instructions": [
+          "Placez le saumon sur une plaque recouverte de papier cuisson.",
+          "Assaisonnez avec huile, citron, persil et poivre.",
+          "Enfournez à 190 °C pendant 12–18 minutes selon l’épaisseur, jusqu’à cuisson complète."
+        ]
+      },
+      "Pollo alla cacciatora": {
+        "name": "Poulet à la cacciatora",
+        "description": "Poulet mijoté à la tomate, aux olives et aux herbes.",
+        "instructions": [
+          "Faites dorer les morceaux de poulet dans une cocotte.",
+          "Ajoutez l’oignon, versez le vin blanc et laissez évaporer.",
+          "Ajoutez la passata, les olives, le romarin et un peu d’eau.",
+          "Couvrez et laissez mijoter 35–40 minutes en vérifiant la cuisson du poulet."
+        ]
+      },
+      "Parmigiana di melanzane": {
+        "name": "Aubergines à la parmigiana",
+        "description": "Aubergines gratinées à la tomate, mozzarella et parmesan.",
+        "instructions": [
+          "Coupez les aubergines en tranches et grillez-les ou cuisez-les au four avec un peu d’huile.",
+          "Préparez une sauce tomate rapide.",
+          "Dans un plat, alternez sauce, aubergine, mozzarella, basilic et parmesan.",
+          "Enfournez à 190 °C environ 35–40 minutes."
+        ]
+      },
+      "Insalata caprese": {
+        "name": "Salade caprese",
+        "description": "Salade fraîche de tomates, mozzarella et basilic.",
+        "instructions": [
+          "Coupez les tomates et la mozzarella en tranches et disposez-les en alternance.",
+          "Ajoutez les feuilles de basilic.",
+          "Assaisonnez d’huile, de sel et de poivre juste avant de servir."
+        ]
+      },
+      "Insalata di ceci e tonno": {
+        "name": "Salade de pois chiches et thon",
+        "description": "Salade de pois chiches, thon et tomate riche en protéines.",
+        "instructions": [
+          "Rincez et égouttez les pois chiches.",
+          "Mélangez-les avec le thon égoutté, la tomate en dés et l’oignon finement émincé.",
+          "Assaisonnez d’huile, de jus de citron, de sel et de poivre.",
+          "Laissez reposer 5 minutes."
+        ]
+      },
+      "Panzanella": {
+        "name": "Panzanella",
+        "description": "Salade toscane de pain, tomate, concombre et oignon.",
+        "instructions": [
+          "Humidifiez brièvement le pain avec de l’eau et un peu de vinaigre, essorez-le puis émiettez-le.",
+          "Ajoutez les tomates, le concombre et l’oignon émincés.",
+          "Assaisonnez d’huile, de vinaigre, de basilic, de sel et de poivre.",
+          "Laissez reposer au frais."
+        ]
+      },
+      "Bruschette al pomodoro": {
+        "name": "Bruschettas à la tomate",
+        "description": "Pain grillé garni de tomates assaisonnées.",
+        "instructions": [
+          "Faites griller le pain sur une plaque ou sous le gril.",
+          "Coupez les tomates en dés et mélangez-les avec l’huile, le basilic et le sel.",
+          "Frottez le pain chaud avec l’ail et répartissez les tomates dessus."
+        ]
+      },
+      "Crostini ricotta e miele": {
+        "name": "Crostini à la ricotta, au miel et aux noix",
+        "description": "Toasts croustillants à la ricotta, au miel et aux noix.",
+        "instructions": [
+          "Faites griller le pain.",
+          "Écrasez la ricotta à la fourchette et étalez-la sur les tranches.",
+          "Ajoutez le miel et les noix hachées, puis servez aussitôt."
+        ]
+      },
+      "Piadina prosciutto e squacquerone": {
+        "name": "Piadina au prosciutto et squacquerone",
+        "description": "Galette italienne garnie de fromage frais et de jambon cru.",
+        "instructions": [
+          "Réchauffez les piadine dans une poêle antiadhésive une minute de chaque côté.",
+          "Garnissez de squacquerone, de prosciutto et de roquette.",
+          "Pliez en deux et servez chaud."
+        ]
+      },
+      "Cous cous alle verdure": {
+        "name": "Couscous aux légumes",
+        "description": "Couscous léger accompagné de légumes sautés.",
+        "instructions": [
+          "Coupez les légumes en dés et faites-les sauter dans l’huile jusqu’à ce qu’ils soient tendres mais encore fermes.",
+          "Versez le bouillon bouillant sur le couscous, couvrez 5 minutes puis aérez à la fourchette.",
+          "Ajoutez les légumes et les épices."
+        ]
+      },
+      "Riso freddo mediterraneo": {
+        "name": "Salade de riz méditerranéenne",
+        "description": "Riz froid à la tomate, mozzarella et basilic.",
+        "instructions": [
+          "Faites cuire le riz dans l’eau salée, égouttez-le et refroidissez-le rapidement.",
+          "Coupez la tomate et la mozzarella en dés.",
+          "Mélangez tous les ingrédients, assaisonnez d’huile, de basilic et de poivre, puis réfrigérez avant de servir."
+        ]
+      },
+      "Farinata di ceci": {
+        "name": "Farinata de pois chiches",
+        "description": "Fine galette ligure à la farine de pois chiches.",
+        "instructions": [
+          "Mélangez la farine de pois chiches et l’eau sans grumeaux et laissez reposer au moins 30 minutes si possible.",
+          "Retirez la mousse et incorporez l’huile et le sel.",
+          "Versez dans un grand plat très chaud, ajoutez le romarin et faites cuire à 220 °C jusqu’à coloration dorée."
+        ]
+      },
+      "Pasta fredda con pesto e pomodorini": {
+        "name": "Pâtes froides au pesto et tomates cerises",
+        "description": "Salade de pâtes froide au pesto et à la mozzarella.",
+        "instructions": [
+          "Faites cuire les pâtes al dente, égouttez-les et refroidissez-les avec un peu d’eau froide.",
+          "Mélangez avec le pesto, les tomates cerises coupées et la mozzarella en dés.",
+          "Réfrigérez et ajoutez un filet d’huile avant de servir."
+        ]
+      },
+      "Zuppa di lenticchie": {
+        "name": "Soupe de lentilles",
+        "description": "Soupe réconfortante de lentilles, légumes et tomate.",
+        "instructions": [
+          "Hachez la carotte, le céleri et l’oignon, puis faites-les fondre dans l’huile.",
+          "Ajoutez les lentilles rincées, la passata et le bouillon.",
+          "Laissez mijoter 30–35 minutes ou selon l’emballage, en ajoutant de l’eau si besoin.",
+          "Salez en fin de cuisson."
+        ]
+      },
+      "Vellutata di zucca": {
+        "name": "Velouté de potiron",
+        "description": "Velouté lisse de potiron et de pomme de terre.",
+        "instructions": [
+          "Faites fondre l’oignon dans l’huile.",
+          "Ajoutez le potiron et la pomme de terre en dés et couvrez de bouillon.",
+          "Faites cuire jusqu’à tendreté puis mixez.",
+          "Ajustez avec le bouillon et servez avec des graines ou des croûtons."
+        ]
+      },
+      "Pasta con broccoli e acciughe": {
+        "name": "Pâtes au brocoli et aux anchois",
+        "description": "Pâtes au brocoli, anchois, ail et huile d’olive.",
+        "instructions": [
+          "Détaillez le brocoli en bouquets et faites-le cuire dans l’eau des pâtes, puis ajoutez les pâtes dans la même casserole.",
+          "Faites fondre les anchois dans une poêle avec l’huile et l’ail.",
+          "Égouttez les pâtes et le brocoli en gardant un peu d’eau et mélangez le tout."
+        ]
+      },
+      "Orzotto ai funghi": {
+        "name": "Orzotto aux champignons",
+        "description": "Orge perlée crémeuse aux champignons.",
+        "instructions": [
+          "Faites revenir l’oignon et les champignons émincés.",
+          "Ajoutez l’orge rincée et faites-la nacrer brièvement.",
+          "Versez progressivement le bouillon chaud en remuant souvent pendant 25–30 minutes.",
+          "Terminez avec le parmesan."
+        ]
+      },
+      "Uova al purgatorio": {
+        "name": "Œufs au purgatoire",
+        "description": "Œufs pochés dans une sauce tomate épicée.",
+        "instructions": [
+          "Chauffez l’huile avec l’ail et le piment.",
+          "Ajoutez la passata, le sel et un peu d’eau, puis faites cuire 8 minutes.",
+          "Creusez quatre puits, cassez-y les œufs et couvrez.",
+          "Faites cuire jusqu’à ce que les blancs soient pris et servez avec du pain."
+        ]
+      },
+      "Patate al forno": {
+        "name": "Pommes de terre rôties",
+        "description": "Quartiers de pommes de terre dorés au four.",
+        "instructions": [
+          "Coupez les pommes de terre en quartiers réguliers et séchez-les.",
+          "Mélangez-les avec l’huile, le romarin, l’ail et le sel.",
+          "Étalez-les en une seule couche et enfournez à 200 °C pendant 35–45 minutes en les retournant à mi-cuisson."
+        ]
+      },
+      "Caponata siciliana": {
+        "name": "Caponata sicilienne",
+        "description": "Préparation sicilienne aigre-douce aux aubergines et légumes.",
+        "instructions": [
+          "Coupez les aubergines en dés et faites-les dorer.",
+          "Blanchissez le céleri en morceaux puis ajoutez-le avec la tomate, les olives et les câpres.",
+          "Faites cuire jusqu’à ce que les légumes soient tendres.",
+          "Ajoutez vinaigre et sucre, laissez évaporer puis refroidir avant de servir."
+        ]
+      },
+      "Spinaci saltati all'aglio": {
+        "name": "Épinards sautés à l’ail",
+        "description": "Épinards sautés rapidement avec de l’ail.",
+        "instructions": [
+          "Chauffez l’huile avec une gousse d’ail.",
+          "Ajoutez les épinards en plusieurs fois et faites-les tomber en laissant évaporer le liquide.",
+          "Retirez l’ail et assaisonnez de sel et de citron à votre goût."
+        ]
+      },
+      "Ceci croccanti al forno": {
+        "name": "Pois chiches croustillants au four",
+        "description": "Pois chiches croquants au paprika et au romarin.",
+        "instructions": [
+          "Rincez les pois chiches et séchez-les très soigneusement.",
+          "Mélangez-les avec huile, paprika, romarin et sel.",
+          "Étalez sur une plaque et faites cuire à 200 °C pendant 25–30 minutes en remuant à mi-cuisson."
+        ]
+      },
+      "Hummus fatto in casa": {
+        "name": "Houmous maison",
+        "description": "Crème de pois chiches au tahini et au citron.",
+        "instructions": [
+          "Mixez les pois chiches, le tahini, le jus de citron, l’ail et l’huile.",
+          "Ajoutez peu à peu de l’eau froide jusqu’à obtenir la texture souhaitée.",
+          "Rectifiez le sel et servez avec des crudités ou du pain."
+        ]
+      },
+      "Porridge mela e cannella": {
+        "name": "Porridge pomme-cannelle",
+        "description": "Porridge chaud à l’avoine, pomme et cannelle.",
+        "instructions": [
+          "Faites chauffer l’avoine et le lait dans une casserole en remuant 5–8 minutes.",
+          "Ajoutez la pomme en dés pendant les dernières minutes.",
+          "Terminez avec la cannelle et le miel."
+        ]
+      },
+      "Pancake alla banana": {
+        "name": "Pancakes à la banane",
+        "description": "Pancakes moelleux à la banane et aux œufs.",
+        "instructions": [
+          "Écrasez la banane et mélangez-la aux œufs et au lait.",
+          "Ajoutez farine et levure chimique pour obtenir une pâte.",
+          "Faites cuire de petites portions dans une poêle légèrement huilée environ 2 minutes de chaque côté."
+        ]
+      },
+      "Yogurt con frutta e granola": {
+        "name": "Yaourt aux fruits et granola",
+        "description": "Petit-déjeuner rapide au yaourt, fruits et granola.",
+        "instructions": [
+          "Versez le yaourt dans un bol et ajoutez les fruits coupés et le granola.",
+          "Ajoutez un filet de miel et servez aussitôt."
+        ]
+      },
+      "Toast prosciutto e formaggio": {
+        "name": "Croque jambon-fromage",
+        "description": "Sandwich grillé au jambon et au fromage fondu.",
+        "instructions": [
+          "Garnissez le pain de jambon et de fromage.",
+          "Faites griller à la poêle, au presse-sandwich ou au four jusqu’à ce que le pain soit doré et le fromage fondu.",
+          "Coupez en deux et servez chaud."
+        ]
+      },
+      "Pasta con zucchine e menta": {
+        "name": "Pâtes aux courgettes et à la menthe",
+        "description": "Pâtes légères aux courgettes, menthe et parmesan.",
+        "instructions": [
+          "Coupez les courgettes en demi-rondelles et faites-les dorer dans l’huile.",
+          "Faites cuire les pâtes et mélangez-les à la poêle avec un peu d’eau de cuisson.",
+          "Hors du feu, ajoutez la menthe hachée et le parmesan."
+        ]
+      },
+      "Ribollita semplificata": {
+        "name": "Ribollita simplifiée",
+        "description": "Soupe toscane de pain, haricots et chou noir.",
+        "instructions": [
+          "Faites revenir l’oignon et la carotte hachés.",
+          "Ajoutez le chou noir en lanières, les haricots et le bouillon, puis faites cuire jusqu’à tendreté.",
+          "Ajoutez le pain en morceaux et laissez épaissir.",
+          "Elle est encore meilleure réchauffée le lendemain."
+        ]
+      },
+      "Risotto agli asparagi": {
+        "name": "Risotto aux asperges",
+        "description": "Risotto crémeux aux asperges fraîches.",
+        "instructions": [
+          "Nettoyez les asperges, coupez les tiges en rondelles et gardez les pointes.",
+          "Faites fondre l’oignon, ajoutez les tiges et le riz puis faites nacrer.",
+          "Ajoutez le bouillon progressivement et les pointes à mi-cuisson.",
+          "Terminez avec beurre et parmesan."
+        ]
+      },
+      "Tortino di patate e formaggio": {
+        "name": "Gratin de pommes de terre au fromage",
+        "description": "Gratin doré de pommes de terre au cœur de mozzarella fondue.",
+        "instructions": [
+          "Faites cuire les pommes de terre, écrasez-les et laissez-les tiédir.",
+          "Mélangez avec les œufs, le parmesan, le sel et le poivre.",
+          "Étalez la moitié dans un plat huilé, ajoutez la mozzarella en dés puis couvrez du reste.",
+          "Saupoudrez de chapelure et enfournez à 190 °C pendant 25–30 minutes."
+        ]
+      },
+      "Burger di lenticchie": {
+        "name": "Burgers de lentilles",
+        "description": "Burgers végétariens aux lentilles, carotte et avoine.",
+        "instructions": [
+          "Écrasez les lentilles et mélangez-les à la carotte râpée, à l’avoine, à l’œuf et au paprika.",
+          "Laissez reposer 10 minutes puis formez des burgers.",
+          "Faites cuire dans un peu d’huile 5–6 minutes de chaque côté jusqu’à ce qu’ils soient dorés et fermes."
+        ]
+      },
+      "Focaccia veloce in padella": {
+        "name": "Focaccia rapide à la poêle",
+        "description": "Pain plat moelleux cuit à la poêle.",
+        "instructions": [
+          "Mélangez farine, yaourt, levure, huile et sel pour obtenir une pâte souple.",
+          "Divisez-la en deux disques et étalez-les.",
+          "Faites cuire dans une poêle couverte à feu moyen-doux 5–6 minutes de chaque côté, en vérifiant la cuisson intérieure."
+        ]
+      },
+      "Tiramisù in bicchiere": {
+        "name": "Tiramisu en verrine",
+        "description": "Tiramisu individuel au café, mascarpone et cacao.",
+        "instructions": [
+          "Préparez le café et laissez-le refroidir.",
+          "Séparez les œufs, fouettez les jaunes avec le sucre et incorporez le mascarpone.",
+          "Montez les blancs en neige ferme et incorporez-les délicatement.",
+          "Alternez biscuits à peine imbibés de café et crème dans les verres, saupoudrez de cacao et réfrigérez au moins 3 heures.",
+          "Utilisez des œufs pasteurisés si nécessaire."
+        ]
+      },
+      "Torta di mele": {
+        "name": "Gâteau aux pommes",
+        "description": "Gâteau maison aux pommes à la mie moelleuse.",
+        "instructions": [
+          "Fouettez les œufs et le sucre, puis ajoutez le beurre fondu tiède et le lait.",
+          "Incorporez la farine et la levure tamisées.",
+          "Ajoutez la moitié des pommes en tranches, versez dans un moule et décorez avec le reste.",
+          "Faites cuire à 180 °C environ 40 minutes et vérifiez avec une pique."
+        ]
+      },
+      "Budino al cacao": {
+        "name": "Flan au cacao",
+        "description": "Flan chocolaté onctueux au cacao et au lait.",
+        "instructions": [
+          "Mélangez le cacao, le sucre et la fécule avec un peu de lait froid jusqu’à obtenir une crème lisse.",
+          "Ajoutez le reste du lait et faites cuire à feu moyen en remuant jusqu’à épaississement.",
+          "Versez dans des moules, laissez refroidir et réfrigérez."
+        ]
+      },
+      "Muffin allo yogurt": {
+        "name": "Muffins au yaourt",
+        "description": "Muffins moelleux au yaourt.",
+        "instructions": [
+          "Mélangez les œufs et le sucre, puis ajoutez le yaourt et l’huile.",
+          "Incorporez la farine et la levure sans trop travailler la pâte.",
+          "Remplissez les caissettes aux deux tiers et faites cuire à 180 °C pendant 18–22 minutes."
+        ]
+      },
+      "Smoothie banana e fragole": {
+        "name": "Smoothie banane-fraise",
+        "description": "Smoothie frais à la banane, aux fraises, au yaourt et au lait.",
+        "instructions": [
+          "Lavez les fraises et retirez les queues.",
+          "Mixez avec la banane, le yaourt et le lait jusqu’à obtenir une texture lisse.",
+          "Ajoutez du lait pour une boisson plus fluide et servez aussitôt."
+        ]
+      },
+      "Fagioli all'uccelletto": {
+        "name": "Haricots toscans à la sauge",
+        "description": "Haricots cannellini mijotés à la tomate, à l’ail et à la sauge.",
+        "instructions": [
+          "Chauffez l’huile avec l’ail et la sauge dans une casserole.",
+          "Ajoutez les haricots égouttés et la passata avec un peu d’eau.",
+          "Laissez mijoter 15–20 minutes, salez et servez avec du pain grillé."
+        ]
+      },
+      "Peperoni ripieni di riso": {
+        "name": "Poivrons farcis au riz",
+        "description": "Poivrons farcis de riz, tomate et parmesan.",
+        "instructions": [
+          "Coupez le sommet des poivrons et retirez graines et membranes.",
+          "Faites cuire le riz à moitié, puis mélangez-le avec la passata, le parmesan et le persil.",
+          "Farcissez les poivrons et remettez les chapeaux.",
+          "Enfournez avec un peu d’eau à 190 °C pendant 35–40 minutes."
+        ]
+      },
+      "Pasta con crema di piselli": {
+        "name": "Pâtes à la crème de petits pois",
+        "description": "Pâtes avec sauce crémeuse aux petits pois.",
+        "instructions": [
+          "Faites fondre l’oignon, ajoutez les petits pois et le bouillon et faites cuire jusqu’à tendreté.",
+          "Mixez la moitié des petits pois avec le parmesan et un peu d’eau de cuisson.",
+          "Faites cuire les pâtes, mélangez-les à la crème et ajoutez les petits pois entiers."
+        ]
+      },
+      "Insalata di farro mediterranea": {
+        "name": "Salade méditerranéenne d’épeautre",
+        "description": "Salade d’épeautre, tomate, concombre, feta et olives.",
+        "instructions": [
+          "Faites cuire l’épeautre selon l’emballage, égouttez et refroidissez.",
+          "Coupez la tomate, le concombre et la feta en dés.",
+          "Mélangez avec les olives et l’épeautre, assaisonnez d’huile, de citron et d’origan et laissez reposer."
+        ]
+      },
+      "Cavolfiore gratinato": {
+        "name": "Chou-fleur gratiné",
+        "description": "Chou-fleur au four avec béchamel et croûte de parmesan.",
+        "instructions": [
+          "Détaillez le chou-fleur et blanchissez-le 5–7 minutes.",
+          "Placez-le dans un plat, couvrez de béchamel, parmesan et chapelure.",
+          "Faites gratiner à 200 °C pendant 15–20 minutes jusqu’à ce que ce soit doré."
+        ]
+      },
+      "Pasta con crema di peperoni": {
+        "name": "Pâtes à la crème de poivrons",
+        "description": "Pâtes avec sauce lisse aux poivrons, ricotta et parmesan.",
+        "instructions": [
+          "Faites cuire les poivrons en morceaux avec l’ail et un peu d’huile jusqu’à ce qu’ils soient tendres.",
+          "Mixez avec la ricotta et le parmesan, en ajoutant de l’eau de cuisson si besoin.",
+          "Faites cuire les pâtes, mélangez-les à la crème et réchauffez brièvement."
+        ]
+      },
+      "Pane dorato alla francese": {
+        "name": "Pain perdu",
+        "description": "Pain doré à la française pour un petit-déjeuner sucré.",
+        "instructions": [
+          "Battez les œufs et le lait dans une assiette creuse.",
+          "Trempez rapidement les tranches de pain des deux côtés.",
+          "Faites-les dorer au beurre 2–3 minutes de chaque côté.",
+          "Pour une version sucrée, ajoutez de la cannelle et un peu de sucre."
+        ]
+      },
+      "Pasta alla puttanesca": {
+        "name": "Pâtes alla puttanesca",
+        "description": "Pâtes aux anchois, câpres, olives et tomate.",
+        "instructions": [
+          "Faites fondre les anchois dans l’huile chaude avec l’ail.",
+          "Ajoutez les câpres et olives hachées, puis la passata, et cuisez 15 minutes.",
+          "Faites cuire les pâtes et mélangez-les à la sauce en salant avec prudence."
+        ]
+      },
+      "Crostata alla marmellata": {
+        "name": "Tarte à la confiture",
+        "description": "Tarte classique en pâte sablée garnie de confiture.",
+        "instructions": [
+          "Sablez le beurre froid en dés avec la farine.",
+          "Ajoutez le sucre et l’œuf et pétrissez rapidement.",
+          "Réfrigérez 30 minutes.",
+          "Étalez les deux tiers de la pâte dans un moule, ajoutez la confiture, décorez de bandes et enfournez à 180 °C pendant 30–35 minutes."
+        ]
+      },
+      "Melanzane ripiene": {
+        "name": "Aubergines farcies",
+        "description": "Aubergines au four farcies de tomate, chapelure et parmesan.",
+        "instructions": [
+          "Coupez les aubergines en deux et incisez la chair.",
+          "Faites cuire à 190 °C pendant 15 minutes puis prélevez délicatement la chair.",
+          "Hachez-la et mélangez avec la passata, la chapelure, le parmesan, l’ail et le persil.",
+          "Farcissez les coques et poursuivez la cuisson 15–20 minutes."
+        ]
+      }
+    },
+    "de": {
+      "Pasta al pomodoro": {
+        "name": "Pasta mit Tomatensauce",
+        "description": "Ein einfacher italienischer Klassiker mit Tomaten und Basilikum.",
+        "instructions": [
+          "Öl mit Knoblauch erhitzen.",
+          "Passata hinzufügen und 15 Minuten köcheln lassen.",
+          "Pasta in Salzwasser al dente kochen, abgießen und mit der Sauce vermengen.",
+          "Mit frischem Basilikum abschließen."
+        ]
+      },
+      "Spaghetti aglio, olio e peperoncino": {
+        "name": "Spaghetti mit Knoblauch, Öl und Chili",
+        "description": "Spaghetti mit Knoblauch, Olivenöl und Chili.",
+        "instructions": [
+          "Spaghetti al dente kochen.",
+          "Öl mit Knoblauchscheiben und Chili sanft erhitzen, ohne sie zu verbrennen.",
+          "Pasta und etwas Kochwasser zugeben und gut schwenken.",
+          "Mit gehackter Petersilie abschließen."
+        ]
+      },
+      "Risotto alla zucca": {
+        "name": "Kürbisrisotto",
+        "description": "Cremiges Risotto mit süßem Kürbis.",
+        "instructions": [
+          "Zwiebel fein hacken und in etwas Butter glasig dünsten.",
+          "Gewürfelten Kürbis dazugeben und 8 Minuten garen.",
+          "Reis einrühren und rösten, dann nach und nach heiße Brühe unter Rühren zugeben.",
+          "Herd ausschalten und Butter sowie Parmesan unterrühren."
+        ]
+      },
+      "Pasta e ceci": {
+        "name": "Pasta mit Kichererbsen",
+        "description": "Rustikale Suppe mit Pasta und Kichererbsen.",
+        "instructions": [
+          "Öl mit Knoblauch und Rosmarin erhitzen.",
+          "Kichererbsen und Passata mit einem Glas Wasser zugeben und köcheln lassen.",
+          "Einige Kichererbsen zerdrücken, damit die Suppe cremig wird.",
+          "Pasta hinzufügen und garen, bei Bedarf heißes Wasser zugeben."
+        ]
+      },
+      "Pasta al pesto": {
+        "name": "Pasta mit Pesto",
+        "description": "Pasta mit frischem Basilikumpesto.",
+        "instructions": [
+          "Basilikum, Pinienkerne, Knoblauch, Parmesan und Öl zu Pesto mixen; bei Bedarf einen Löffel kaltes Wasser zugeben.",
+          "Pasta kochen.",
+          "Vom Herd nehmen, mit Pesto vermengen und mit Kochwasser verdünnen."
+        ]
+      },
+      "Penne all'arrabbiata": {
+        "name": "Penne all’arrabbiata",
+        "description": "Pikante Penne in Tomatensauce.",
+        "instructions": [
+          "Knoblauch und Chili in Öl anbraten.",
+          "Passata zugeben und 15 Minuten kochen.",
+          "Penne al dente kochen, in die Sauce geben und vermengen.",
+          "Mit gehackter Petersilie abschließen."
+        ]
+      },
+      "Pasta tonno e limone": {
+        "name": "Pasta mit Thunfisch und Zitrone",
+        "description": "Frische Pasta mit Thunfisch, Zitrone und Petersilie.",
+        "instructions": [
+          "Pasta kochen.",
+          "Thunfisch abtropfen lassen und kurz mit Öl und abgeriebener Zitronenschale erwärmen.",
+          "Pasta und etwas Kochwasser zugeben, nach Geschmack Zitronensaft und Petersilie ergänzen."
+        ]
+      },
+      "Pasta ricotta e spinaci": {
+        "name": "Pasta mit Ricotta und Spinat",
+        "description": "Cremige Ricotta-Pasta mit Spinat.",
+        "instructions": [
+          "Spinat mit etwas Wasser in einer Pfanne garen und hacken.",
+          "Ricotta, Parmesan, Muskat und eine Kelle Kochwasser verrühren.",
+          "Pasta und Spinat unter die Creme mischen, nicht mehr erhitzen."
+        ]
+      },
+      "Gnocchi al burro e salvia": {
+        "name": "Kartoffelgnocchi mit Butter und Salbei",
+        "description": "Zarte Gnocchi mit aromatischer Salbeibutter.",
+        "instructions": [
+          "Gnocchi kochen, bis sie an die Oberfläche steigen.",
+          "Inzwischen Butter mit Salbei schmelzen.",
+          "Gnocchi mit einer Schaumkelle herausheben und in der Butter schwenken.",
+          "Mit Parmesan servieren."
+        ]
+      },
+      "Pasta alla carbonara": {
+        "name": "Spaghetti Carbonara",
+        "description": "Römische Spaghetti mit Ei, Pecorino und Guanciale.",
+        "instructions": [
+          "Guanciale in Streifen knusprig braten.",
+          "Eier mit Pecorino und schwarzem Pfeffer verquirlen.",
+          "Spaghetti kochen und etwas Kochwasser aufbewahren.",
+          "Vom Herd nehmen, Pasta mit Guanciale mischen und die Eier mit wenig heißem Wasser cremig einrühren, ohne sie stocken zu lassen."
+        ]
+      },
+      "Pasta alla norma": {
+        "name": "Pasta alla Norma",
+        "description": "Sizilianische Pasta mit Aubergine, Tomate und gesalzener Ricotta.",
+        "instructions": [
+          "Aubergine würfeln und in Öl goldbraun braten.",
+          "Passata mit Basilikum 15 Minuten köcheln lassen.",
+          "Pasta kochen und mit Sauce und Aubergine mischen.",
+          "Gesalzene Ricotta darüberreiben."
+        ]
+      },
+      "Lasagne vegetariane": {
+        "name": "Vegetarische Lasagne",
+        "description": "Geschichtete Lasagne mit Gemüse und Béchamel.",
+        "instructions": [
+          "Gemüse würfeln und in der Pfanne anbraten.",
+          "Eine dünne Schicht Passata und Béchamel in eine Auflaufform geben.",
+          "Nudelplatten, Gemüse, Sauce, Béchamel und Mozzarella abwechselnd schichten.",
+          "Mit Parmesan abschließen und bei 180 °C 30–35 Minuten backen."
+        ]
+      },
+      "Minestrone di verdure": {
+        "name": "Gemüse-Minestrone",
+        "description": "Herzhafte Suppe mit saisonalem Gemüse und Bohnen.",
+        "instructions": [
+          "Gemüse würfeln.",
+          "Zwiebel in etwas Öl weich dünsten, Gemüse und Brühe zugeben.",
+          "Etwa 30 Minuten sanft köcheln lassen.",
+          "Bohnen in den letzten 10 Minuten hinzufügen und salzen."
+        ]
+      },
+      "Frittata di zucchine": {
+        "name": "Zucchini-Frittata",
+        "description": "Italienisches Omelett mit Zucchini und Parmesan.",
+        "instructions": [
+          "Zucchini reiben oder dünn schneiden und anbraten.",
+          "Eier mit Parmesan und Pfeffer verquirlen und über die Zucchini geben.",
+          "Abdecken und bei niedriger Hitze garen.",
+          "Mit einem Teller wenden und fertig garen."
+        ]
+      },
+      "Polpette al sugo": {
+        "name": "Hackbällchen in Tomatensauce",
+        "description": "Zarte Fleischbällchen in Tomatensauce.",
+        "instructions": [
+          "Fleisch, Ei, Parmesan, Semmelbrösel und Milch mischen und feste Bällchen formen.",
+          "In einer Pfanne leicht anbräunen.",
+          "Passata und etwas Wasser zugeben, abdecken und bei niedriger Hitze 25 Minuten köcheln lassen."
+        ]
+      },
+      "Pollo al limone": {
+        "name": "Zitronenhähnchen",
+        "description": "Schnelle Hähnchenstreifen mit frischer Zitronensauce.",
+        "instructions": [
+          "Hähnchen in Streifen schneiden, leicht mehlieren und in Öl anbraten.",
+          "Brühe und Zitronensaft zugeben.",
+          "Garen, bis das Hähnchen durch und die Sauce eingedickt ist.",
+          "Salzen und sofort servieren."
+        ]
+      },
+      "Salmone al forno": {
+        "name": "Ofenlachs",
+        "description": "Lachs aus dem Ofen mit Zitrone und Petersilie.",
+        "instructions": [
+          "Lachs auf ein mit Backpapier belegtes Blech legen.",
+          "Mit Öl, Zitrone, Petersilie und Pfeffer würzen.",
+          "Je nach Dicke 12–18 Minuten bei 190 °C backen, bis er durchgegart ist."
+        ]
+      },
+      "Pollo alla cacciatora": {
+        "name": "Hähnchen nach Jägerart",
+        "description": "Geschmortes Hähnchen mit Tomate, Oliven und Kräutern.",
+        "instructions": [
+          "Hähnchenteile in einem Schmortopf anbraten.",
+          "Zwiebel zugeben, Weißwein angießen und verdampfen lassen.",
+          "Passata, Oliven, Rosmarin und etwas Wasser hinzufügen.",
+          "Abdecken und 35–40 Minuten sanft schmoren, bis das Hähnchen gar ist."
+        ]
+      },
+      "Parmigiana di melanzane": {
+        "name": "Auberginen-Parmigiana",
+        "description": "Gebackene Auberginenschichten mit Tomate, Mozzarella und Parmesan.",
+        "instructions": [
+          "Auberginen in Scheiben schneiden und grillen oder mit wenig Öl backen.",
+          "Eine schnelle Tomatensauce zubereiten.",
+          "In einer Form Sauce, Aubergine, Mozzarella, Basilikum und Parmesan schichten.",
+          "Bei 190 °C etwa 35–40 Minuten backen."
+        ]
+      },
+      "Insalata caprese": {
+        "name": "Caprese-Salat",
+        "description": "Frischer Salat aus Tomaten, Mozzarella und Basilikum.",
+        "instructions": [
+          "Tomaten und Mozzarella in Scheiben schneiden und abwechselnd anrichten.",
+          "Basilikumblätter dazugeben.",
+          "Erst kurz vor dem Servieren mit Öl, Salz und Pfeffer würzen."
+        ]
+      },
+      "Insalata di ceci e tonno": {
+        "name": "Kichererbsen-Thunfisch-Salat",
+        "description": "Proteinreicher Salat mit Kichererbsen, Thunfisch und Tomate.",
+        "instructions": [
+          "Kichererbsen abspülen und abtropfen lassen.",
+          "Mit abgetropftem Thunfisch, gewürfelter Tomate und fein geschnittener Zwiebel mischen.",
+          "Mit Öl, Zitronensaft, Salz und Pfeffer würzen.",
+          "5 Minuten ziehen lassen."
+        ]
+      },
+      "Panzanella": {
+        "name": "Panzanella",
+        "description": "Toskanischer Brotsalat mit Tomate, Gurke und Zwiebel.",
+        "instructions": [
+          "Brot kurz mit Wasser und etwas Essig befeuchten, ausdrücken und zerkleinern.",
+          "Geschnittene Tomaten, Gurke und Zwiebel zugeben.",
+          "Mit Öl, Essig, Basilikum, Salz und Pfeffer würzen.",
+          "Kühl durchziehen lassen."
+        ]
+      },
+      "Bruschette al pomodoro": {
+        "name": "Tomaten-Bruschetta",
+        "description": "Geröstetes Brot mit gewürzten Tomaten.",
+        "instructions": [
+          "Brot auf einer Grillplatte oder unter dem Grill rösten.",
+          "Tomaten würfeln und mit Öl, Basilikum und Salz mischen.",
+          "Warmes Brot mit Knoblauch einreiben und Tomaten darauf verteilen."
+        ]
+      },
+      "Crostini ricotta e miele": {
+        "name": "Ricotta-Crostini mit Honig und Walnüssen",
+        "description": "Knuspriges Brot mit Ricotta, Honig und Walnüssen.",
+        "instructions": [
+          "Brot rösten.",
+          "Ricotta mit einer Gabel glatt drücken und auf die Scheiben streichen.",
+          "Honig und gehackte Walnüsse daraufgeben und sofort servieren."
+        ]
+      },
+      "Piadina prosciutto e squacquerone": {
+        "name": "Piadina mit Prosciutto und Squacquerone",
+        "description": "Italienisches Fladenbrot mit Frischkäse und Rohschinken.",
+        "instructions": [
+          "Piadine in einer beschichteten Pfanne je Seite eine Minute erwärmen.",
+          "Mit Squacquerone, Prosciutto und Rucola füllen.",
+          "Zusammenklappen und warm servieren."
+        ]
+      },
+      "Cous cous alle verdure": {
+        "name": "Gemüse-Couscous",
+        "description": "Lockerer Couscous mit gebratenem Gemüse.",
+        "instructions": [
+          "Gemüse würfeln und in Öl anbraten, bis es weich, aber noch bissfest ist.",
+          "Kochende Brühe über Couscous gießen, 5 Minuten abdecken und mit einer Gabel auflockern.",
+          "Gemüse untermischen und würzen."
+        ]
+      },
+      "Riso freddo mediterraneo": {
+        "name": "Mediterraner Reissalat",
+        "description": "Kalter Reis mit Tomate, Mozzarella und Basilikum.",
+        "instructions": [
+          "Reis in Salzwasser kochen, abgießen und rasch abkühlen.",
+          "Tomate und Mozzarella würfeln.",
+          "Alles vermengen, mit Öl, Basilikum und Pfeffer würzen und vor dem Servieren kühlen."
+        ]
+      },
+      "Farinata di ceci": {
+        "name": "Kichererbsen-Farinata",
+        "description": "Dünner ligurischer Fladen aus Kichererbsenmehl.",
+        "instructions": [
+          "Kichererbsenmehl klumpenfrei mit Wasser verrühren und möglichst 30 Minuten ruhen lassen.",
+          "Schaum abnehmen, Öl und Salz einrühren.",
+          "In eine breite, sehr heiße Form gießen, Rosmarin zugeben und bei 220 °C goldbraun backen."
+        ]
+      },
+      "Pasta fredda con pesto e pomodorini": {
+        "name": "Kalte Pasta mit Pesto und Kirschtomaten",
+        "description": "Kalter Nudelsalat mit Pesto und Mozzarella.",
+        "instructions": [
+          "Pasta al dente kochen, abgießen und mit etwas kaltem Wasser abkühlen.",
+          "Mit Pesto, halbierten Kirschtomaten und gewürfelter Mozzarella mischen.",
+          "Kühlen und vor dem Servieren etwas Öl darübergeben."
+        ]
+      },
+      "Zuppa di lenticchie": {
+        "name": "Linsensuppe",
+        "description": "Wärmende Linsensuppe mit Gemüse und Tomate.",
+        "instructions": [
+          "Karotte, Sellerie und Zwiebel hacken und in Öl weich dünsten.",
+          "Abgespülte Linsen, Passata und Brühe zugeben.",
+          "30–35 Minuten oder nach Packungsangabe sanft kochen, bei Bedarf Wasser ergänzen.",
+          "Am Ende salzen."
+        ]
+      },
+      "Vellutata di zucca": {
+        "name": "Kürbiscremesuppe",
+        "description": "Samtige Suppe aus Kürbis und Kartoffeln.",
+        "instructions": [
+          "Zwiebel in Öl weich dünsten.",
+          "Gewürfelten Kürbis und Kartoffel zugeben und mit Brühe bedecken.",
+          "Weich kochen und glatt pürieren.",
+          "Mit Brühe verdünnen und mit Kernen oder Croûtons servieren."
+        ]
+      },
+      "Pasta con broccoli e acciughe": {
+        "name": "Pasta mit Brokkoli und Sardellen",
+        "description": "Pasta mit Brokkoli, Sardellen, Knoblauch und Olivenöl.",
+        "instructions": [
+          "Brokkoli in Röschen teilen und im Nudelwasser garen; Pasta im selben Topf hinzufügen.",
+          "Sardellen mit Öl und Knoblauch in einer Pfanne schmelzen.",
+          "Pasta und Brokkoli abgießen, Kochwasser aufbewahren und alles vermengen."
+        ]
+      },
+      "Orzotto ai funghi": {
+        "name": "Graupenrisotto mit Pilzen",
+        "description": "Cremige Perlgraupen mit Pilzen.",
+        "instructions": [
+          "Zwiebel und geschnittene Pilze anbraten.",
+          "Abgespülte Graupen zugeben und kurz rösten.",
+          "Heiße Brühe nach und nach zugeben und 25–30 Minuten unter häufigem Rühren garen.",
+          "Mit Parmesan abschließen."
+        ]
+      },
+      "Uova al purgatorio": {
+        "name": "Eier in Fegefeuer-Tomatensauce",
+        "description": "Eier in würziger Tomatensauce pochiert.",
+        "instructions": [
+          "Öl mit Knoblauch und Chili erhitzen.",
+          "Passata, Salz und etwas Wasser hinzufügen und 8 Minuten kochen.",
+          "Vier Mulden formen, Eier hineinschlagen und abdecken.",
+          "Garen, bis das Eiweiß fest ist, und mit Brot servieren."
+        ]
+      },
+      "Patate al forno": {
+        "name": "Ofenkartoffeln",
+        "description": "Goldbraune Kartoffelspalten aus dem Ofen.",
+        "instructions": [
+          "Kartoffeln in gleichmäßige Spalten schneiden und trocknen.",
+          "Mit Öl, Rosmarin, Knoblauch und Salz mischen.",
+          "Einlagig verteilen und bei 200 °C 35–45 Minuten backen, nach der Hälfte wenden."
+        ]
+      },
+      "Caponata siciliana": {
+        "name": "Sizilianische Caponata",
+        "description": "Süß-saures sizilianisches Gemüsegericht mit Auberginen.",
+        "instructions": [
+          "Auberginen würfeln und anbraten.",
+          "Sellerie in Stücken blanchieren und mit Tomate, Oliven und Kapern zugeben.",
+          "Garen, bis das Gemüse weich ist.",
+          "Essig und Zucker zugeben, verdampfen lassen und vor dem Servieren abkühlen."
+        ]
+      },
+      "Spinaci saltati all'aglio": {
+        "name": "Spinat mit Knoblauch",
+        "description": "Schnell gebratener Spinat mit Knoblauch.",
+        "instructions": [
+          "Öl mit einer Knoblauchzehe erhitzen.",
+          "Spinat portionsweise zugeben und zusammenfallen lassen, dabei Flüssigkeit verdampfen lassen.",
+          "Knoblauch entfernen und nach Geschmack mit Salz und Zitrone würzen."
+        ]
+      },
+      "Ceci croccanti al forno": {
+        "name": "Knusprige Ofenkichererbsen",
+        "description": "Knusprige Kichererbsen mit Paprika und Rosmarin.",
+        "instructions": [
+          "Kichererbsen abspülen und sehr gut trocknen.",
+          "Mit Öl, Paprika, Rosmarin und Salz mischen.",
+          "Auf einem Blech bei 200 °C 25–30 Minuten rösten und zwischendurch wenden."
+        ]
+      },
+      "Hummus fatto in casa": {
+        "name": "Hausgemachter Hummus",
+        "description": "Cremiger Kichererbsenaufstrich mit Tahini und Zitrone.",
+        "instructions": [
+          "Kichererbsen, Tahini, Zitronensaft, Knoblauch und Öl pürieren.",
+          "Nach und nach kaltes Wasser zugeben, bis die gewünschte Konsistenz erreicht ist.",
+          "Abschmecken und mit Rohkost oder Brot servieren."
+        ]
+      },
+      "Porridge mela e cannella": {
+        "name": "Apfel-Zimt-Porridge",
+        "description": "Warmer Haferbrei mit Apfel und Zimt.",
+        "instructions": [
+          "Haferflocken und Milch unter Rühren 5–8 Minuten in einem kleinen Topf erhitzen.",
+          "In den letzten Minuten gewürfelten Apfel zugeben.",
+          "Mit Zimt und Honig abschließen."
+        ]
+      },
+      "Pancake alla banana": {
+        "name": "Bananen-Pfannkuchen",
+        "description": "Lockere Pfannkuchen mit Banane und Ei.",
+        "instructions": [
+          "Banane zerdrücken und mit Eiern und Milch vermischen.",
+          "Mehl und Backpulver zu einem Teig einrühren.",
+          "Kleine Portionen in einer leicht gefetteten Pfanne etwa 2 Minuten pro Seite backen."
+        ]
+      },
+      "Yogurt con frutta e granola": {
+        "name": "Joghurt mit Obst und Granola",
+        "description": "Schnelles Frühstück mit Joghurt, Obst und Granola.",
+        "instructions": [
+          "Joghurt in eine Schüssel geben und geschnittenes Obst sowie Granola ergänzen.",
+          "Mit etwas Honig abrunden und sofort servieren."
+        ]
+      },
+      "Toast prosciutto e formaggio": {
+        "name": "Toast mit Schinken und Käse",
+        "description": "Geröstetes Sandwich mit Schinken und geschmolzenem Käse.",
+        "instructions": [
+          "Brot mit Schinken und Käse belegen.",
+          "In Pfanne, Sandwichmaker oder Ofen rösten, bis das Brot goldbraun und der Käse geschmolzen ist.",
+          "Halbieren und heiß servieren."
+        ]
+      },
+      "Pasta con zucchine e menta": {
+        "name": "Pasta mit Zucchini und Minze",
+        "description": "Leichte Pasta mit Zucchini, Minze und Parmesan.",
+        "instructions": [
+          "Zucchini in Halbmonde schneiden und in Öl goldbraun braten.",
+          "Pasta kochen und mit etwas Kochwasser in die Pfanne geben.",
+          "Herd ausschalten und gehackte Minze sowie Parmesan hinzufügen."
+        ]
+      },
+      "Ribollita semplificata": {
+        "name": "Vereinfachte Ribollita",
+        "description": "Toskanische Suppe mit Brot, Bohnen und Schwarzkohl.",
+        "instructions": [
+          "Gehackte Zwiebel und Karotte anschwitzen.",
+          "Schwarzkohlstreifen, Bohnen und Brühe hinzufügen und garen, bis der Kohl weich ist.",
+          "Brotstücke einrühren und eindicken lassen.",
+          "Am nächsten Tag aufgewärmt schmeckt sie noch besser."
+        ]
+      },
+      "Risotto agli asparagi": {
+        "name": "Spargelrisotto",
+        "description": "Cremiges Risotto mit frischem Spargel.",
+        "instructions": [
+          "Spargel putzen, Stiele in Scheiben schneiden und Spitzen beiseitelegen.",
+          "Zwiebel weich dünsten, Stiele und Reis zugeben und rösten.",
+          "Brühe nach und nach angießen, die Spitzen nach der Hälfte der Garzeit zugeben.",
+          "Mit Butter und Parmesan abschließen."
+        ]
+      },
+      "Tortino di patate e formaggio": {
+        "name": "Kartoffel-Käse-Auflauf",
+        "description": "Goldener Kartoffelauflauf mit geschmolzener Mozzarella-Füllung.",
+        "instructions": [
+          "Kartoffeln kochen, stampfen und leicht abkühlen lassen.",
+          "Mit Eiern, Parmesan, Salz und Pfeffer mischen.",
+          "Die Hälfte in eine geölte Form geben, Mozzarella-Würfel darauf verteilen und mit dem Rest bedecken.",
+          "Mit Semmelbröseln bestreuen und bei 190 °C 25–30 Minuten backen."
+        ]
+      },
+      "Burger di lenticchie": {
+        "name": "Linsenburger",
+        "description": "Vegetarische Burger aus Linsen, Karotte und Haferflocken.",
+        "instructions": [
+          "Linsen zerdrücken und mit geriebener Karotte, Haferflocken, Ei und Paprika mischen.",
+          "10 Minuten ruhen lassen und Burger formen.",
+          "In wenig Öl 5–6 Minuten je Seite braten, bis sie goldbraun und fest sind."
+        ]
+      },
+      "Focaccia veloce in padella": {
+        "name": "Schnelle Pfannen-Focaccia",
+        "description": "Weiches Fladenbrot aus der Pfanne.",
+        "instructions": [
+          "Mehl, Joghurt, Backpulver, Öl und Salz zu einem weichen Teig mischen.",
+          "In zwei Scheiben teilen und ausrollen.",
+          "In einer abgedeckten Pfanne bei mittlerer bis niedriger Hitze 5–6 Minuten pro Seite backen und prüfen, ob die Mitte gar ist."
+        ]
+      },
+      "Tiramisù in bicchiere": {
+        "name": "Tiramisu im Glas",
+        "description": "Einzelportion Tiramisu mit Kaffee, Mascarpone und Kakao.",
+        "instructions": [
+          "Kaffee zubereiten und abkühlen lassen.",
+          "Eier trennen, Eigelbe mit Zucker schlagen und Mascarpone einrühren.",
+          "Eiweiß steif schlagen und vorsichtig unterheben.",
+          "Kurz in Kaffee getauchte Löffelbiskuits und Creme in Gläser schichten, Kakao darüberstäuben und mindestens 3 Stunden kühlen.",
+          "Bei Bedarf pasteurisierte Eier verwenden."
+        ]
+      },
+      "Torta di mele": {
+        "name": "Apfelkuchen",
+        "description": "Hausgemachter Apfelkuchen mit lockerer Krume.",
+        "instructions": [
+          "Eier und Zucker schlagen, lauwarme geschmolzene Butter und Milch einrühren.",
+          "Gesiebtes Mehl und Backpulver unterheben.",
+          "Die Hälfte der Apfelscheiben einarbeiten, in eine Form füllen und mit den übrigen Scheiben dekorieren.",
+          "Bei 180 °C etwa 40 Minuten backen und mit einem Holzstäbchen prüfen."
+        ]
+      },
+      "Budino al cacao": {
+        "name": "Kakaopudding",
+        "description": "Cremiger Schokoladenpudding aus Kakao und Milch.",
+        "instructions": [
+          "Kakao, Zucker und Maisstärke mit etwas kalter Milch glatt rühren.",
+          "Restliche Milch zugeben und unter Rühren bei mittlerer Hitze eindicken.",
+          "In Förmchen füllen, abkühlen und kalt stellen."
+        ]
+      },
+      "Muffin allo yogurt": {
+        "name": "Joghurt-Muffins",
+        "description": "Lockere Muffins mit Joghurt.",
+        "instructions": [
+          "Eier und Zucker verrühren, dann Joghurt und Öl zugeben.",
+          "Mehl und Backpulver kurz unterheben.",
+          "Förmchen zu etwa zwei Dritteln füllen und bei 180 °C 18–22 Minuten backen."
+        ]
+      },
+      "Smoothie banana e fragole": {
+        "name": "Bananen-Erdbeer-Smoothie",
+        "description": "Fruchtiger Smoothie mit Banane, Erdbeeren, Joghurt und Milch.",
+        "instructions": [
+          "Erdbeeren waschen und Stiele entfernen.",
+          "Mit Banane, Joghurt und Milch glatt mixen.",
+          "Für eine dünnere Konsistenz mehr Milch zugeben und sofort servieren."
+        ]
+      },
+      "Fagioli all'uccelletto": {
+        "name": "Toskanische Bohnen mit Salbei",
+        "description": "Cannellini-Bohnen in Tomate, Knoblauch und Salbei geschmort.",
+        "instructions": [
+          "Öl mit Knoblauch und Salbei in einem Topf erhitzen.",
+          "Abgetropfte Bohnen, Passata und etwas Wasser zugeben.",
+          "15–20 Minuten sanft köcheln, salzen und mit geröstetem Brot servieren."
+        ]
+      },
+      "Peperoni ripieni di riso": {
+        "name": "Mit Reis gefüllte Paprika",
+        "description": "Paprika gefüllt mit Reis, Tomate und Parmesan.",
+        "instructions": [
+          "Paprikadeckel abschneiden und Kerne sowie Rippen entfernen.",
+          "Reis halb so lange wie auf der Packung angegeben kochen und mit Passata, Parmesan und Petersilie vermischen.",
+          "Paprika füllen und Deckel aufsetzen.",
+          "Mit etwas Wasser bei 190 °C 35–40 Minuten backen."
+        ]
+      },
+      "Pasta con crema di piselli": {
+        "name": "Pasta mit Erbsencreme",
+        "description": "Pasta mit cremiger Erbsensauce.",
+        "instructions": [
+          "Zwiebel weich dünsten, Erbsen und Brühe zugeben und weich kochen.",
+          "Die Hälfte mit Parmesan und etwas Kochwasser pürieren.",
+          "Pasta kochen, mit der Creme mischen und ganze Erbsen unterheben."
+        ]
+      },
+      "Insalata di farro mediterranea": {
+        "name": "Mediterraner Dinkelsalat",
+        "description": "Dinkelsalat mit Tomate, Gurke, Feta und Oliven.",
+        "instructions": [
+          "Dinkel nach Packungsangabe kochen, abgießen und abkühlen.",
+          "Tomate, Gurke und Feta würfeln.",
+          "Mit Oliven und Dinkel mischen, mit Öl, Zitrone und Oregano würzen und ziehen lassen."
+        ]
+      },
+      "Cavolfiore gratinato": {
+        "name": "Blumenkohlgratin",
+        "description": "Blumenkohl mit Béchamel und goldener Parmesan-Kruste.",
+        "instructions": [
+          "Blumenkohl in Röschen teilen und 5–7 Minuten blanchieren.",
+          "In eine Auflaufform geben und mit Béchamel, Parmesan und Semmelbröseln bedecken.",
+          "Bei 200 °C 15–20 Minuten goldbraun gratinieren."
+        ]
+      },
+      "Pasta con crema di peperoni": {
+        "name": "Pasta mit cremiger Paprikasauce",
+        "description": "Pasta mit glatter Paprika-Ricotta-Parmesan-Sauce.",
+        "instructions": [
+          "Paprikastücke mit Knoblauch und wenig Öl weich garen.",
+          "Mit Ricotta und Parmesan pürieren und bei Bedarf Kochwasser zugeben.",
+          "Pasta kochen, mit der Sauce mischen und kurz erwärmen."
+        ]
+      },
+      "Pane dorato alla francese": {
+        "name": "Arme Ritter",
+        "description": "Goldbraunes French Toast für ein süßes Frühstück.",
+        "instructions": [
+          "Eier und Milch in einem tiefen Teller verquirlen.",
+          "Brotscheiben kurz von beiden Seiten eintauchen.",
+          "In Butter je Seite 2–3 Minuten goldbraun braten.",
+          "Für eine süße Variante Zimt und etwas Zucker ergänzen."
+        ]
+      },
+      "Pasta alla puttanesca": {
+        "name": "Pasta alla puttanesca",
+        "description": "Pasta mit Sardellen, Kapern, Oliven und Tomate.",
+        "instructions": [
+          "Sardellen mit Knoblauch in heißem Öl zergehen lassen.",
+          "Gehackte Kapern und Oliven sowie Passata zugeben und 15 Minuten kochen.",
+          "Pasta kochen und mit der Sauce mischen; wegen der salzigen Zutaten vorsichtig salzen."
+        ]
+      },
+      "Crostata alla marmellata": {
+        "name": "Marmeladentarte",
+        "description": "Klassische Mürbeteigtarte mit Marmelade.",
+        "instructions": [
+          "Kalte Butterwürfel mit Mehl zu Streuseln verreiben.",
+          "Zucker und Ei zugeben und rasch verkneten.",
+          "30 Minuten kalt stellen.",
+          "Zwei Drittel des Teigs in eine Form drücken, Marmelade verstreichen, mit Streifen verzieren und bei 180 °C 30–35 Minuten backen."
+        ]
+      },
+      "Melanzane ripiene": {
+        "name": "Gefüllte Auberginen",
+        "description": "Auberginen aus dem Ofen mit Tomate, Semmelbröseln und Parmesan.",
+        "instructions": [
+          "Auberginen halbieren und das Fruchtfleisch einschneiden.",
+          "Bei 190 °C 15 Minuten backen und das Fruchtfleisch vorsichtig herauslösen.",
+          "Hacken und mit Passata, Semmelbröseln, Parmesan, Knoblauch und Petersilie mischen.",
+          "Die Schalen füllen und weitere 15–20 Minuten backen."
+        ]
+      }
+    },
+    "pt": {
+      "Pasta al pomodoro": {
+        "name": "Massa com tomate",
+        "description": "Um clássico italiano simples com tomate e manjericão.",
+        "instructions": [
+          "Aqueça o azeite com o alho.",
+          "Junte a polpa de tomate e cozinhe em lume brando durante 15 minutos.",
+          "Coza a massa al dente em água com sal, escorra e envolva no molho.",
+          "Finalize com manjericão fresco."
+        ]
+      },
+      "Spaghetti aglio, olio e peperoncino": {
+        "name": "Esparguete com alho, azeite e malagueta",
+        "description": "Esparguete com alho, azeite e malagueta.",
+        "instructions": [
+          "Coza o esparguete al dente.",
+          "Aqueça suavemente o azeite com o alho laminado e a malagueta, sem deixar queimar.",
+          "Junte a massa e um pouco da água da cozedura e envolva bem.",
+          "Finalize com salsa picada."
+        ]
+      },
+      "Risotto alla zucca": {
+        "name": "Risoto de abóbora",
+        "description": "Risoto cremoso com abóbora doce.",
+        "instructions": [
+          "Pique a cebola e amoleça-a com um pouco de manteiga.",
+          "Junte a abóbora em cubos e cozinhe durante 8 minutos.",
+          "Adicione o arroz e toste-o; depois junte o caldo quente gradualmente, mexendo.",
+          "Desligue o lume e envolva a manteiga e o parmesão."
+        ]
+      },
+      "Pasta e ceci": {
+        "name": "Massa com grão-de-bico",
+        "description": "Sopa rústica de massa e grão-de-bico.",
+        "instructions": [
+          "Aqueça o azeite com alho e alecrim.",
+          "Junte o grão e a polpa de tomate com um copo de água e deixe fervilhar.",
+          "Esmague parte do grão para tornar a sopa cremosa.",
+          "Adicione a massa e cozinhe, juntando água quente se necessário."
+        ]
+      },
+      "Pasta al pesto": {
+        "name": "Massa com pesto",
+        "description": "Massa com pesto fresco de manjericão.",
+        "instructions": [
+          "Triture manjericão, pinhões, alho, parmesão e azeite até obter pesto; junte uma colher de água fria se necessário.",
+          "Coza a massa.",
+          "Fora do lume, misture a massa com o pesto, ajustando com água da cozedura."
+        ]
+      },
+      "Penne all'arrabbiata": {
+        "name": "Penne all’arrabbiata",
+        "description": "Penne picantes com molho de tomate.",
+        "instructions": [
+          "Aloure o alho e a malagueta no azeite.",
+          "Junte a polpa de tomate e cozinhe 15 minutos.",
+          "Coza os penne al dente, junte ao molho e envolva.",
+          "Finalize com salsa picada."
+        ]
+      },
+      "Pasta tonno e limone": {
+        "name": "Massa com atum e limão",
+        "description": "Massa com atum, limão e salsa.",
+        "instructions": [
+          "Coza a massa.",
+          "Escorra o atum e aqueça-o brevemente com azeite e raspa de limão.",
+          "Junte a massa e um pouco da água da cozedura, sumo de limão a gosto e salsa."
+        ]
+      },
+      "Pasta ricotta e spinaci": {
+        "name": "Massa com ricota e espinafres",
+        "description": "Massa cremosa de ricota com espinafres.",
+        "instructions": [
+          "Cozinhe os espinafres numa frigideira com um pouco de água e pique-os.",
+          "Misture ricota, parmesão, noz-moscada e uma concha de água da cozedura.",
+          "Junte a massa e os espinafres ao creme e misture fora do lume."
+        ]
+      },
+      "Gnocchi al burro e salvia": {
+        "name": "Nhoques de batata com manteiga e salva",
+        "description": "Nhoques macios com manteiga aromatizada com salva.",
+        "instructions": [
+          "Coza os nhoques até subirem à superfície.",
+          "Entretanto, derreta a manteiga com a salva.",
+          "Retire os nhoques com uma escumadeira e salteie-os na manteiga.",
+          "Sirva com parmesão."
+        ]
+      },
+      "Pasta alla carbonara": {
+        "name": "Esparguete à carbonara",
+        "description": "Esparguete romano com ovo, pecorino e guanciale.",
+        "instructions": [
+          "Doure o guanciale cortado em tiras.",
+          "Bata os ovos com pecorino e pimenta-preta.",
+          "Coza o esparguete e reserve água da cozedura.",
+          "Fora do lume, misture a massa com o guanciale e incorpore os ovos com um pouco de água quente até ficar cremoso, sem os cozinhar demasiado."
+        ]
+      },
+      "Pasta alla norma": {
+        "name": "Massa alla Norma",
+        "description": "Massa siciliana com beringela, tomate e ricota salgada.",
+        "instructions": [
+          "Corte a beringela em cubos e doure-a em azeite.",
+          "Cozinhe a polpa de tomate com manjericão durante 15 minutos.",
+          "Coza a massa e misture-a com o molho e a beringela.",
+          "Rale ricota salgada por cima."
+        ]
+      },
+      "Lasagne vegetariane": {
+        "name": "Lasanha vegetariana",
+        "description": "Lasanha em camadas com legumes e molho béchamel.",
+        "instructions": [
+          "Corte os legumes em cubos e salteie-os.",
+          "Espalhe uma camada fina de tomate e béchamel num tabuleiro.",
+          "Alterne folhas de lasanha, legumes, molho, béchamel e mozzarella.",
+          "Finalize com parmesão e leve ao forno a 180 °C durante 30–35 minutos."
+        ]
+      },
+      "Minestrone di verdure": {
+        "name": "Minestrone de legumes",
+        "description": "Sopa substancial de legumes da época e feijão.",
+        "instructions": [
+          "Corte os legumes em cubos.",
+          "Amoleça a cebola em azeite e junte os legumes e o caldo.",
+          "Cozinhe em lume brando durante cerca de 30 minutos.",
+          "Junte o feijão nos últimos 10 minutos e tempere com sal."
+        ]
+      },
+      "Frittata di zucchine": {
+        "name": "Frittata de curgete",
+        "description": "Omelete italiana de curgete e parmesão.",
+        "instructions": [
+          "Rale ou corte a curgete em fatias finas e salteie-a.",
+          "Bata os ovos com parmesão e pimenta e verta sobre a curgete.",
+          "Tape e cozinhe em lume baixo.",
+          "Vire com a ajuda de um prato e termine a cozedura."
+        ]
+      },
+      "Polpette al sugo": {
+        "name": "Almôndegas em molho de tomate",
+        "description": "Almôndegas tenras estufadas em tomate.",
+        "instructions": [
+          "Misture a carne, o ovo, parmesão, pão ralado e leite; forme bolas firmes.",
+          "Aloure-as ligeiramente numa frigideira.",
+          "Junte polpa de tomate e um pouco de água, tape e cozinhe em lume brando durante 25 minutos."
+        ]
+      },
+      "Pollo al limone": {
+        "name": "Frango com limão",
+        "description": "Tiras rápidas de frango com molho fresco de limão.",
+        "instructions": [
+          "Corte o frango em tiras, passe ligeiramente por farinha e aloure em azeite.",
+          "Junte caldo e sumo de limão.",
+          "Cozinhe até o frango estar bem passado e o molho engrossar.",
+          "Tempere com sal e sirva de imediato."
+        ]
+      },
+      "Salmone al forno": {
+        "name": "Salmão no forno",
+        "description": "Salmão assado com limão e salsa.",
+        "instructions": [
+          "Coloque o salmão num tabuleiro com papel vegetal.",
+          "Tempere com azeite, limão, salsa e pimenta.",
+          "Leve ao forno a 190 °C durante 12–18 minutos, conforme a espessura, até estar bem cozinhado."
+        ]
+      },
+      "Pollo alla cacciatora": {
+        "name": "Frango à caçadora",
+        "description": "Frango estufado com tomate, azeitonas e ervas aromáticas.",
+        "instructions": [
+          "Aloure os pedaços de frango numa caçarola.",
+          "Junte cebola, verta vinho branco e deixe evaporar.",
+          "Adicione polpa de tomate, azeitonas, alecrim e um pouco de água.",
+          "Tape e cozinhe em lume brando durante 35–40 minutos, confirmando que o frango está cozinhado."
+        ]
+      },
+      "Parmigiana di melanzane": {
+        "name": "Beringela à parmegiana",
+        "description": "Camadas de beringela, tomate, mozzarella e parmesão no forno.",
+        "instructions": [
+          "Corte as beringelas às rodelas e grelhe-as ou leve-as ao forno com pouco azeite.",
+          "Prepare um molho rápido de tomate.",
+          "Num tabuleiro alterne molho, beringela, mozzarella, manjericão e parmesão.",
+          "Leve ao forno a 190 °C durante cerca de 35–40 minutos."
+        ]
+      },
+      "Insalata caprese": {
+        "name": "Salada caprese",
+        "description": "Salada fresca de tomate, mozzarella e manjericão.",
+        "instructions": [
+          "Corte tomate e mozzarella às rodelas e disponha alternadamente num prato.",
+          "Junte folhas de manjericão.",
+          "Tempere com azeite, sal e pimenta imediatamente antes de servir."
+        ]
+      },
+      "Insalata di ceci e tonno": {
+        "name": "Salada de grão e atum",
+        "description": "Salada rica em proteína com grão, atum e tomate.",
+        "instructions": [
+          "Passe o grão por água e escorra-o.",
+          "Misture com atum escorrido, tomate em cubos e cebola finamente cortada.",
+          "Tempere com azeite, sumo de limão, sal e pimenta.",
+          "Deixe repousar 5 minutos."
+        ]
+      },
+      "Panzanella": {
+        "name": "Panzanella",
+        "description": "Salada toscana de pão, tomate, pepino e cebola.",
+        "instructions": [
+          "Humedeça brevemente o pão com água e um pouco de vinagre, esprema e parta em pedaços.",
+          "Junte tomate, pepino e cebola cortados.",
+          "Tempere com azeite, vinagre, manjericão, sal e pimenta.",
+          "Deixe repousar num local fresco."
+        ]
+      },
+      "Bruschette al pomodoro": {
+        "name": "Bruschettas de tomate",
+        "description": "Pão tostado coberto com tomate temperado.",
+        "instructions": [
+          "Toste o pão numa chapa ou sob o grelhador.",
+          "Corte o tomate em cubos e tempere com azeite, manjericão e sal.",
+          "Esfregue alho no pão quente e distribua o tomate por cima."
+        ]
+      },
+      "Crostini ricotta e miele": {
+        "name": "Crostini de ricota, mel e nozes",
+        "description": "Tostas crocantes com ricota, mel e nozes.",
+        "instructions": [
+          "Toste o pão.",
+          "Amasse a ricota com um garfo e barre as fatias.",
+          "Finalize com mel e nozes picadas e sirva de imediato."
+        ]
+      },
+      "Piadina prosciutto e squacquerone": {
+        "name": "Piadina com prosciutto e squacquerone",
+        "description": "Pão achatado italiano com queijo cremoso e presunto curado.",
+        "instructions": [
+          "Aqueça as piadine numa frigideira antiaderente durante um minuto de cada lado.",
+          "Recheie com squacquerone, prosciutto e rúcula.",
+          "Dobre ao meio e sirva quente."
+        ]
+      },
+      "Cous cous alle verdure": {
+        "name": "Cuscuz com legumes",
+        "description": "Cuscuz solto com legumes salteados.",
+        "instructions": [
+          "Corte os legumes em cubos e salteie em azeite até ficarem macios mas firmes.",
+          "Verta caldo a ferver sobre o cuscuz, tape 5 minutos e solte com um garfo.",
+          "Junte os legumes e tempere com especiarias."
+        ]
+      },
+      "Riso freddo mediterraneo": {
+        "name": "Salada mediterrânica de arroz",
+        "description": "Arroz frio com tomate, mozzarella e manjericão.",
+        "instructions": [
+          "Coza o arroz em água com sal, escorra e arrefeça rapidamente.",
+          "Corte tomate e mozzarella em cubos.",
+          "Misture tudo, tempere com azeite, manjericão e pimenta e leve ao frio antes de servir."
+        ]
+      },
+      "Farinata di ceci": {
+        "name": "Farinata de grão-de-bico",
+        "description": "Pão fino da Ligúria feito com farinha de grão.",
+        "instructions": [
+          "Misture a farinha de grão com água sem grumos e deixe repousar pelo menos 30 minutos, se possível.",
+          "Retire a espuma e incorpore azeite e sal.",
+          "Verta num tabuleiro largo muito quente, junte alecrim e leve ao forno a 220 °C até dourar."
+        ]
+      },
+      "Pasta fredda con pesto e pomodorini": {
+        "name": "Massa fria com pesto e tomate-cereja",
+        "description": "Salada fria de massa com pesto e mozzarella.",
+        "instructions": [
+          "Coza a massa al dente, escorra e arrefeça com um pouco de água fria.",
+          "Misture com pesto, tomate-cereja cortado e mozzarella em cubos.",
+          "Leve ao frigorífico e junte um fio de azeite antes de servir."
+        ]
+      },
+      "Zuppa di lenticchie": {
+        "name": "Sopa de lentilhas",
+        "description": "Sopa reconfortante de lentilhas, legumes e tomate.",
+        "instructions": [
+          "Pique cenoura, aipo e cebola e amoleça em azeite.",
+          "Junte lentilhas lavadas, polpa de tomate e caldo.",
+          "Cozinhe em lume brando durante 30–35 minutos, ou conforme a embalagem, acrescentando água se necessário.",
+          "Tempere com sal no fim."
+        ]
+      },
+      "Vellutata di zucca": {
+        "name": "Creme de abóbora",
+        "description": "Creme suave de abóbora e batata.",
+        "instructions": [
+          "Amoleça a cebola em azeite.",
+          "Junte abóbora e batata em cubos e cubra com caldo.",
+          "Cozinhe até ficarem macias e triture até obter um creme.",
+          "Ajuste com caldo e sirva com sementes ou croutons."
+        ]
+      },
+      "Pasta con broccoli e acciughe": {
+        "name": "Massa com brócolos e anchovas",
+        "description": "Massa com brócolos, anchovas, alho e azeite.",
+        "instructions": [
+          "Separe os brócolos em floretes e coza-os na água da massa; junte a massa ao mesmo tacho.",
+          "Derreta as anchovas numa frigideira com azeite e alho.",
+          "Escorra a massa e os brócolos, reserve água e envolva tudo."
+        ]
+      },
+      "Orzotto ai funghi": {
+        "name": "Orzotto de cogumelos",
+        "description": "Cevada pérola cremosa com cogumelos.",
+        "instructions": [
+          "Salteie cebola e cogumelos laminados.",
+          "Junte a cevada lavada e toste-a brevemente.",
+          "Adicione caldo quente aos poucos, mexendo frequentemente durante 25–30 minutos.",
+          "Finalize com parmesão."
+        ]
+      },
+      "Uova al purgatorio": {
+        "name": "Ovos no purgatório",
+        "description": "Ovos escalfados em molho de tomate picante.",
+        "instructions": [
+          "Aqueça azeite com alho e malagueta.",
+          "Junte polpa de tomate, sal e um pouco de água e cozinhe 8 minutos.",
+          "Faça quatro cavidades, parta os ovos e tape.",
+          "Cozinhe até as claras firmarem e sirva com pão."
+        ]
+      },
+      "Patate al forno": {
+        "name": "Batatas assadas no forno",
+        "description": "Gomos de batata dourados no forno.",
+        "instructions": [
+          "Corte as batatas em gomos regulares e seque-os.",
+          "Misture com azeite, alecrim, alho e sal.",
+          "Disponha numa só camada e asse a 200 °C durante 35–45 minutos, virando a meio."
+        ]
+      },
+      "Caponata siciliana": {
+        "name": "Caponata siciliana",
+        "description": "Preparação siciliana agridoce de beringela e legumes.",
+        "instructions": [
+          "Corte as beringelas em cubos e aloure-as.",
+          "Escalde o aipo em pedaços e junte-o com tomate, azeitonas e alcaparras.",
+          "Cozinhe até os legumes ficarem macios.",
+          "Junte vinagre e açúcar, deixe evaporar e arrefecer antes de servir."
+        ]
+      },
+      "Spinaci saltati all'aglio": {
+        "name": "Espinafres salteados com alho",
+        "description": "Espinafres salteados rapidamente com alho.",
+        "instructions": [
+          "Aqueça o azeite com um dente de alho.",
+          "Junte os espinafres em várias porções e cozinhe até murcharem, deixando evaporar o líquido.",
+          "Retire o alho e tempere com sal e limão a gosto."
+        ]
+      },
+      "Ceci croccanti al forno": {
+        "name": "Grão crocante no forno",
+        "description": "Grão crocante com paprika e alecrim.",
+        "instructions": [
+          "Passe o grão por água e seque-o muito bem.",
+          "Misture com azeite, paprika, alecrim e sal.",
+          "Espalhe num tabuleiro e asse a 200 °C durante 25–30 minutos, mexendo a meio, até ficar crocante."
+        ]
+      },
+      "Hummus fatto in casa": {
+        "name": "Húmus caseiro",
+        "description": "Creme de grão com tahini e limão.",
+        "instructions": [
+          "Triture grão, tahini, sumo de limão, alho e azeite.",
+          "Adicione água fria aos poucos até obter a textura desejada.",
+          "Prove, ajuste o sal e sirva com legumes crus ou pão."
+        ]
+      },
+      "Porridge mela e cannella": {
+        "name": "Papas de aveia com maçã e canela",
+        "description": "Papas quentes de aveia, maçã e canela.",
+        "instructions": [
+          "Aqueça a aveia com leite num tacho pequeno, mexendo durante 5–8 minutos.",
+          "Junte a maçã em cubos nos últimos minutos.",
+          "Finalize com canela e mel."
+        ]
+      },
+      "Pancake alla banana": {
+        "name": "Panquecas de banana",
+        "description": "Panquecas macias de banana e ovo.",
+        "instructions": [
+          "Esmague a banana e misture com ovos e leite.",
+          "Junte farinha e fermento até obter uma massa.",
+          "Cozinhe pequenas porções numa frigideira ligeiramente untada durante cerca de 2 minutos de cada lado."
+        ]
+      },
+      "Yogurt con frutta e granola": {
+        "name": "Iogurte com fruta e granola",
+        "description": "Pequeno-almoço rápido com iogurte, fruta e granola.",
+        "instructions": [
+          "Coloque o iogurte numa taça e junte fruta cortada e granola.",
+          "Finalize com um fio de mel e sirva de imediato."
+        ]
+      },
+      "Toast prosciutto e formaggio": {
+        "name": "Tosta de fiambre e queijo",
+        "description": "Sanduíche tostada com fiambre e queijo derretido.",
+        "instructions": [
+          "Recheie o pão com fiambre e queijo.",
+          "Toste na frigideira, tostadeira ou forno até dourar e o queijo derreter.",
+          "Corte ao meio e sirva quente."
+        ]
+      },
+      "Pasta con zucchine e menta": {
+        "name": "Massa com curgete e hortelã",
+        "description": "Massa leve com curgete, hortelã e parmesão.",
+        "instructions": [
+          "Corte a curgete em meias-luas e salteie em azeite até dourar.",
+          "Coza a massa e envolva-a na frigideira com um pouco de água da cozedura.",
+          "Desligue o lume e junte hortelã picada e parmesão."
+        ]
+      },
+      "Ribollita semplificata": {
+        "name": "Ribollita simplificada",
+        "description": "Sopa toscana de pão, feijão e couve preta.",
+        "instructions": [
+          "Refogue cebola e cenoura picadas.",
+          "Junte couve preta em tiras, feijão e caldo e cozinhe até a couve ficar tenra.",
+          "Adicione pedaços de pão e deixe engrossar.",
+          "Fica ainda melhor reaquecida no dia seguinte."
+        ]
+      },
+      "Risotto agli asparagi": {
+        "name": "Risoto de espargos",
+        "description": "Risoto cremoso com espargos frescos.",
+        "instructions": [
+          "Limpe os espargos, corte os talos em rodelas e reserve as pontas.",
+          "Amoleça a cebola, junte os talos e o arroz e toste.",
+          "Adicione caldo aos poucos e junte as pontas a meio da cozedura.",
+          "Finalize com manteiga e parmesão."
+        ]
+      },
+      "Tortino di patate e formaggio": {
+        "name": "Empadão de batata e queijo",
+        "description": "Empadão dourado de batata com mozzarella derretida.",
+        "instructions": [
+          "Coza as batatas, esmague-as e deixe arrefecer um pouco.",
+          "Misture com ovos, parmesão, sal e pimenta.",
+          "Coloque metade num tabuleiro untado, junte mozzarella em cubos e cubra com o resto.",
+          "Polvilhe com pão ralado e asse a 190 °C durante 25–30 minutos."
+        ]
+      },
+      "Burger di lenticchie": {
+        "name": "Hambúrgueres de lentilhas",
+        "description": "Hambúrgueres vegetarianos de lentilhas, cenoura e aveia.",
+        "instructions": [
+          "Esmague as lentilhas e misture com cenoura ralada, aveia, ovo e paprika.",
+          "Deixe repousar 10 minutos e molde hambúrgueres.",
+          "Frite com pouco azeite durante 5–6 minutos de cada lado, até dourarem e ficarem firmes."
+        ]
+      },
+      "Focaccia veloce in padella": {
+        "name": "Focaccia rápida na frigideira",
+        "description": "Pão achatado macio cozinhado na frigideira.",
+        "instructions": [
+          "Misture farinha, iogurte, fermento, azeite e sal até obter uma massa macia.",
+          "Divida em dois discos e estenda.",
+          "Cozinhe numa frigideira tapada em lume médio-baixo 5–6 minutos de cada lado, verificando se o interior está cozido."
+        ]
+      },
+      "Tiramisù in bicchiere": {
+        "name": "Tiramisù no copo",
+        "description": "Tiramisù individual com café, mascarpone e cacau.",
+        "instructions": [
+          "Prepare o café e deixe arrefecer.",
+          "Separe os ovos, bata as gemas com açúcar e incorpore mascarpone.",
+          "Bata as claras em castelo e envolva delicadamente.",
+          "Alterne palitos de champanhe brevemente embebidos em café e creme nos copos, polvilhe cacau e leve ao frio pelo menos 3 horas.",
+          "Use ovos pasteurizados se necessário."
+        ]
+      },
+      "Torta di mele": {
+        "name": "Bolo de maçã",
+        "description": "Bolo caseiro de maçã com miolo macio.",
+        "instructions": [
+          "Bata os ovos com açúcar, junte manteiga derretida morna e leite.",
+          "Incorpore farinha e fermento peneirados.",
+          "Junte metade das maçãs laminadas, verta numa forma e decore com as restantes.",
+          "Leve ao forno a 180 °C durante cerca de 40 minutos e teste com um palito."
+        ]
+      },
+      "Budino al cacao": {
+        "name": "Pudim de cacau",
+        "description": "Pudim cremoso de chocolate com cacau e leite.",
+        "instructions": [
+          "Misture cacau, açúcar e amido de milho com um pouco de leite frio até ficar liso.",
+          "Junte o restante leite e cozinhe em lume médio, mexendo até engrossar.",
+          "Verta em formas, arrefeça e leve ao frigorífico."
+        ]
+      },
+      "Muffin allo yogurt": {
+        "name": "Queques de iogurte",
+        "description": "Queques fofos com iogurte.",
+        "instructions": [
+          "Misture ovos e açúcar, depois junte iogurte e azeite.",
+          "Incorpore farinha e fermento sem bater demasiado.",
+          "Encha as formas até dois terços e coza a 180 °C durante 18–22 minutos."
+        ]
+      },
+      "Smoothie banana e fragole": {
+        "name": "Batido de banana e morango",
+        "description": "Batido fresco de banana, morangos, iogurte e leite.",
+        "instructions": [
+          "Lave os morangos e retire os pés.",
+          "Triture com banana, iogurte e leite até ficar homogéneo.",
+          "Junte mais leite para uma bebida mais líquida e sirva de imediato."
+        ]
+      },
+      "Fagioli all'uccelletto": {
+        "name": "Feijão toscano com salva",
+        "description": "Feijão cannellini estufado com tomate, alho e salva.",
+        "instructions": [
+          "Aqueça azeite, alho e salva numa caçarola.",
+          "Junte o feijão escorrido, a polpa de tomate e um pouco de água.",
+          "Cozinhe em lume brando durante 15–20 minutos, tempere com sal e sirva com pão tostado."
+        ]
+      },
+      "Peperoni ripieni di riso": {
+        "name": "Pimentos recheados com arroz",
+        "description": "Pimentos recheados com arroz, tomate e parmesão.",
+        "instructions": [
+          "Corte a parte superior dos pimentos e retire sementes e nervuras.",
+          "Coza o arroz durante metade do tempo indicado e misture com polpa de tomate, parmesão e salsa.",
+          "Recheie os pimentos e volte a colocar as tampas.",
+          "Leve ao forno com um pouco de água a 190 °C durante 35–40 minutos."
+        ]
+      },
+      "Pasta con crema di piselli": {
+        "name": "Massa com creme de ervilhas",
+        "description": "Massa com molho cremoso de ervilhas.",
+        "instructions": [
+          "Amoleça a cebola, junte ervilhas e caldo e cozinhe até ficarem tenras.",
+          "Triture metade das ervilhas com parmesão e um pouco de água da cozedura.",
+          "Coza a massa, envolva no creme e junte as ervilhas inteiras."
+        ]
+      },
+      "Insalata di farro mediterranea": {
+        "name": "Salada mediterrânica de espelta",
+        "description": "Salada de espelta, tomate, pepino, feta e azeitonas.",
+        "instructions": [
+          "Coza a espelta conforme a embalagem, escorra e arrefeça.",
+          "Corte tomate, pepino e feta em cubos.",
+          "Misture com azeitonas e espelta, tempere com azeite, limão e orégãos e deixe repousar."
+        ]
+      },
+      "Cavolfiore gratinato": {
+        "name": "Couve-flor gratinada",
+        "description": "Couve-flor no forno com béchamel e crosta dourada de parmesão.",
+        "instructions": [
+          "Separe a couve-flor em floretes e escalde durante 5–7 minutos.",
+          "Coloque num tabuleiro e cubra com béchamel, parmesão e pão ralado.",
+          "Gratine a 200 °C durante 15–20 minutos até dourar."
+        ]
+      },
+      "Pasta con crema di peperoni": {
+        "name": "Massa com creme de pimentos",
+        "description": "Massa com molho suave de pimento, ricota e parmesão.",
+        "instructions": [
+          "Cozinhe pimentos cortados com alho e pouco azeite até ficarem macios.",
+          "Triture com ricota e parmesão, juntando água da cozedura se necessário.",
+          "Coza a massa, envolva no creme e aqueça brevemente."
+        ]
+      },
+      "Pane dorato alla francese": {
+        "name": "Rabanadas francesas",
+        "description": "Pão dourado à francesa para um pequeno-almoço doce.",
+        "instructions": [
+          "Bata ovos e leite num prato fundo.",
+          "Mergulhe rapidamente as fatias de pão dos dois lados.",
+          "Frite em manteiga durante 2–3 minutos de cada lado até dourarem.",
+          "Para uma versão doce, junte canela e um pouco de açúcar."
+        ]
+      },
+      "Pasta alla puttanesca": {
+        "name": "Massa alla puttanesca",
+        "description": "Massa com anchovas, alcaparras, azeitonas e tomate.",
+        "instructions": [
+          "Dissolva as anchovas em azeite quente com alho.",
+          "Junte alcaparras e azeitonas picadas, depois a polpa de tomate e cozinhe 15 minutos.",
+          "Coza a massa e envolva no molho, tendo cuidado com o sal porque os ingredientes já são salgados."
+        ]
+      },
+      "Crostata alla marmellata": {
+        "name": "Tarte de compota",
+        "description": "Tarte clássica de massa quebrada recheada com compota.",
+        "instructions": [
+          "Esfregue a manteiga fria em cubos com a farinha até obter migalhas.",
+          "Junte açúcar e ovo e amasse rapidamente.",
+          "Leve ao frigorífico durante 30 minutos.",
+          "Estenda dois terços da massa numa forma, espalhe a compota, decore com tiras e leve ao forno a 180 °C durante 30–35 minutos."
+        ]
+      },
+      "Melanzane ripiene": {
+        "name": "Beringelas recheadas",
+        "description": "Beringelas no forno recheadas com tomate, pão ralado e parmesão.",
+        "instructions": [
+          "Corte as beringelas ao meio e faça incisões na polpa.",
+          "Leve ao forno a 190 °C durante 15 minutos e retire cuidadosamente a polpa.",
+          "Pique-a e misture com polpa de tomate, pão ralado, parmesão, alho e salsa.",
+          "Recheie as cascas e asse por mais 15–20 minutos."
+        ]
+      }
+    }
+  },
+  "ingredients": {
+    "Olio extravergine d'oliva": {
+      "en": "Extra-virgin olive oil",
+      "es": "Aceite de oliva virgen extra",
+      "fr": "Huile d’olive extra-vierge",
+      "de": "Natives Olivenöl extra",
+      "pt": "Azeite virgem extra"
+    },
+    "Parmigiano": {
+      "en": "Parmesan",
+      "es": "Parmesano",
+      "fr": "Parmesan",
+      "de": "Parmesan",
+      "pt": "Parmesão"
+    },
+    "Aglio": {
+      "en": "Garlic",
+      "es": "Ajo",
+      "fr": "Ail",
+      "de": "Knoblauch",
+      "pt": "Alho"
+    },
+    "Passata di pomodoro": {
+      "en": "Tomato passata",
+      "es": "Tomate triturado",
+      "fr": "Passata de tomate",
+      "de": "Passierte Tomaten",
+      "pt": "Polpa de tomate"
+    },
+    "Pasta": {
+      "en": "Pasta",
+      "es": "Pasta",
+      "fr": "Pâtes",
+      "de": "Pasta",
+      "pt": "Massa"
+    },
+    "Cipolla": {
+      "en": "Onion",
+      "es": "Cebolla",
+      "fr": "Oignon",
+      "de": "Zwiebel",
+      "pt": "Cebola"
+    },
+    "Brodo vegetale": {
+      "en": "Vegetable stock",
+      "es": "Caldo de verduras",
+      "fr": "Bouillon de légumes",
+      "de": "Gemüsebrühe",
+      "pt": "Caldo de legumes"
+    },
+    "Uova": {
+      "en": "Eggs",
+      "es": "Huevos",
+      "fr": "Œufs",
+      "de": "Eier",
+      "pt": "Ovos"
+    },
+    "Latte": {
+      "en": "Milk",
+      "es": "Leche",
+      "fr": "Lait",
+      "de": "Milch",
+      "pt": "Leite"
+    },
+    "Pomodoro": {
+      "en": "Tomato",
+      "es": "Tomate",
+      "fr": "Tomate",
+      "de": "Tomate",
+      "pt": "Tomate"
+    },
+    "Basilico": {
+      "en": "Basil",
+      "es": "Albahaca",
+      "fr": "Basilic",
+      "de": "Basilikum",
+      "pt": "Manjericão"
+    },
+    "Prezzemolo": {
+      "en": "Parsley",
+      "es": "Perejil",
+      "fr": "Persil",
+      "de": "Petersilie",
+      "pt": "Salsa"
+    },
+    "Burro": {
+      "en": "Butter",
+      "es": "Mantequilla",
+      "fr": "Beurre",
+      "de": "Butter",
+      "pt": "Manteiga"
+    },
+    "Carota": {
+      "en": "Carrot",
+      "es": "Zanahoria",
+      "fr": "Carotte",
+      "de": "Karotte",
+      "pt": "Cenoura"
+    },
+    "Mozzarella": {
+      "en": "Mozzarella",
+      "es": "Mozzarella",
+      "fr": "Mozzarella",
+      "de": "Mozzarella",
+      "pt": "Mozzarella"
+    },
+    "Farina": {
+      "en": "Flour",
+      "es": "Harina",
+      "fr": "Farine",
+      "de": "Mehl",
+      "pt": "Farinha"
+    },
+    "Zucchero": {
+      "en": "Sugar",
+      "es": "Azúcar",
+      "fr": "Sucre",
+      "de": "Zucker",
+      "pt": "Açúcar"
+    },
+    "Rosmarino": {
+      "en": "Rosemary",
+      "es": "Romero",
+      "fr": "Romarin",
+      "de": "Rosmarin",
+      "pt": "Alecrim"
+    },
+    "Limone": {
+      "en": "Lemon",
+      "es": "Limón",
+      "fr": "Citron",
+      "de": "Zitrone",
+      "pt": "Limão"
+    },
+    "Zucchina": {
+      "en": "Zucchini",
+      "es": "Calabacín",
+      "fr": "Courgette",
+      "de": "Zucchini",
+      "pt": "Curgete"
+    },
+    "Ceci cotti": {
+      "en": "Cooked chickpeas",
+      "es": "Garbanzos cocidos",
+      "fr": "Pois chiches cuits",
+      "de": "Gekochte Kichererbsen",
+      "pt": "Grão-de-bico cozido"
+    },
+    "Melanzana": {
+      "en": "Aubergine",
+      "es": "Berenjena",
+      "fr": "Aubergine",
+      "de": "Aubergine",
+      "pt": "Beringela"
+    },
+    "Patata": {
+      "en": "Potato",
+      "es": "Patata",
+      "fr": "Pomme de terre",
+      "de": "Kartoffel",
+      "pt": "Batata"
+    },
+    "Pangrattato": {
+      "en": "Breadcrumbs",
+      "es": "Pan rallado",
+      "fr": "Chapelure",
+      "de": "Semmelbrösel",
+      "pt": "Pão ralado"
+    },
+    "Olive": {
+      "en": "Olives",
+      "es": "Aceitunas",
+      "fr": "Olives",
+      "de": "Oliven",
+      "pt": "Azeitonas"
+    },
+    "Yogurt bianco": {
+      "en": "Plain yogurt",
+      "es": "Yogur natural",
+      "fr": "Yaourt nature",
+      "de": "Naturjoghurt",
+      "pt": "Iogurte natural"
+    },
+    "Peperoncino": {
+      "en": "Chilli",
+      "es": "Guindilla",
+      "fr": "Piment",
+      "de": "Chili",
+      "pt": "Malagueta"
+    },
+    "Ricotta": {
+      "en": "Ricotta",
+      "es": "Ricota",
+      "fr": "Ricotta",
+      "de": "Ricotta",
+      "pt": "Ricota"
+    },
+    "Uovo": {
+      "en": "Egg",
+      "es": "Huevo",
+      "fr": "Œuf",
+      "de": "Ei",
+      "pt": "Ovo"
+    },
+    "Pane": {
+      "en": "Bread",
+      "es": "Pan",
+      "fr": "Pain",
+      "de": "Brot",
+      "pt": "Pão"
+    },
+    "Miele": {
+      "en": "Honey",
+      "es": "Miel",
+      "fr": "Miel",
+      "de": "Honig",
+      "pt": "Mel"
+    },
+    "Peperone": {
+      "en": "Bell pepper",
+      "es": "Pimiento",
+      "fr": "Poivron",
+      "de": "Paprika",
+      "pt": "Pimento"
+    },
+    "Lievito per dolci": {
+      "en": "Baking powder",
+      "es": "Levadura química",
+      "fr": "Levure chimique",
+      "de": "Backpulver",
+      "pt": "Fermento em pó"
+    },
+    "Spaghetti": {
+      "en": "Spaghetti",
+      "es": "Espaguetis",
+      "fr": "Spaghetti",
+      "de": "Spaghetti",
+      "pt": "Esparguete"
+    },
+    "Riso Carnaroli": {
+      "en": "Carnaroli rice",
+      "es": "Arroz Carnaroli",
+      "fr": "Riz Carnaroli",
+      "de": "Carnaroli-Reis",
+      "pt": "Arroz Carnaroli"
+    },
+    "Zucca": {
+      "en": "Pumpkin",
+      "es": "Calabaza",
+      "fr": "Potiron",
+      "de": "Kürbis",
+      "pt": "Abóbora"
+    },
+    "Pasta corta": {
+      "en": "Short pasta",
+      "es": "Pasta corta",
+      "fr": "Pâtes courtes",
+      "de": "Kurze Pasta",
+      "pt": "Massa curta"
+    },
+    "Tonno in scatola": {
+      "en": "Canned tuna",
+      "es": "Atún en conserva",
+      "fr": "Thon en conserve",
+      "de": "Thunfisch aus der Dose",
+      "pt": "Atum em lata"
+    },
+    "Spinaci": {
+      "en": "Spinach",
+      "es": "Espinacas",
+      "fr": "Épinards",
+      "de": "Spinat",
+      "pt": "Espinafres"
+    },
+    "Salvia": {
+      "en": "Sage",
+      "es": "Salvia",
+      "fr": "Sauge",
+      "de": "Salbei",
+      "pt": "Salva"
+    },
+    "Besciamella": {
+      "en": "Béchamel sauce",
+      "es": "Bechamel",
+      "fr": "Béchamel",
+      "de": "Béchamelsauce",
+      "pt": "Molho béchamel"
+    },
+    "Cipolla rossa": {
+      "en": "Red onion",
+      "es": "Cebolla roja",
+      "fr": "Oignon rouge",
+      "de": "Rote Zwiebel",
+      "pt": "Cebola roxa"
+    },
+    "Pane raffermo": {
+      "en": "Stale bread",
+      "es": "Pan duro",
+      "fr": "Pain rassis",
+      "de": "Altbackenes Brot",
+      "pt": "Pão duro"
+    },
+    "Cetriolo": {
+      "en": "Cucumber",
+      "es": "Pepino",
+      "fr": "Concombre",
+      "de": "Gurke",
+      "pt": "Pepino"
+    },
+    "Aceto di vino": {
+      "en": "Wine vinegar",
+      "es": "Vinagre de vino",
+      "fr": "Vinaigre de vin",
+      "de": "Weinessig",
+      "pt": "Vinagre de vinho"
+    },
+    "Riso": {
+      "en": "Rice",
+      "es": "Arroz",
+      "fr": "Riz",
+      "de": "Reis",
+      "pt": "Arroz"
+    },
+    "Sedano": {
+      "en": "Celery",
+      "es": "Apio",
+      "fr": "Céleri",
+      "de": "Sellerie",
+      "pt": "Aipo"
+    },
+    "Acciughe sott'olio": {
+      "en": "Anchovies in oil",
+      "es": "Anchoas en aceite",
+      "fr": "Anchois à l’huile",
+      "de": "Sardellen in Öl",
+      "pt": "Anchovas em azeite"
+    },
+    "Capperi": {
+      "en": "Capers",
+      "es": "Alcaparras",
+      "fr": "Câpres",
+      "de": "Kapern",
+      "pt": "Alcaparras"
+    },
+    "Paprika": {
+      "en": "Paprika",
+      "es": "Pimentón",
+      "fr": "Paprika",
+      "de": "Paprikapulver",
+      "pt": "Paprika"
+    },
+    "Fiocchi d'avena": {
+      "en": "Rolled oats",
+      "es": "Copos de avena",
+      "fr": "Flocons d’avoine",
+      "de": "Haferflocken",
+      "pt": "Flocos de aveia"
+    },
+    "Mela": {
+      "en": "Apple",
+      "es": "Manzana",
+      "fr": "Pomme",
+      "de": "Apfel",
+      "pt": "Maçã"
+    },
+    "Cannella": {
+      "en": "Cinnamon",
+      "es": "Canela",
+      "fr": "Cannelle",
+      "de": "Zimt",
+      "pt": "Canela"
+    },
+    "Banana": {
+      "en": "Banana",
+      "es": "Plátano",
+      "fr": "Banane",
+      "de": "Banane",
+      "pt": "Banana"
+    },
+    "Fagioli cannellini cotti": {
+      "en": "Cooked cannellini beans",
+      "es": "Alubias cannellini cocidas",
+      "fr": "Haricots cannellini cuits",
+      "de": "Gekochte Cannellini-Bohnen",
+      "pt": "Feijão cannellini cozido"
+    },
+    "Cacao amaro": {
+      "en": "Unsweetened cocoa",
+      "es": "Cacao puro",
+      "fr": "Cacao non sucré",
+      "de": "Ungesüßter Kakao",
+      "pt": "Cacau em pó sem açúcar"
+    },
+    "Sale": {
+      "en": "Salt",
+      "es": "Sal",
+      "fr": "Sel",
+      "de": "Salz",
+      "pt": "Sal"
+    },
+    "Pinoli": {
+      "en": "Pine nuts",
+      "es": "Piñones",
+      "fr": "Pignons de pin",
+      "de": "Pinienkerne",
+      "pt": "Pinhões"
+    },
+    "Penne": {
+      "en": "Penne",
+      "es": "Penne",
+      "fr": "Penne",
+      "de": "Penne",
+      "pt": "Penne"
+    },
+    "Noce moscata": {
+      "en": "Nutmeg",
+      "es": "Nuez moscada",
+      "fr": "Noix de muscade",
+      "de": "Muskatnuss",
+      "pt": "Noz-moscada"
+    },
+    "Gnocchi di patate": {
+      "en": "Potato gnocchi",
+      "es": "Ñoquis de patata",
+      "fr": "Gnocchis de pomme de terre",
+      "de": "Kartoffelgnocchi",
+      "pt": "Nhoques de batata"
+    },
+    "Guanciale": {
+      "en": "Guanciale (cured pork cheek)",
+      "es": "Guanciale (papada curada)",
+      "fr": "Guanciale (joue de porc séchée)",
+      "de": "Guanciale (gepökelte Schweinebacke)",
+      "pt": "Guanciale (bochecha de porco curada)"
+    },
+    "Pecorino romano": {
+      "en": "Pecorino Romano",
+      "es": "Pecorino romano",
+      "fr": "Pecorino romano",
+      "de": "Pecorino Romano",
+      "pt": "Pecorino Romano"
+    },
+    "Pepe nero": {
+      "en": "Black pepper",
+      "es": "Pimienta negra",
+      "fr": "Poivre noir",
+      "de": "Schwarzer Pfeffer",
+      "pt": "Pimenta-preta"
+    },
+    "Ricotta salata": {
+      "en": "Salted ricotta",
+      "es": "Ricota salada",
+      "fr": "Ricotta salée",
+      "de": "Gesalzene Ricotta",
+      "pt": "Ricota salgada"
+    },
+    "Sfoglie per lasagne": {
+      "en": "Lasagne sheets",
+      "es": "Placas de lasaña",
+      "fr": "Feuilles de lasagne",
+      "de": "Lasagneplatten",
+      "pt": "Folhas de lasanha"
+    },
+    "Fagioli cotti": {
+      "en": "Cooked beans",
+      "es": "Alubias cocidas",
+      "fr": "Haricots cuits",
+      "de": "Gekochte Bohnen",
+      "pt": "Feijão cozido"
+    },
+    "Carne macinata": {
+      "en": "Ground meat",
+      "es": "Carne picada",
+      "fr": "Viande hachée",
+      "de": "Hackfleisch",
+      "pt": "Carne picada"
+    },
+    "Petto di pollo": {
+      "en": "Chicken breast",
+      "es": "Pechuga de pollo",
+      "fr": "Blanc de poulet",
+      "de": "Hähnchenbrust",
+      "pt": "Peito de frango"
+    },
+    "Brodo": {
+      "en": "Stock",
+      "es": "Caldo",
+      "fr": "Bouillon",
+      "de": "Brühe",
+      "pt": "Caldo"
+    },
+    "Filetto di salmone": {
+      "en": "Salmon fillet",
+      "es": "Filete de salmón",
+      "fr": "Filet de saumon",
+      "de": "Lachsfilet",
+      "pt": "Lombo de salmão"
+    },
+    "Pollo": {
+      "en": "Chicken",
+      "es": "Pollo",
+      "fr": "Poulet",
+      "de": "Hähnchen",
+      "pt": "Frango"
+    },
+    "Vino bianco": {
+      "en": "White wine",
+      "es": "Vino blanco",
+      "fr": "Vin blanc",
+      "de": "Weißwein",
+      "pt": "Vinho branco"
+    },
+    "Noci": {
+      "en": "Walnuts",
+      "es": "Nueces",
+      "fr": "Noix",
+      "de": "Walnüsse",
+      "pt": "Nozes"
+    },
+    "Piadina": {
+      "en": "Piadina flatbread",
+      "es": "Piadina",
+      "fr": "Piadina",
+      "de": "Piadina-Fladenbrot",
+      "pt": "Piadina"
+    },
+    "Prosciutto crudo": {
+      "en": "Cured ham",
+      "es": "Jamón curado",
+      "fr": "Jambon cru",
+      "de": "Rohschinken",
+      "pt": "Presunto curado"
+    },
+    "Squacquerone": {
+      "en": "Squacquerone cheese",
+      "es": "Queso squacquerone",
+      "fr": "Fromage squacquerone",
+      "de": "Squacquerone-Käse",
+      "pt": "Queijo squacquerone"
+    },
+    "Rucola": {
+      "en": "Rocket",
+      "es": "Rúcula",
+      "fr": "Roquette",
+      "de": "Rucola",
+      "pt": "Rúcula"
+    },
+    "Cous cous": {
+      "en": "Couscous",
+      "es": "Cuscús",
+      "fr": "Couscous",
+      "de": "Couscous",
+      "pt": "Cuscuz"
+    },
+    "Mais": {
+      "en": "Corn",
+      "es": "Maíz",
+      "fr": "Maïs",
+      "de": "Mais",
+      "pt": "Milho"
+    },
+    "Farina di ceci": {
+      "en": "Chickpea flour",
+      "es": "Harina de garbanzo",
+      "fr": "Farine de pois chiches",
+      "de": "Kichererbsenmehl",
+      "pt": "Farinha de grão-de-bico"
+    },
+    "Acqua": {
+      "en": "Water",
+      "es": "Agua",
+      "fr": "Eau",
+      "de": "Wasser",
+      "pt": "Água"
+    },
+    "Pesto": {
+      "en": "Pesto",
+      "es": "Pesto",
+      "fr": "Pesto",
+      "de": "Pesto",
+      "pt": "Pesto"
+    },
+    "Pomodorini": {
+      "en": "Cherry tomatoes",
+      "es": "Tomates cherry",
+      "fr": "Tomates cerises",
+      "de": "Kirschtomaten",
+      "pt": "Tomate-cereja"
+    },
+    "Lenticchie secche": {
+      "en": "Dried lentils",
+      "es": "Lentejas secas",
+      "fr": "Lentilles sèches",
+      "de": "Getrocknete Linsen",
+      "pt": "Lentilhas secas"
+    },
+    "Broccoli": {
+      "en": "Broccoli",
+      "es": "Brócoli",
+      "fr": "Brocoli",
+      "de": "Brokkoli",
+      "pt": "Brócolos"
+    },
+    "Orzo perlato": {
+      "en": "Pearl barley",
+      "es": "Cebada perlada",
+      "fr": "Orge perlée",
+      "de": "Perlgraupen",
+      "pt": "Cevada pérola"
+    },
+    "Funghi": {
+      "en": "Mushrooms",
+      "es": "Setas",
+      "fr": "Champignons",
+      "de": "Pilze",
+      "pt": "Cogumelos"
+    },
+    "Tahina": {
+      "en": "Tahini",
+      "es": "Tahini",
+      "fr": "Tahini",
+      "de": "Tahini",
+      "pt": "Tahini"
+    },
+    "Frutta fresca": {
+      "en": "Fresh fruit",
+      "es": "Fruta fresca",
+      "fr": "Fruits frais",
+      "de": "Frisches Obst",
+      "pt": "Fruta fresca"
+    },
+    "Granola": {
+      "en": "Granola",
+      "es": "Granola",
+      "fr": "Granola",
+      "de": "Granola",
+      "pt": "Granola"
+    },
+    "Pane in cassetta": {
+      "en": "Sandwich bread",
+      "es": "Pan de molde",
+      "fr": "Pain de mie",
+      "de": "Toastbrot",
+      "pt": "Pão de forma"
+    },
+    "Prosciutto cotto": {
+      "en": "Cooked ham",
+      "es": "Jamón cocido",
+      "fr": "Jambon cuit",
+      "de": "Kochschinken",
+      "pt": "Fiambre"
+    },
+    "Formaggio a fette": {
+      "en": "Sliced cheese",
+      "es": "Queso en lonchas",
+      "fr": "Fromage en tranches",
+      "de": "Käsescheiben",
+      "pt": "Queijo fatiado"
+    },
+    "Menta": {
+      "en": "Mint",
+      "es": "Menta",
+      "fr": "Menthe",
+      "de": "Minze",
+      "pt": "Hortelã"
+    },
+    "Cavolo nero": {
+      "en": "Tuscan kale",
+      "es": "Col negra",
+      "fr": "Chou noir toscan",
+      "de": "Schwarzkohl",
+      "pt": "Couve preta"
+    },
+    "Asparagi": {
+      "en": "Asparagus",
+      "es": "Espárragos",
+      "fr": "Asperges",
+      "de": "Spargel",
+      "pt": "Espargos"
+    },
+    "Lenticchie cotte": {
+      "en": "Cooked lentils",
+      "es": "Lentejas cocidas",
+      "fr": "Lentilles cuites",
+      "de": "Gekochte Linsen",
+      "pt": "Lentilhas cozidas"
+    },
+    "Lievito istantaneo salato": {
+      "en": "Instant savoury yeast",
+      "es": "Levadura instantánea salada",
+      "fr": "Levure instantanée salée",
+      "de": "Instanthefe für Herzhaftes",
+      "pt": "Fermento instantâneo salgado"
+    },
+    "Mascarpone": {
+      "en": "Mascarpone",
+      "es": "Mascarpone",
+      "fr": "Mascarpone",
+      "de": "Mascarpone",
+      "pt": "Mascarpone"
+    },
+    "Savoiardi": {
+      "en": "Ladyfingers",
+      "es": "Bizcochos de soletilla",
+      "fr": "Biscuits à la cuillère",
+      "de": "Löffelbiskuits",
+      "pt": "Palitos de champanhe"
+    },
+    "Caffè": {
+      "en": "Coffee",
+      "es": "Café",
+      "fr": "Café",
+      "de": "Kaffee",
+      "pt": "Café"
+    },
+    "Amido di mais": {
+      "en": "Cornstarch",
+      "es": "Maicena",
+      "fr": "Fécule de maïs",
+      "de": "Maisstärke",
+      "pt": "Amido de milho"
+    },
+    "Olio di semi": {
+      "en": "Vegetable oil",
+      "es": "Aceite de semillas",
+      "fr": "Huile végétale",
+      "de": "Pflanzenöl",
+      "pt": "Óleo vegetal"
+    },
+    "Fragole": {
+      "en": "Strawberries",
+      "es": "Fresas",
+      "fr": "Fraises",
+      "de": "Erdbeeren",
+      "pt": "Morangos"
+    },
+    "Piselli": {
+      "en": "Peas",
+      "es": "Guisantes",
+      "fr": "Petits pois",
+      "de": "Erbsen",
+      "pt": "Ervilhas"
+    },
+    "Farro": {
+      "en": "Spelt",
+      "es": "Espelta",
+      "fr": "Épeautre",
+      "de": "Dinkel",
+      "pt": "Espelta"
+    },
+    "Feta": {
+      "en": "Feta cheese",
+      "es": "Queso feta",
+      "fr": "Feta",
+      "de": "Feta",
+      "pt": "Queijo feta"
+    },
+    "Cavolfiore": {
+      "en": "Cauliflower",
+      "es": "Coliflor",
+      "fr": "Chou-fleur",
+      "de": "Blumenkohl",
+      "pt": "Couve-flor"
+    },
+    "Olive nere": {
+      "en": "Black olives",
+      "es": "Aceitunas negras",
+      "fr": "Olives noires",
+      "de": "Schwarze Oliven",
+      "pt": "Azeitonas pretas"
+    },
+    "Marmellata": {
+      "en": "Jam",
+      "es": "Mermelada",
+      "fr": "Confiture",
+      "de": "Marmelade",
+      "pt": "Compota"
+    }
+  }
+}

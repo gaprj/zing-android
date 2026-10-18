@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Transparent foreground symbol with safe margins for adaptive launcher masking. -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/zing_icon_foreground_adaptive"
+    android:gravity="fill" />

@@ -1,0 +1,29 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+# Local secrets and signing material
+keystore.properties
+*.jks
+*.keystore
+# OS/editor
+.DS_Store
+Thumbs.db
+# Release artifacts and personal data exports
+*.apk
+*.aab
+*-backup.json
+*backup-*.json
+Zing-backup.json
+# Additional local/generated files
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+*.log
+*.hprof
+*.tmp
+.DS_Store
+Thumbs.db
