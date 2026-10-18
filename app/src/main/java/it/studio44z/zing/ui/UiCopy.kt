@@ -20,6 +20,7 @@ internal fun uiCopy(italian: String, langCode: String): String {
         ?: releaseFeatureTranslations[language]?.get(italian)
         ?: wikibooksFeatureTranslations[language]?.get(italian)
         ?: recipePolishTranslations[language]?.get(italian)
+        ?: adFeatureTranslations[language]?.get(italian)
         ?: italian
 }
 
@@ -841,3 +842,27 @@ private val releaseFeatureTranslations: Map<String, Map<String, String>> = mapOf
     ),
 )
 
+
+
+private val adFeatureTranslations: Map<String, Map<String, String>> = mapOf(
+    "en" to mapOf(
+        "Mostra un banner in fondo all’app per sostenere lo sviluppo. Gli annunci vengono richiesti solo quando attivi questa opzione e dopo le scelte privacy richieste." to "Show a banner at the bottom of the app to support development. Ads are requested only while this option is enabled and after required privacy choices.",
+        "Gestisci le preferenze privacy degli annunci" to "Manage ad privacy choices",
+    ),
+    "es" to mapOf(
+        "Mostra un banner in fondo all’app per sostenere lo sviluppo. Gli annunci vengono richiesti solo quando attivi questa opzione e dopo le scelte privacy richieste." to "Muestra un banner en la parte inferior de la aplicación para apoyar su desarrollo. Solo se solicitan anuncios cuando esta opción está activada y después de las opciones de privacidad requeridas.",
+        "Gestisci le preferenze privacy degli annunci" to "Gestionar las preferencias de privacidad de anuncios",
+    ),
+    "fr" to mapOf(
+        "Mostra un banner in fondo all’app per sostenere lo sviluppo. Gli annunci vengono richiesti solo quando attivi questa opzione e dopo le scelte privacy richieste." to "Affiche une bannière en bas de l’application pour soutenir son développement. Les annonces sont demandées uniquement lorsque cette option est activée et après les choix de confidentialité requis.",
+        "Gestisci le preferenze privacy degli annunci" to "Gérer les préférences de confidentialité des annonces",
+    ),
+    "de" to mapOf(
+        "Mostra un banner in fondo all’app per sostenere lo sviluppo. Gli annunci vengono richiesti solo quando attivi questa opzione e dopo le scelte privacy richieste." to "Zeigt unten in der App ein Banner zur Unterstützung der Entwicklung. Anzeigen werden nur angefordert, wenn diese Option aktiviert ist und erforderliche Datenschutzeinstellungen abgeschlossen sind.",
+        "Gestisci le preferenze privacy degli annunci" to "Datenschutzeinstellungen für Anzeigen verwalten",
+    ),
+    "pt" to mapOf(
+        "Mostra un banner in fondo all’app per sostenere lo sviluppo. Gli annunci vengono richiesti solo quando attivi questa opzione e dopo le scelte privacy richieste." to "Mostra um banner na parte inferior da aplicação para apoiar o desenvolvimento. Os anúncios só são solicitados quando esta opção está ativa e após as escolhas de privacidade necessárias.",
+        "Gestisci le preferenze privacy degli annunci" to "Gerir preferências de privacidade dos anúncios",
+    ),
+)

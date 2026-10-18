@@ -16,6 +16,11 @@ android {
         versionCode = 1
         versionName = "1.0.0"
 
+        // Keep the App ID in one Gradle source of truth for UMP and GMA Next-Gen.
+        manifestPlaceholders["admobAppId"] = "ca-app-pub-4481725277287086~8676927676"
+        buildConfigField("String", "ADMOB_APP_ID", "\"ca-app-pub-4481725277287086~8676927676\"")
+        buildConfigField("String", "ADMOB_BANNER_AD_UNIT_ID", "\"ca-app-pub-4481725277287086/8805840057\"")
+
         testInstrumentationRunner =
             "androidx.test.runner.AndroidJUnitRunner"
 
@@ -115,6 +120,10 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.11.2")
 
     implementation("com.android.billingclient:billing:9.1.0")
+
+    // Current Google Mobile Ads Next-Gen SDK and Google User Messaging Platform.
+    implementation("com.google.android.libraries.ads.mobile.sdk:ads-mobile-sdk:1.5.0")
+    implementation("com.google.android.ump:user-messaging-platform:4.0.0")
 
     implementation("androidx.camera:camera-core:1.5.3")
     implementation("androidx.camera:camera-camera2:1.5.3")

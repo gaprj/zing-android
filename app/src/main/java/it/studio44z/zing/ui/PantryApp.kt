@@ -152,6 +152,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import it.studio44z.zing.ads.ZingAdsManager
+import it.studio44z.zing.ads.findActivity
 import androidx.work.Data
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequestBuilder
@@ -1243,6 +1245,9 @@ fun PantryApp(viewModel: PantryViewModel) {
     val busy by viewModel.busy.collectAsStateWithLifecycle()
 
     val applicationContext = context.applicationContext
+    val activity = remember(context) { context.findActivity() }
+    val adsManager = remember(applicationContext) { ZingAdsManager(applicationContext) }
+    val adsState by adsManager.state.collectAsStateWithLifecycle()
     val billingManager = remember(applicationContext) { GooglePlayBillingManager(applicationContext) }
     val playProUnlocked by billingManager.proUnlocked.collectAsStateWithLifecycle()
     val playProPrice by billingManager.formattedPrice.collectAsStateWithLifecycle()
@@ -1270,6 +1275,9 @@ fun PantryApp(viewModel: PantryViewModel) {
         supporterProUnlocked = playProUnlocked,
         keepScreenOnCooking = playProUnlocked && storedExtraPrefs.keepScreenOnCooking,
     )
+    LaunchedEffect(activity, extraPrefs.voluntarySupportAdsEnabled) {
+        activity?.let { adsManager.refreshConsent(it, extraPrefs.voluntarySupportAdsEnabled) }
+    }
     val updateExtraPrefs: (ZingExtraPrefs) -> Unit = { updated ->
         val stored = updated.copy(
             supporterProUnlocked = false,
@@ -1506,26 +1514,38 @@ fun PantryApp(viewModel: PantryViewModel) {
                     }
                 },
                 bottomBar = {
-                    if (!useTabletLayout) {
-                        NavigationBar(windowInsets = WindowInsets.navigationBars) {
-                            MainTab.values().forEach { tab ->
-                                val (icon, label) = when (tab) {
-                                    MainTab.HOME -> Icons.Outlined.Home to strings.tabHome
-                                    MainTab.PANTRY -> Icons.Outlined.Inventory2 to strings.tabPantry
-                                    MainTab.RECIPES -> Icons.Outlined.RestaurantMenu to strings.tabRecipes
-                                    MainTab.SHOPPING -> Icons.Outlined.ShoppingBasket to strings.tabShopping
-                                    MainTab.SETTINGS -> Icons.Outlined.Settings to strings.tabSettings
+                    Column {
+                        if (
+                            activity != null &&
+                            extraPrefs.voluntarySupportAdsEnabled &&
+                            adsState.adsOptedIn &&
+                            adsState.consentFlowComplete &&
+                            adsState.canRequestAds &&
+                            adsState.sdkReady
+                        ) {
+                            ZingBannerAd(activity)
+                        }
+                        if (!useTabletLayout) {
+                            NavigationBar(windowInsets = WindowInsets.navigationBars) {
+                                MainTab.values().forEach { tab ->
+                                    val (icon, label) = when (tab) {
+                                        MainTab.HOME -> Icons.Outlined.Home to strings.tabHome
+                                        MainTab.PANTRY -> Icons.Outlined.Inventory2 to strings.tabPantry
+                                        MainTab.RECIPES -> Icons.Outlined.RestaurantMenu to strings.tabRecipes
+                                        MainTab.SHOPPING -> Icons.Outlined.ShoppingBasket to strings.tabShopping
+                                        MainTab.SETTINGS -> Icons.Outlined.Settings to strings.tabSettings
+                                    }
+                                    NavigationBarItem(
+                                        selected = selectedTab == tab,
+                                        onClick = {
+                                            selectedTab = tab
+                                            if (tab != MainTab.RECIPES) selectedRecipeId = null
+                                        },
+                                        icon = { Icon(icon, contentDescription = label) },
+                                        label = { Text(label, maxLines = 1, overflow = TextOverflow.Ellipsis) },
+                                        alwaysShowLabel = true,
+                                    )
                                 }
-                                NavigationBarItem(
-                                    selected = selectedTab == tab,
-                                    onClick = {
-                                        selectedTab = tab
-                                        if (tab != MainTab.RECIPES) selectedRecipeId = null
-                                    },
-                                    icon = { Icon(icon, contentDescription = label) },
-                                    label = { Text(label, maxLines = 1, overflow = TextOverflow.Ellipsis) },
-                                    alwaysShowLabel = true,
-                                )
                             }
                         }
                     }
@@ -1737,6 +1757,10 @@ fun PantryApp(viewModel: PantryViewModel) {
                                     events = events,
                                     proPrice = playProPrice,
                                     proProductAvailable = playProProductAvailable,
+                                    adsPrivacyOptionsRequired = adsState.privacyOptionsRequired,
+                                    onManageAdsPrivacy = {
+                                        activity?.let { adsManager.showPrivacyOptions(it) }
+                                    },
                                     onBuyPro = {
                                         val activity = context as? Activity
                                         if (activity != null) billingManager.launchPurchase(activity)
@@ -3873,6 +3897,8 @@ private fun SettingsScreen(
     events: List<FoodEventEntity>,
     proPrice: String?,
     proProductAvailable: Boolean,
+    adsPrivacyOptionsRequired: Boolean,
+    onManageAdsPrivacy: () -> Unit,
     onBuyPro: () -> Unit,
     onRedeemPromoCode: (String) -> Unit,
     onRefreshProPurchases: () -> Unit,
@@ -4312,35 +4338,24 @@ private fun SettingsScreen(
 
                     HorizontalDivider(color = MaterialTheme.colorScheme.surfaceVariant)
 
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Surface(
-                            shape = RoundedCornerShape(11.dp),
-                            color = MaterialTheme.colorScheme.secondaryContainer,
-                            modifier = Modifier.size(41.dp),
+                    SettingsSwitchRow(
+                        icon = Icons.Outlined.FavoriteBorder,
+                        title = uiCopy("Pubblicità volontaria (Opt-in)", strings.langCode),
+                        description = uiCopy(
+                            "Mostra un banner in fondo all’app per sostenere lo sviluppo. Gli annunci vengono richiesti solo quando attivi questa opzione e dopo le scelte privacy richieste.",
+                            strings.langCode,
+                        ),
+                        checked = extraPrefs.voluntarySupportAdsEnabled,
+                        onChanged = { enabled ->
+                            onUpdateExtraPrefs(extraPrefs.copy(voluntarySupportAdsEnabled = enabled))
+                        },
+                    )
+                    if (adsPrivacyOptionsRequired) {
+                        OutlinedButton(
+                            onClick = onManageAdsPrivacy,
+                            modifier = Modifier.fillMaxWidth(),
                         ) {
-                            Box(contentAlignment = Alignment.Center) {
-                                Icon(Icons.Outlined.FavoriteBorder, null, tint = MaterialTheme.colorScheme.onSecondaryContainer)
-                            }
-                        }
-                        Spacer(Modifier.width(11.dp))
-                        Column(Modifier.weight(1f)) {
-                            Text(uiCopy("Pubblicità volontaria (Opt-in)", strings.langCode), fontWeight = FontWeight.SemiBold)
-                            Text(
-                                uiCopy("Consenso per annunci non invasivi. Arriverà a breve.", strings.langCode),
-                                style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
-                        }
-                        Surface(
-                            shape = RoundedCornerShape(24.dp),
-                            color = MaterialTheme.colorScheme.surfaceVariant,
-                        ) {
-                            Text(
-                                uiCopy("Prossimamente", strings.langCode),
-                                modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp),
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
+                            Text(uiCopy("Gestisci le preferenze privacy degli annunci", strings.langCode))
                         }
                     }
 
