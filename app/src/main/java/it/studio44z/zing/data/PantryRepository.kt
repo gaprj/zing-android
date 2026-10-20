@@ -603,7 +603,7 @@ class PantryRepository(
     suspend fun exportBackup(outputStream: OutputStream) = withContext(Dispatchers.IO) {
         val extraPreferences = context.getSharedPreferences("zest_extra_prefs", Context.MODE_PRIVATE)
             .all
-            .filterKeys { it !in PRO_ENTITLEMENT_KEYS }
+            .filterKeys { !ProBackupPolicy.isSensitiveKey(it) }
         val payload = BackupPayload(
             lots = lotDao.getAll(),
             recipes = recipeDao.getAll(),
@@ -656,7 +656,7 @@ class PantryRepository(
         val keys = objectJson.keys()
         while (keys.hasNext()) {
             val key = keys.next()
-            if (key in PRO_ENTITLEMENT_KEYS) continue
+            if (ProBackupPolicy.isSensitiveKey(key)) continue
             val value = objectJson.opt(key)
             when (value) {
                 is String -> editor.putString(key, value)
@@ -675,9 +675,6 @@ class PantryRepository(
         check(editor.commit()) { "Impossibile ripristinare le preferenze personali dal backup." }
     }
 
-    private companion object {
-        val PRO_ENTITLEMENT_KEYS = setOf("supporterProUnlocked", "supporterProRedeemed")
-    }
 
     suspend fun deleteAllData() = withContext(Dispatchers.IO) {
         db.withTransaction {

@@ -358,7 +358,7 @@ val LocalAppStrings = staticCompositionLocalOf { stringsFor("it") }
 val SupportedLanguages = listOf(
     "system" to "🌐 Automatic (System)",
     "it" to "🇮🇹 Italiano",
-    "en" to "🇬🇧 English",
+    "en" to "🇺🇸 English (US)",
     "es" to "🇪🇸 Español",
     "fr" to "🇫🇷 Français",
     "de" to "🇩🇪 Deutsch",

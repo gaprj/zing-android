@@ -10,10 +10,22 @@ import android.net.Uri
 import android.os.Build
 import android.view.HapticFeedbackConstants
 import android.widget.Toast
+import it.studio44z.zing.billing.ZingProCodeRedemptionClient
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedVisibility
+import com.google.android.play.core.appupdate.AppUpdateInfo
+import com.google.android.play.core.appupdate.AppUpdateManager
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory
+import com.google.android.play.core.appupdate.AppUpdateOptions
+import com.google.android.play.core.install.InstallStateUpdatedListener
+import com.google.android.play.core.install.model.InstallStatus
+import com.google.android.play.core.install.model.AppUpdateType
+import com.google.android.play.core.install.model.UpdateAvailability
+import kotlinx.coroutines.launch
+import java.text.DateFormat
+import java.util.Date
 import androidx.compose.animation.expandVertically
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -82,6 +94,7 @@ import androidx.compose.material.icons.outlined.ShoppingBasket
 import androidx.compose.material.icons.outlined.ShoppingCart
 import androidx.compose.material.icons.outlined.Timer
 import androidx.compose.material.icons.outlined.Tune
+import androidx.compose.material.icons.outlined.SystemUpdate
 import androidx.compose.material.icons.outlined.WarningAmber
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -188,7 +201,6 @@ import it.studio44z.zing.notifications.AlarmSoundController
 import it.studio44z.zing.notifications.ExpiryReminderWorker
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.FileOutputStream
@@ -198,7 +210,6 @@ import java.time.LocalDate
 import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
-import java.util.Date
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 
@@ -1252,11 +1263,63 @@ fun PantryApp(viewModel: PantryViewModel) {
     val playProUnlocked by billingManager.proUnlocked.collectAsStateWithLifecycle()
     val playProPrice by billingManager.formattedPrice.collectAsStateWithLifecycle()
     val playProProductAvailable by billingManager.productAvailable.collectAsStateWithLifecycle()
+    val playProStatus by billingManager.statusMessage.collectAsStateWithLifecycle()
+    val googlePlayActivationTime by billingManager.activationTimeMillis.collectAsStateWithLifecycle()
     val lifecycleOwner = LocalLifecycleOwner.current
+    val proCodeClient = remember(applicationContext) { ZingProCodeRedemptionClient(applicationContext) }
+    val workScope = rememberCoroutineScope()
+    var customCodeProActive by remember { mutableStateOf(false) }
+    var customCodeActivatedAt by remember { mutableStateOf<Long?>(null) }
+    var customCodeStatusKey by remember { mutableStateOf<String?>(null) }
+    var usageStreak by remember(applicationContext) { mutableStateOf(UsageStreak.recordToday(applicationContext)) }
+    val anyProUnlocked = playProUnlocked || customCodeProActive
+
+    val appUpdateManager = remember(activity) { activity?.let { AppUpdateManagerFactory.create(it) } }
+    var appUpdateInfo by remember { mutableStateOf<AppUpdateInfo?>(null) }
+    var updateAvailable by remember { mutableStateOf(false) }
+    var updateAvailableVersion by remember { mutableIntStateOf(-1) }
+    val updatePrefs = remember(applicationContext) { applicationContext.getSharedPreferences("zing_play_update", Context.MODE_PRIVATE) }
+    var updateBannerDismissed by remember { mutableStateOf(false) }
+    val checkForUpdate: () -> Unit = {
+        val manager = appUpdateManager
+        if (manager != null) {
+            manager.appUpdateInfo
+                .addOnSuccessListener { info ->
+                    val available = info.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                    val version = if (available) info.availableVersionCode() else -1
+                    appUpdateInfo = if (available) info else null
+                    updateAvailableVersion = version
+                    updateBannerDismissed = available && updatePrefs.getInt("dismissed_version_code", -2) == version
+                    updateAvailable = available && !updateBannerDismissed
+                }
+                .addOnFailureListener {
+                    appUpdateInfo = null
+                    updateAvailable = false
+                    updateAvailableVersion = -1
+                }
+        }
+    }
+    val updateFlowLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.StartIntentSenderForResult(),
+    ) { result ->
+        // If the user cancels or Play cannot start the flow, recheck instead of leaving stale UI state.
+        if (result.resultCode != Activity.RESULT_OK) checkForUpdate()
+    }
     // Choose navigation and pane layouts from available window width, not device brand.
     val windowWidthDp = LocalConfiguration.current.screenWidthDp
     val useTabletLayout = windowWidthDp >= 600
     val useDualPaneRecipes = windowWidthDp >= 900
+
+    DisposableEffect(appUpdateManager) {
+        val manager = appUpdateManager
+        val installListener = InstallStateUpdatedListener { state ->
+            if (state.installStatus() == InstallStatus.DOWNLOADED) {
+                manager?.completeUpdate()
+            }
+        }
+        manager?.registerListener(installListener)
+        onDispose { manager?.unregisterListener(installListener) }
+    }
 
     DisposableEffect(billingManager) {
         billingManager.start()
@@ -1272,16 +1335,56 @@ fun PantryApp(viewModel: PantryViewModel) {
 
     var storedExtraPrefs by remember { mutableStateOf(loadExtraPrefs(context).copy(supporterProUnlocked = false)) }
     val extraPrefs = storedExtraPrefs.copy(
-        supporterProUnlocked = playProUnlocked,
-        keepScreenOnCooking = playProUnlocked && storedExtraPrefs.keepScreenOnCooking,
+        supporterProUnlocked = anyProUnlocked,
+        keepScreenOnCooking = anyProUnlocked && storedExtraPrefs.keepScreenOnCooking,
     )
-    LaunchedEffect(activity, extraPrefs.voluntarySupportAdsEnabled) {
-        activity?.let { adsManager.refreshConsent(it, extraPrefs.voluntarySupportAdsEnabled) }
+    var onboardingVisible by rememberSaveable {
+        mutableStateOf(
+            !applicationContext.getSharedPreferences("zing_onboarding", Context.MODE_PRIVATE)
+                .getBoolean("completed", false),
+        )
+    }
+    val onboardingPreferences = remember(applicationContext) {
+        applicationContext.getSharedPreferences("zing_onboarding", Context.MODE_PRIVATE)
+    }
+    val finishOnboarding: () -> Unit = {
+        onboardingPreferences.edit().putBoolean("completed", true).apply()
+        onboardingVisible = false
+    }
+
+    LaunchedEffect(activity, extraPrefs.voluntarySupportAdsEnabled, onboardingVisible) {
+        activity?.let { adsManager.refreshConsent(it, extraPrefs.voluntarySupportAdsEnabled && !onboardingVisible) }
+        if (!onboardingVisible) {
+            checkForUpdate()
+            workScope.launch {
+                val result = proCodeClient.refreshEntitlement()
+                customCodeProActive = result.active
+                if (result.activatedAtMillis != null) customCodeActivatedAt = result.activatedAtMillis
+                if (result.active && customCodeStatusKey == null) customCodeStatusKey = "Zing Pro attivo tramite codice Zing."
+            }
+        }
+    }
+    DisposableEffect(lifecycleOwner, applicationContext, onboardingVisible, appUpdateManager) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) {
+                usageStreak = UsageStreak.recordToday(applicationContext)
+                if (!onboardingVisible) {
+                    checkForUpdate()
+                    workScope.launch {
+                        val result = proCodeClient.refreshEntitlement()
+                        customCodeProActive = result.active
+                        if (result.activatedAtMillis != null) customCodeActivatedAt = result.activatedAtMillis
+                    }
+                }
+            }
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
     }
     val updateExtraPrefs: (ZingExtraPrefs) -> Unit = { updated ->
         val stored = updated.copy(
             supporterProUnlocked = false,
-            keepScreenOnCooking = if (playProUnlocked) updated.keepScreenOnCooking else storedExtraPrefs.keepScreenOnCooking,
+            keepScreenOnCooking = if (anyProUnlocked) updated.keepScreenOnCooking else storedExtraPrefs.keepScreenOnCooking,
         )
         storedExtraPrefs = stored
         saveExtraPrefs(context, stored)
@@ -1294,7 +1397,7 @@ fun PantryApp(viewModel: PantryViewModel) {
     }
     val strings = remember(extraPrefs.language) { stringsForLanguage(extraPrefs.language) }
     val recipeLocalizer = remember(context) { RecipeLocalizer(context) }
-    val activeAccent = if (extraPrefs.supporterProUnlocked) extraPrefs.supporterAccentTheme else "emerald"
+    val activeAccent = if (anyProUnlocked) extraPrefs.supporterAccentTheme else "emerald"
     val dynamicColorScheme = remember(settings.darkTheme, activeAccent) {
         buildZingColorScheme(settings.darkTheme, activeAccent)
     }
@@ -1431,7 +1534,7 @@ fun PantryApp(viewModel: PantryViewModel) {
         }
     }
 
-    BackHandler(enabled = scannerActive || selectedRecipeId != null || selectedTab != MainTab.HOME) {
+    BackHandler(enabled = !onboardingVisible && (scannerActive || selectedRecipeId != null || selectedTab != MainTab.HOME)) {
         when {
             scannerActive -> scannerActive = false
             selectedRecipeId != null -> selectedRecipeId = null
@@ -1465,6 +1568,14 @@ fun PantryApp(viewModel: PantryViewModel) {
             LocalRecipeLocalizer provides recipeLocalizer,
             LocalTabletLayout provides useTabletLayout,
         ) {
+            if (onboardingVisible) {
+                OnboardingScreen(
+                    langCode = strings.langCode,
+                    onFinish = finishOnboarding,
+                )
+                return@CompositionLocalProvider
+            }
+
             if (scannerActive) {
                 CameraScannerScreen(
                     onCodeDetected = { value ->
@@ -1605,6 +1716,30 @@ fun PantryApp(viewModel: PantryViewModel) {
                                     events = events,
                                     habits = habitSuggestions,
                                     settings = settings,
+                                    streakDays = usageStreak.days,
+                                    updateAvailable = updateAvailable,
+                                    onStartUpdate = {
+                                        val manager = appUpdateManager
+                                        val info = appUpdateInfo
+                                        if (manager != null && info != null) {
+                                            val flexible = AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE).build()
+                                            val immediate = AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE).build()
+                                            updateAvailable = false
+                                            runCatching {
+                                                when {
+                                                    info.isUpdateTypeAllowed(flexible) ->
+                                                        manager.startUpdateFlowForResult(info, updateFlowLauncher, flexible)
+                                                    info.isUpdateTypeAllowed(immediate) ->
+                                                        manager.startUpdateFlowForResult(info, updateFlowLauncher, immediate)
+                                                }
+                                            }.onFailure { checkForUpdate() }
+                                        }
+                                    },
+                                    onDismissUpdate = {
+                                        updateBannerDismissed = true
+                                        updatePrefs.edit().putInt("dismissed_version_code", updateAvailableVersion).apply()
+                                        updateAvailable = false
+                                    },
                                     onAddLot = { editingLot = null; scannedBarcode = ""; lookupResult = null; addLotVisible = true },
                                     onScan = {
                                         if (ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) scannerActive = true
@@ -1757,6 +1892,7 @@ fun PantryApp(viewModel: PantryViewModel) {
                                     events = events,
                                     proPrice = playProPrice,
                                     proProductAvailable = playProProductAvailable,
+                                    proBillingStatus = playProStatus,
                                     adsPrivacyOptionsRequired = adsState.privacyOptionsRequired,
                                     onManageAdsPrivacy = {
                                         activity?.let { adsManager.showPrivacyOptions(it) }
@@ -1767,6 +1903,18 @@ fun PantryApp(viewModel: PantryViewModel) {
                                         else Toast.makeText(context, uiCopy("Impossibile aprire Google Play da questa schermata.", strings.langCode), Toast.LENGTH_LONG).show()
                                     },
                                     onRedeemPromoCode = { code -> billingManager.openPromoRedemption(context, code) },
+                                    onRedeemZingCode = { code ->
+                                        workScope.launch {
+                                            val result = proCodeClient.redeem(code)
+                                            customCodeStatusKey = result.messageKey
+                                            if (result.active) {
+                                                customCodeProActive = true
+                                                customCodeActivatedAt = result.activatedAtMillis
+                                            }
+                                        }
+                                    },
+                                    zingProCodeStatus = customCodeStatusKey,
+                                    proActivationTimeMillis = customCodeActivatedAt ?: googlePlayActivationTime,
                                     onRefreshProPurchases = { billingManager.refreshPurchases() },
                                     onUpdateExtraPrefs = updateExtraPrefs,
                                     onDarkTheme = viewModel::setDarkTheme,
@@ -1783,6 +1931,7 @@ fun PantryApp(viewModel: PantryViewModel) {
                                     onExport = { exportLauncher.launch("Zing-backup.json") },
                                     onImport = { importLauncher.launch(arrayOf("application/json", "text/json", "*/*")) },
                                     onClearAll = { clearAllConfirm = true },
+                                    onShowOnboarding = { onboardingVisible = true },
                                 )
                             }
 
@@ -2018,6 +2167,10 @@ private fun HomeScreen(
     events: List<FoodEventEntity>,
     habits: List<HabitSuggestion>,
     settings: AppSettings,
+    streakDays: Int,
+    updateAvailable: Boolean,
+    onStartUpdate: () -> Unit,
+    onDismissUpdate: () -> Unit,
     onAddLot: () -> Unit,
     onScan: () -> Unit,
     onOpenPantry: () -> Unit,
@@ -2082,6 +2235,10 @@ private fun HomeScreen(
                 events = events,
                 habits = habits,
                 settings = settings,
+                streakDays = streakDays,
+                updateAvailable = updateAvailable,
+                onStartUpdate = onStartUpdate,
+                onDismissUpdate = onDismissUpdate,
                 expiring = expiring,
                 expiredCount = expiredCount,
                 lowStock = lowStock,
@@ -2098,6 +2255,10 @@ private fun HomeScreen(
                 contentPadding = PaddingValues(start = 20.dp, end = 20.dp, top = 22.dp, bottom = 26.dp),
                 verticalArrangement = Arrangement.spacedBy(18.dp),
             ) {
+                if (updateAvailable) {
+                    item { UpdateAvailableCard(langCode = strings.langCode, onUpdate = onStartUpdate, onDismiss = onDismissUpdate) }
+                }
+                item { UsageStreakCard(days = streakDays, langCode = strings.langCode) }
                 item {
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                         Column(Modifier.weight(1f)) {
@@ -2236,6 +2397,10 @@ private fun HomeTabletDashboard(
     events: List<FoodEventEntity>,
     habits: List<HabitSuggestion>,
     settings: AppSettings,
+    streakDays: Int,
+    updateAvailable: Boolean,
+    onStartUpdate: () -> Unit,
+    onDismissUpdate: () -> Unit,
     expiring: List<FoodLotEntity>,
     expiredCount: Int,
     lowStock: List<FoodLotEntity>,
@@ -2252,6 +2417,8 @@ private fun HomeTabletDashboard(
         Modifier.fillMaxSize().padding(horizontal = 24.dp, vertical = 20.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
+        if (updateAvailable) UpdateAvailableCard(langCode = strings.langCode, onUpdate = onStartUpdate, onDismiss = onDismissUpdate)
+        UsageStreakCard(days = streakDays, langCode = strings.langCode)
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -3897,10 +4064,14 @@ private fun SettingsScreen(
     events: List<FoodEventEntity>,
     proPrice: String?,
     proProductAvailable: Boolean,
+    proBillingStatus: String?,
     adsPrivacyOptionsRequired: Boolean,
     onManageAdsPrivacy: () -> Unit,
     onBuyPro: () -> Unit,
     onRedeemPromoCode: (String) -> Unit,
+    onRedeemZingCode: (String) -> Unit,
+    zingProCodeStatus: String?,
+    proActivationTimeMillis: Long?,
     onRefreshProPurchases: () -> Unit,
     onUpdateExtraPrefs: (ZingExtraPrefs) -> Unit,
     onDarkTheme: (Boolean) -> Unit,
@@ -3912,8 +4083,10 @@ private fun SettingsScreen(
     onExport: () -> Unit,
     onImport: () -> Unit,
     onClearAll: () -> Unit,
+    onShowOnboarding: () -> Unit,
 ) {
     val strings = LocalStrings.current
+    val onboardingCopy = remember(strings.langCode) { OnboardingCopy.forLanguage(strings.langCode) }
     val uriHandler = LocalUriHandler.current
     val context = LocalContext.current
     var redeemCodeInput by rememberSaveable { mutableStateOf("") }
@@ -3929,9 +4102,9 @@ private fun SettingsScreen(
     val cooked = events.count { it.type == "cooked" }
 
     val languages = listOf(
-        "system" to "Auto (Sistema)",
+        "system" to uiCopy("Automatico (sistema)", strings.langCode),
         "it" to "🇮🇹 Italiano",
-        "en" to "🇬🇧 English",
+        "en" to "🇺🇸 English (US)",
         "es" to "🇪🇸 Español",
         "fr" to "🇫🇷 Français",
         "de" to "🇩🇪 Deutsch",
@@ -3946,6 +4119,31 @@ private fun SettingsScreen(
         item {
             Text(strings.settingsTitle, style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
             Text(strings.settingsSub, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(22.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(16.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(14.dp),
+                ) {
+                    Icon(
+                        imageVector = Icons.Outlined.RestaurantMenu,
+                        contentDescription = null,
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(28.dp),
+                    )
+                    Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        Text(onboardingCopy.reviewTitle, style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.SemiBold)
+                        Text(onboardingCopy.reviewDescription, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    TextButton(onClick = onShowOnboarding) { Text(onboardingCopy.reviewButton) }
+                }
+            }
         }
 
         item {
@@ -4235,6 +4433,9 @@ private fun SettingsScreen(
                             },
                         )
                     }
+                    localizeBillingStatus(proBillingStatus, strings.langCode)?.let { status ->
+                        Text(status, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
                     if (proProductAvailable || extraPrefs.supporterProUnlocked) {
                         HorizontalDivider(color = MaterialTheme.colorScheme.surfaceVariant)
                         Text(
@@ -4249,6 +4450,13 @@ private fun SettingsScreen(
                                 color = MaterialTheme.colorScheme.primary,
                                 fontWeight = FontWeight.SemiBold,
                             )
+                            if (proActivationTimeMillis != null) {
+                                Text(
+                                    uiCopy("Zing Pro attivato il", strings.langCode) + " " + formatProActivationDate(proActivationTimeMillis, strings.langCode),
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
                         } else {
                             OutlinedTextField(
                                 value = redeemCodeInput,
@@ -4277,6 +4485,46 @@ private fun SettingsScreen(
                                 Text(redeemCodeMessage, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 2)
                             }
                         }
+                    }
+                    HorizontalDivider(color = MaterialTheme.colorScheme.surfaceVariant)
+                    Text(
+                        uiCopy("Riscatta un codice Zing", strings.langCode),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.SemiBold,
+                    )
+                    Text(
+                        uiCopy("I codici Zing personali sono monouso e devono essere verificati online.", strings.langCode),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    var zingCodeInput by rememberSaveable { mutableStateOf("") }
+                    OutlinedTextField(
+                        value = zingCodeInput,
+                        onValueChange = { zingCodeInput = it.uppercase().take(64) },
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text(uiCopy("Codice Zing", strings.langCode)) },
+                        singleLine = true,
+                        shape = RoundedCornerShape(14.dp),
+                        enabled = !extraPrefs.supporterProUnlocked,
+                    )
+                    Button(
+                        onClick = { onRedeemZingCode(zingCodeInput); zingCodeInput = "" },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(14.dp),
+                        enabled = zingCodeInput.isNotBlank() && !extraPrefs.supporterProUnlocked,
+                    ) { Text(uiCopy("Verifica e riscatta codice Zing", strings.langCode)) }
+                    if (!zingProCodeStatus.isNullOrBlank()) {
+                        Text(uiCopy(zingProCodeStatus, strings.langCode), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    TextButton(
+                        onClick = {
+                            runCatching {
+                                uriHandler.openUri("mailto:studio44z.info@gmail.com?subject=Zing%20Pro%20support")
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Text(uiCopy("Hai cambiato telefono? Scrivi a studio44z.info@gmail.com per assistenza.", strings.langCode))
                     }
                     if (extraPrefs.supporterProUnlocked) {
                         HorizontalDivider(color = MaterialTheme.colorScheme.surfaceVariant)
@@ -4438,7 +4686,7 @@ private fun SettingsScreen(
             Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f))) {
                 Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
                     Text(strings.appTagline, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-                    Text(uiCopy("Version 1.0.0 · by Studio 44z · Offline-first", strings.langCode), style = MaterialTheme.typography.bodySmall)
+                    Text(uiCopy("Version 1.2.0 · by Studio 44z · Offline-first", strings.langCode), style = MaterialTheme.typography.bodySmall)
                     OutlinedButton(
                         onClick = {
                             runCatching { uriHandler.openUri(ZING_PRIVACY_POLICY_URL) }
@@ -5555,4 +5803,90 @@ private fun OnlineRecipeFinderDialog(lots: List<FoodLotEntity>, onDismiss: () ->
             }
         }
     }
+}
+
+
+@Composable
+private fun UsageStreakCard(days: Int, langCode: String) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.58f)),
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+        ) {
+            Text("🔥", style = MaterialTheme.typography.titleLarge)
+            Column(Modifier.weight(1f)) {
+                Text(uiCopy("Giorni di fila", langCode), style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.SemiBold)
+                Text(
+                    if (days == 1) uiCopy("Hai aperto Zing 1 giorno di fila.", langCode)
+                    else uiCopy("Hai aperto Zing {days} giorni di fila.", langCode).replace("{days}", days.toString()),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun UpdateAvailableCard(langCode: String, onUpdate: () -> Unit, onDismiss: () -> Unit) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(start = 14.dp, end = 8.dp, top = 9.dp, bottom = 9.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+        ) {
+            Icon(Icons.Outlined.SystemUpdate, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+            Column(Modifier.weight(1f)) {
+                Text(uiCopy("Aggiornamento disponibile", langCode), style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.SemiBold)
+                Text(uiCopy("È disponibile una nuova versione di Zing.", langCode), style = MaterialTheme.typography.bodySmall)
+            }
+            TextButton(onClick = onUpdate) { Text(uiCopy("Aggiorna", langCode)) }
+            IconButton(onClick = onDismiss) { Icon(Icons.Outlined.Close, contentDescription = uiCopy("Chiudi", langCode)) }
+        }
+    }
+}
+
+private fun formatProActivationDate(timeMillis: Long, langCode: String): String {
+    val locale = when (langCode.lowercase(Locale.ROOT).substringBefore('-').substringBefore('_')) {
+        "en" -> Locale.US
+        "es" -> Locale.forLanguageTag("es-ES")
+        "fr" -> Locale.FRENCH
+        "de" -> Locale.GERMAN
+        "pt" -> Locale.forLanguageTag("pt-PT")
+        else -> Locale.ITALIAN
+    }
+    return DateFormat.getDateInstance(DateFormat.LONG, locale).format(Date(timeMillis))
+}
+
+
+private fun localizeBillingStatus(status: String?, langCode: String): String? {
+    if (status.isNullOrBlank()) return null
+    val key = when {
+        status.startsWith("Google Play Billing non disponibile") -> "Google Play Billing non disponibile."
+        status.startsWith("Impossibile caricare il prodotto Google Play") -> "Impossibile caricare il prodotto Google Play."
+        status.startsWith("Prodotto non ancora attivo") || status.startsWith("Zing Pro non è ancora configurato") -> "Zing Pro non è ancora attivo in Google Play."
+        status.startsWith("Impossibile verificare gli acquisti Google Play") -> "Impossibile verificare gli acquisti Google Play."
+        status.startsWith("Prodotto non disponibile") || status.startsWith("Impossibile avviare l'acquisto") -> "Acquisto non disponibile."
+        status == "Acquisto annullato." -> "Acquisto annullato."
+        status.startsWith("Acquisto non completato") -> "Acquisto non completato. Riprova più tardi."
+        status.startsWith("Google Play ha confermato") -> "Google Play ha confermato Zing Pro."
+        status.startsWith("Acquisto riconosciuto") -> "Acquisto riconosciuto; conferma in attesa."
+        status.startsWith("Connessione a Google Play in corso") -> "Connessione a Google Play in corso. Riprova tra poco."
+        status.startsWith("L'offerta Google Play non contiene un token valido") -> "L'offerta Google Play non è configurata correttamente."
+        status.startsWith("Inserisci un codice promozionale Google Play") -> "Inserisci un codice promozionale Google Play."
+        status.startsWith("Completa il riscatto in Google Play, poi torna qui") -> "Completa il riscatto in Google Play, poi torna qui: controlleremo l'acquisto."
+        status.startsWith("Completa il riscatto in Google Play e poi torna in Zing") -> "Completa il riscatto in Google Play e poi torna in Zing per aggiornare lo stato Pro."
+        status.startsWith("Non riesco ad aprire Google Play") -> "Non riesco ad aprire Google Play. Aggiorna Play Store e riprova."
+        else -> return status
+    }
+    return uiCopy(key, langCode)
 }

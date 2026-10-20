@@ -10,6 +10,8 @@ Zing is a native Android app built with Kotlin, Jetpack Compose and Room. It hel
 - Online recipe discovery through the public Wikibooks MediaWiki API. Results are heuristic and the online catalogue is not exhaustive.
 - Ingredient availability checks, missing-ingredient comparison, recipe scaling and a shopping list.
 - Local reminders, cooking timers, light/dark theme, language and unit preferences.
+- Four-step animated first-run introduction, locally stored consecutive-day streak, and Play in-app update banner when an update is available.
+- Optional one-time Zing Pro purchase through Google Play Billing; Pro activation is not included in manual JSON backups. Custom single-use Zing codes need the optional HTTPS backend under `server/pro_code_service`, which is source-only and not deployed.
 - Optional nutrition profile and JSON export/import. Nutrition estimates are informational, not medical advice.
 - Adaptive layouts for phones and tablets, including a navigation rail, adaptive grids and a two-pane recipe view on wider screens.
 
@@ -22,7 +24,7 @@ Zing is a native Android app built with Kotlin, Jetpack Compose and Room. It hel
 
 ## Build locally
 
-1. Install Android Studio, JDK 17 or newer, Android SDK Platform 36 and the required SDK Build Tools.
+1. Install Android Studio, Android SDK Platform 36 and the required SDK Build Tools. Use JDK 21 as the Gradle JDK (recommended for this project; avoid JDK 25 with Gradle 8.13).
 2. Open the project directory containing `settings.gradle.kts` in Android Studio and allow Gradle to sync.
 3. From the project root, run the relevant commands.
 
@@ -50,3 +52,7 @@ The first build requires network access to download Gradle and dependencies. Bui
 ## Source code license
 
 No license is currently specified for this repository. Public availability on GitHub does not, by itself, grant permission to copy, modify or redistribute the source code.
+
+## Release 1.2.0 test notes
+
+See [`docs/RELEASE_1.2.0_TEST.md`](docs/RELEASE_1.2.0_TEST.md) for the release checklist, Pro-code backend configuration, device testing and closed-track upload steps. This project archive has not been built on the container environment; confirm the build and test tasks in Android Studio on Windows.

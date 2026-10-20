@@ -5,6 +5,9 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
+val configuredZingProRedemptionBaseUrl = providers.gradleProperty("zingProRedemptionBaseUrl").orNull.orEmpty()
+    .replace("\\", "\\\\").replace("\"", "\\\"")
+
 android {
     namespace = "it.studio44z.zing"
     compileSdk = 36
@@ -13,13 +16,14 @@ android {
         applicationId = "it.studio44z.zing"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 3
+        versionName = "1.2.0"
 
         // Keep the App ID in one Gradle source of truth for UMP and GMA Next-Gen.
         manifestPlaceholders["admobAppId"] = "ca-app-pub-4481725277287086~8676927676"
         buildConfigField("String", "ADMOB_APP_ID", "\"ca-app-pub-4481725277287086~8676927676\"")
         buildConfigField("String", "ADMOB_BANNER_AD_UNIT_ID", "\"ca-app-pub-4481725277287086/8805840057\"")
+        buildConfigField("String", "ZING_PRO_REDEMPTION_BASE_URL", "\"$configuredZingProRedemptionBaseUrl\"")
 
         testInstrumentationRunner =
             "androidx.test.runner.AndroidJUnitRunner"
@@ -105,6 +109,7 @@ dependencies {
 
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.compose.animation:animation")
     implementation("androidx.compose.foundation:foundation")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
@@ -120,6 +125,7 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.11.2")
 
     implementation("com.android.billingclient:billing:9.1.0")
+    implementation("com.google.android.play:app-update-ktx:2.1.0")
 
     // Current Google Mobile Ads Next-Gen SDK and Google User Messaging Platform.
     implementation("com.google.android.libraries.ads.mobile.sdk:ads-mobile-sdk:1.5.0")

@@ -43,6 +43,13 @@ internal class GooglePlayBillingManager(context: Context) : PurchasesUpdatedList
     private val _statusMessage = MutableStateFlow<String?>(null)
     val statusMessage: StateFlow<String?> = _statusMessage.asStateFlow()
 
+    private val entitlementPrefs = appContext.getSharedPreferences("zing_pro_state", Context.MODE_PRIVATE)
+    private val _activationTimeMillis = MutableStateFlow(
+        entitlementPrefs.getLong("google_play_activated_at_ms", 0L).takeIf { it > 0L },
+    )
+    /** Historical purchase timestamp, displayed only as metadata and never used to grant Pro. */
+    val activationTimeMillis: StateFlow<Long?> = _activationTimeMillis.asStateFlow()
+
     @Volatile private var connecting = false
 
     fun start() {
@@ -157,6 +164,11 @@ internal class GooglePlayBillingManager(context: Context) : PurchasesUpdatedList
         _proUnlocked.value = ownedPurchase != null
         if (ownedPurchase == null) return
 
+        val purchaseTime = ownedPurchase.purchaseTime.takeIf { it > 0L }
+        if (purchaseTime != null) {
+            entitlementPrefs.edit().putLong("google_play_activated_at_ms", purchaseTime).apply()
+            _activationTimeMillis.value = purchaseTime
+        }
         _statusMessage.value = "Google Play ha confermato Zing Pro."
         if (!ownedPurchase.isAcknowledged) {
             val params = AcknowledgePurchaseParams.newBuilder()

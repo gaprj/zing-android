@@ -27,3 +27,25 @@ captures/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# Local secrets, databases and generated environments
+# Local secrets, databases and generated environments
+.env
+.env.*
+secrets.properties
+*.p12
+*.pfx
+*.pem
+*.key
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-wal
+*.sqlite-shm
+credentials*.json
+service-account*.json
+venv/
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
